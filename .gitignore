@@ -15,7 +15,7 @@ yarn-error.log*
 
 # Nuxt系
 .nuxt/
-secret-infos.js
+/secret-infos.js
 
 # distディレクトリ
 /dist/
