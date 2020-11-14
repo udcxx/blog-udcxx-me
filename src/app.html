@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html {{ HTML_ATTRS }}>
+  <head {{ HEAD_ATTRS }}>
+    {{ HEAD }}
+    <style media="screen">
+      @keyframes fadein {
+        0% { opacity:   0; }
+        100% { opacity: 1; }
+      }
+      body { animation: fadein 2s ease-in 0s 1; }
+    </style>
+
+  </head>
+  <body {{ BODY_ATTRS }} >
+    {{ APP }}
+  </body>
+</html>

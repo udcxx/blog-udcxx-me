@@ -1,0 +1,142 @@
+@import '~/assets/css/_ress.css';
+@import '~/assets/css/_m_plus_1p.css';
+
+.page-enter-active, .page-leave-active {
+  transition: opacity 1s;
+}
+.page-enter, .page-leave-active {
+  opacity: 0;
+}
+
+html {
+  /* 16px @ 768px increasing to 12.5px @ 320px */
+  font-size: calc(1rem + ((1vw - 7.68px) * 0.7813));
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  font-family: 'M PLUS 1p', sans-serif;
+  // font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', YuGothic, 'Yu Gothic', 'ＭＳ ゴシック', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  background-color: #071e22;
+}
+
+.contents {
+  margin: 0 auto;
+  padding: 0 5px;
+  width: 100%;
+  max-width: 768px;
+  background-color: #071e22;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #c37d2c;
+  &:visited { color: #c37d2c; }
+  &:hover { color: #f49d37; }
+}
+
+h1 { margin: 1em 0.5rem;  font-size: 2.3rem; line-height: 1.2em; }
+h2 {
+  margin: 1.5em 0 1em;
+  font-size: 2rem; line-height: 1.3em; font-weight: 300; text-align: center;
+}
+h2::after {
+  content: "―";
+  color: #f49d37;
+  display: block;
+  text-align: center;
+}
+h3 { margin: 1em 0 0.5em; font-size: 1.7rem; line-height: 1.2em; font-weight: 300; }
+h3::before {
+  content: "｜";
+  color: #f49d37; font-weight: bold; font-size: 1.1em;
+}
+h4 { padding-left: 0.5rem; margin: 1rem 0 0.5rem; font-size: 1.5rem; line-height: 1.2em; font-weight: 300; }
+h5 { padding-left: 0.5rem; margin: 1rem 0 0.5rem; font-size: 1.05rem; line-height: 1.2em; font-weight: bold; }
+h6 { padding-left: 0.5rem; margin: 1rem 0 0.5rem; font-size: 1rem; line-height: 1.2em; font-weight: bold; }
+
+p {
+  padding: 0.7rem 0.5rem;
+  font-size: 1rem; line-height: 2em;
+  text-align: justify; text-align-last: left;
+}
+
+ul {
+  margin: 1rem auto;
+}
+
+li {
+  margin: 1rem 0 1rem 1rem;
+  list-style: none;
+  font-size: 1rem; line-height: 1.4em;
+}
+li::before {
+  margin-right: 0.5rem;
+  content: '・';
+  color: #000;
+  text-shadow: 0px 0px 5px #000;
+  font-size: 0.9rem; font-weight: bold; line-height: 1.4em;
+}
+
+blockquote {
+  margin: 1rem;
+  border-left: solid 5px #f49d37;
+  font-style: oblique;
+}
+
+code {
+  padding: 0 0.3em;
+  background-color: #333;
+  border: solid 1px #000;
+  border-radius: 3px;
+  font-size: 0.9rem;
+  color: #f2f2f2;
+}
+
+pre {
+  margin: 1rem;
+  padding: 1rem;
+  overflow: hidden;
+  overflow-x: scroll;
+  background-color: #333;
+  border: solid 1px #000;
+  border-radius: 3px;
+  code {
+    border: none;
+  }
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  th, td {
+    padding: 1rem;
+    border-bottom: solid 1px #000;
+  }
+}
+
+.cf:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.page_top {
+  padding: 1%;
+  position: fixed;
+  bottom: 2%; right: 2%;
+  color: #fff;
+  font-size: 0.8rem;
+  text-decoration: none;
+  background: #000;
+}
+
+@media (min-width:768px) {
+  html {
+    font-size: 16px;
+  }
+}
