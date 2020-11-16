@@ -16,7 +16,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "npm run blog"
+      "pre-push": "node prepush.js"
     }
   },
   "dependencies": {
