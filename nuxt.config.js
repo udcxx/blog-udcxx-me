@@ -9,10 +9,12 @@ const sourceFileArrayReplaced = sourceFileArray.sourceFileArray.map(
 export default {
   mode: 'universal',
   srcDir: 'src/',
+  target: 'static',
   generate: {
+    crawler: false,
     routes() {
        return sourceFileArrayReplaced.map(sourceFileArray => {
-         return `article/${sourceFileArray}`
+         return `/article/${sourceFileArray}/`
        })
      }
   },
