@@ -3,7 +3,7 @@ title: LINE Messaging APIで遊んでみました
 date: 2020-11-29
 tags: IT GAS
 eyecatch: 201129.jpg
-discription: LINE Messaging APIとGoogle Apps Scriptを組み合わせて、簡単なBotのようなものを作って遊んでみました
+description: LINE Messaging APIとGoogle Apps Scriptを組み合わせて、簡単なBotのようなものを作って遊んでみました
 ---
 
 こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。

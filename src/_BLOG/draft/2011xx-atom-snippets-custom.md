@@ -3,7 +3,7 @@ title: Atomのスニペットをカスタマイズした
 date: 2020-
 tags: IT
 eyecatch:
-discription: Atomで今より快適にコーディングが出来るようにスニペットをカスタマイズしてみました！
+description: Atomで今より快適にコーディングが出来るようにスニペットをカスタマイズしてみました！
 ---
 
 こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。

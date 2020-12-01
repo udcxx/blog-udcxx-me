@@ -3,7 +3,7 @@ title: Nuxt.jsを更新したらgenerate出来なくなったので調整した
 date: 2020-
 tags: Blog Vue IT
 eyecatch:
-discription: Nuxt.jsをv2.13に上げたら静的生成するとルーティング周りでエラーになってしまったので修正しました。
+description: Nuxt.jsをv2.13に上げたら静的生成するとルーティング周りでエラーになってしまったので修正しました。
 ---
 
 こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
