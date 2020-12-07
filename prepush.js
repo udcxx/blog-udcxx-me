@@ -1,10 +1,11 @@
-const { exec } = require('child_process');
-const branch = exec("git rev-parse --abbrev-ref HEAD")
+const execSync = require('child_process').execSync;
+const branch = execSync("git rev-parse --abbrev-ref HEAD")
     .toString()
     .replace(/\r?\n/g, "");
 
 if (branch === "blog") {
-	exec("npm run blog");
+	// execSync("npm run blog");
+    execSync("node -v");
 } else {
 	return;
 }
