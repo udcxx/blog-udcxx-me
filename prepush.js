@@ -5,7 +5,7 @@ const branch = execSync("git rev-parse --abbrev-ref HEAD")
 
 if (branch === "blog") {
 	execSync("npm run blog");
-    execSync("node -v");
+    // execSync("node -v");
 } else {
 	return;
 }
