@@ -4,7 +4,7 @@ const branch = execSync("git rev-parse --abbrev-ref HEAD")
     .replace(/\r?\n/g, "");
 
 if (branch === "blog") {
-	// execSync("npm run blog");
+	execSync("npm run blog");
     execSync("node -v");
 } else {
 	return;
