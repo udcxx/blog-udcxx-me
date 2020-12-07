@@ -4,10 +4,11 @@ const branch = execSync("git rev-parse --abbrev-ref HEAD")
     .replace(/\r?\n/g, "");
 
 if (branch === "201207prepush-test") {
+    console.log("対象ブランチでしたー");
 	execSync("npm run md");
-    execSync("npm run generate");
-    execSync("npm run copy");
-    execSync("npm run upload");
+    // execSync("npm run generate");
+    // execSync("npm run copy");
+    // execSync("npm run upload");
     // execSync("node -v");
 } else {
 	return;
