@@ -1,5 +1,5 @@
 ---
-title: Safariの仕様に悩まされた備忘録
+title: Safariの仕様に悩まされた備忘録あああ
 date: 2020-12-07
 tags: IT
 eyecatch: 201207.jpg
