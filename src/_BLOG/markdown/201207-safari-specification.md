@@ -38,7 +38,7 @@ window.onpageshow = function(event) {
 };
 ```
 
-## window.opne() ブロックされる問題
+## window.open() ブロックされる問題
 
 これもユーザー的に意図しない動作を抑制する為の仕様なので、 **悪意じゃないのがまた歯がゆいところ。**
 
