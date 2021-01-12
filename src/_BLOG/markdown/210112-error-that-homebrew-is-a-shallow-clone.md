@@ -3,7 +3,7 @@ title: 久しぶりにHomebrewをupdateしようとしたらエラーが出て�
 date: 2020-01-12
 tags: IT
 eyecatch: 210112.jpg
-description: Homebrewの実行時に Error: homebrew-core is a shallow clone. というエラーが出て処理を続行出来なかったので、その理由と対策方法について。
+description: Homebrewの実行時に homebrew-core is a shallow clone. というエラーが出て処理を続行出来なかったので、その理由と対策方法について。
 ---
 
 こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
