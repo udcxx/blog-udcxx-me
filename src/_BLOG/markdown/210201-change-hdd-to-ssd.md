@@ -37,7 +37,7 @@ HDD自体は結構アクセスしやすい場所にあったので助かりま�
 ちなみに今回は [Crucialの500GBのもの](https://amzn.to/2MCWUEa) を購入しました。
 
 [![](/images/210201.jpg)](https://amzn.to/2MCWUEa)    
-![Amazon | Crucial クルーシャル SSD 500GB MX500 SATA3 内蔵2.5インチ 7mm CT500MX500SSD1 9.5mmスペーサー付【3年保証】 [並行輸入品] | Crucial(クルーシャル) | 内蔵SSD 通販](https://amzn.to/2MCWUEa)
+[Amazon | Crucial クルーシャル SSD 500GB MX500 SATA3 内蔵2.5インチ 7mm CT500MX500SSD1 9.5mmスペーサー付【3年保証】 [並行輸入品] | Crucial(クルーシャル) | 内蔵SSD 通販](https://amzn.to/2MCWUEa)
 
 
 ## OSのセットアップ
