@@ -3,7 +3,7 @@ title: Alfredの設定を見直してみました
 date: 2021-02-26
 tags: IT
 eyecatch: 210226.jpg
-discription: いよいよAlfredの設定周りをカスタマイズしてみました
+description: いよいよAlfredの設定周りをカスタマイズしてみました
 ---
 
 こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
