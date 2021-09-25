@@ -3,6 +3,7 @@ title: FTPアップまでコマンドで終わらせる
 date: 2019-11-11
 tags: Blog Vue IT
 eyecatch: 191111.jpg
+description: FileZillaを使わずに、コマンド1つでデプロイからサーバーへのアップロードまで完了できるようにアップデートしました。
 ---
 
 こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。

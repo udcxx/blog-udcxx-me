@@ -3,6 +3,7 @@ title: VS Codeの隠しフォルダ設定を変更する
 date: 2020-04-08
 tags: IT
 eyecatch: 200408.jpg
+description: VSCodeで隠しフォルダやhtaccessなどの隠しファイルもファイルツリーに表示されるように設定する方法
 ---
 
 こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
