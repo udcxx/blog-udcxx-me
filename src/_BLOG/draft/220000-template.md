@@ -1,19 +1,19 @@
 ---
 title:
-date: 2021-
+date: 2022-
 tags: Blog Vue IT GAS Life Car Book
 eyecatch:
-discription:
+discription: 
 ---
 
 こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
 
 ▼画像
-![](/images/210000.jpg)
+![](/images/220000.jpg)
 
 ▼リンク付き画像
-[![](/images/210000.jpg)](https://meetupokinawans.coresv.com/)
+[![](/images/220000.jpg)](https://hogehoge.com/)
 
 ▼リンク付き画像＋テキストリンク・・・Amazonとかコレ
-[![](/images/210000.jpg)](https://meetupokinawans.coresv.com/)    
-[テキストリンクのテキスト](https://meetupokinawans.coresv.com/)
+[![](/images/220000.jpg)](https://hogehoge.com/)    
+[テキストリンクのテキスト](https://hogehoge.com/)
