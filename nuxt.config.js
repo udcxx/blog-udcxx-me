@@ -13,9 +13,13 @@ export default {
   generate: {
     crawler: false,
     routes() {
-       return sourceFileArrayReplaced.map(sourceFileArray => {
-         return `/article/${sourceFileArray}/`
-       })
+        let routes = []
+        sourceFileArrayReplaced.map(sourceFileArray => {
+            routes.push(`/article/${sourceFileArray}/`)
+        })
+        routes.push('/category/blog/', '/category/vue/', '/category/it/', '/category/gas/', '/category/life/', '/category/car/', '/category/book/');
+
+        return routes;
      }
   },
   router: {
