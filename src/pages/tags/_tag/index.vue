@@ -2,7 +2,7 @@
   <div>
     <Header></Header>
     <div class="contents">
-        <p class="category_name">{{p.tag.toUpperCase()}}カテゴリ</p>
+        <p class="category_name">{{p.tag.toUpperCase()}}タグ</p>
         <div class="post_wrap">
             <div v-for="categoryArry in categoryArry" :key="categoryArry" class="post">
                 <n-link :to="'/article/' + categoryArry[3].replace('.md','').replace('-','/')" class="notscroll" >
