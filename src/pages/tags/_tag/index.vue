@@ -5,7 +5,7 @@
         <p class="category_name">{{p.tag.toUpperCase()}}タグ</p>
         <div class="post_wrap">
             <div v-for="categoryArry in categoryArry" :key="categoryArry" class="post">
-                <n-link :to="'/article/' + categoryArry[3].replace('.md','').replace('-','/')" class="notscroll" >
+                <n-link :to="'/article/' + categoryArry[3].replace('.md','').replace('-','/') + '/'" class="notscroll" >
                   <img :src="'/images/' + categoryArry[4]">
                   <div class="post_inner">
                     <span class="tag">{{categoryArry[1]}}</span>
