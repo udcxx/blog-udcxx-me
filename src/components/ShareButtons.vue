@@ -71,7 +71,7 @@ export default {
 .share_buttons {
   width: 100%;
   ul {
-    padding: 1rem;
+    padding: 0 1rem 1rem;
     text-align: right;
     li {
       margin-left: 0.5rem;
