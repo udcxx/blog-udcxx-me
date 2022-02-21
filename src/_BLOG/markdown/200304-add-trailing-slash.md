@@ -1,8 +1,9 @@
 ---
-title: Nuxt.jsでのURL表記を統一した
+title: Nuxt.jsでのURL表記を統一した【'20/12/04 追記】
 date: 2020-03-04
 tags: Blog Vue IT
 eyecatch: 200304.jpg
+description: GAでURLがめちゃくちゃだったので、トレイリングスラッシュ付きに統一されるよう、Nuxt.jsの設定を見直しました
 ---
 
 こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
@@ -100,3 +101,9 @@ RewriteEngine on
 -----
 
 これでGoogle Analyticsの計測も見やすくなるかな...。
+
+-----
+
+## 【2020/12/04 追記】
+
+Nuxt.js側の設定が良かったのか、htaccessの設定が功を奏したのか定かではありませんが、結果として、Google Analyticsのレポートは読みやすくなりました！！

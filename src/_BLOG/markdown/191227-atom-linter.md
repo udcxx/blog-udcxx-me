@@ -1,17 +1,18 @@
 ---
-title: Atomでhtml/cssの構文チェック
+title: Atomで構文チェックする linter の導入が難しかった話
 date: 2019-12−27
 tags: IT
 eyecatch: 191227.png
+description: AtomでWebコーディングの時に構文エラーチェックをしてくれるlinterというパッケージをインストールする奮闘記
 ---
 
 こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
 
-コーディング時のミスを減らすために、構文チェックが欠かせませんが、Atomでそれを自動でチェックしてくれるパッケージをインストールする際につまずいたのでメモ。なんかググって書かれた通りにやっても動かなかったので。古い情報が多かったみたいでした。
+コーディング時のミスを減らすためには構文チェックが欠かせませんが、Atomでそのチェックを自動でしてくれる `linter` というパッケージが存在するのですが、インストールする際につまずいたのでメモ。ググって書かれた通りにやっても動かなかったので調べてみると、古い情報が多いようでした。
 
 ## 結論
 
-いきなり結論。html/cssだけチェック出来れば良いなら、下記4つのパッケージをインストール＆brewでtidyをアップデートすれば良いっぽいです。
+いきなり結論です。htmlとcssさえチェック出来れば良いなら、下記4つのパッケージをインストールし、brewで `tidy` をアップデートすれば良いっぽいです。
 
 * [linter](https://atom.io/packages/linter)
   * 構文チェックの本体
@@ -20,9 +21,9 @@ eyecatch: 191227.png
 * [linter-tidy](https://atom.io/packages/linter-tidy)
   * html用
 * [linter-stylelint](https://atom.io/packages/linter-stylelint)
-  * css
+  * css用
 
-（Macの場合）ターミナルで、
+（Homebrewがインストール済みのMacの場合）ターミナルで、
 
 ```
 $ brew install tidy-html5
