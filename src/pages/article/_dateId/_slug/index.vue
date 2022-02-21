@@ -9,10 +9,12 @@
             <div class="article_title"><h1>{{ title }}</h1></div>
             <div class="article_meta">
                 <div class="article_meta_date">date: <time>{{ date.slice(0, 10) }}</time></div>
+                <Tags :tags="tags"></Tags>
                 <ShareButtons :title="title"></ShareButtons>
             </div>
         </div>
         <div class="article_body" v-html="bodyHtml"></div>
+        <Tags :tags="tags"></Tags>
         <ShareButtons :title="title"></ShareButtons>
         <adsbygoogle ad-slot="2499763349" style="max-width: calc(768px - 1rem); margin: 2rem auto;" />
         <div class="recommend_article">
@@ -31,6 +33,7 @@
 <script>
 import Header from '~/components/Header.vue'
 import ShareButtons from '~/components/ShareButtons.vue'
+import Tags from '~/components/Tags.vue'
 import PostList from '~/components/PostList.vue'
 import Footer from '~/components/Footer.vue'
 import {sourceFileArray} from '~/_BLOG/json/summary.json'
@@ -38,7 +41,7 @@ import {sourceFileArray} from '~/_BLOG/json/summary.json'
 
 export default {
   components: {
-    Header, ShareButtons, PostList, Footer,
+    Header, ShareButtons, Tags, PostList, Footer,
   },
   computed: {
     baseUrl() {
@@ -97,6 +100,7 @@ export default {
   display: block;
 }
 .article_meta_date {
+    padding-bottom: 1rem;
   margin-right: 1em;
   text-align: right;
 }
