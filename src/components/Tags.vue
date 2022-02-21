@@ -1,7 +1,7 @@
 <template lang="html">
   <div class="tags">
     <ul>
-      <li v-for="tag in tagArr()" :key="tag"><n-link :to="'/category/' + tag.toLowerCase() + '/'">{{tag}}</n-link></li>
+      <li v-for="tag in tagArr()" :key="tag"><n-link :to="'/tags/' + tag.toLowerCase() + '/'">{{tag}}</n-link></li>
     </ul>
   </div>
 </template>
@@ -19,18 +19,6 @@ export default {
       tagArr() {
           return this.tags.split(' ');
       }
-    // tag() {
-    //     let tagsWithLink = '';
-    //     const tagArr = this.tags.split(' ');
-    //     for (var i = 0; i < tagArr.length; i++) {
-    //         tagsWithLink = `<li><n-link :to="/category/{$tagArr[i]}/">{$tagArr[i]}</n-link></li>`
-    //     }
-    //     // forEach((tagArr, tag) => {
-    //     //     tagsWithLink = `<li><n-link :to="/category/{$tag}/">{$tag}</n-link></li>`
-    //     // });
-    //
-    //     return tagsWithLink;
-    // }
   }
 };
 </script>

@@ -2,7 +2,7 @@
   <div>
     <Header></Header>
     <div class="contents">
-        <p class="category_name">{{p.category.toUpperCase()}}カテゴリ</p>
+        <p class="category_name">{{p.tag.toUpperCase()}}カテゴリ</p>
         <div class="post_wrap">
             <div v-for="categoryArry in categoryArry" :key="categoryArry" class="post">
                 <n-link :to="'/article/' + categoryArry[3].replace('.md','').replace('-','/')" class="notscroll" >
@@ -38,7 +38,7 @@ export default {
         };
     },
     validate({ params }) {
-      return  /^[0-9a-z]+$/.test(params.category)
+      return  /^[0-9a-z]+$/.test(params.tag)
     },
     asyncData ({ params }) {
         return {
@@ -51,7 +51,7 @@ export default {
             const source = this.sourceFileArray;
 
             for (var key in source) {
-                if (source[key]['tags'].toUpperCase().includes(this.p.category.toUpperCase())) {
+                if (source[key]['tags'].toUpperCase().includes(this.p.tag.toUpperCase())) {
                     arry.unshift([source[key]['title'], source[key]['tags'], source[key]['date'], source[key]['sourceBase'], source[key]['eyecatch']]);
                 }
             }

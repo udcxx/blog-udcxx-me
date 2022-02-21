@@ -17,7 +17,7 @@ export default {
         sourceFileArrayReplaced.map(sourceFileArray => {
             routes.push(`/article/${sourceFileArray}/`)
         })
-        routes.push('/category/blog/', '/category/vue/', '/category/it/', '/category/gas/', '/category/life/', '/category/car/', '/category/book/');
+        routes.push('/tags/blog/', '/tags/vue/', '/tags/it/', '/tags/gas/', '/tags/life/', '/tags/car/', '/tags/book/');
 
         return routes;
      }
