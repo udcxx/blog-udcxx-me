@@ -83,7 +83,7 @@ export default {
   mounted() {
       // H2タグ直前にGoogleAdを埋め込む
       // ※ H2が2個以上なら2個目の前、1個しかなければその前
-      const googleAd = document.querySelector('ins:nth-of-type(1)');
+      const googleAd = document.querySelector('ins:nth-of-type(2)');
 
       if (document.querySelectorAll('h2').length >= 2) {
           let target = document.querySelector('h2:nth-of-type(2)');
