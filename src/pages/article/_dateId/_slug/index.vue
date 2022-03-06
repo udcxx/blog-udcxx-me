@@ -12,10 +12,12 @@
                 <Tags :tags="tags"></Tags>
                 <ShareButtons :title="title"></ShareButtons>
             </div>
+            <adsbygoogle ad-slot="2499763349" style="max-width: calc(768px - 1rem); margin: 2rem auto;" />
         </div>
         <div class="article_body" v-html="bodyHtml"></div>
         <Tags :tags="tags"></Tags>
         <ShareButtons :title="title"></ShareButtons>
+        <adsbygoogle ad-slot="2499763349" style="max-width: calc(768px - 1rem); margin: 2rem auto;" />
         <adsbygoogle ad-slot="2499763349" style="max-width: calc(768px - 1rem); margin: 2rem auto;" />
         <div class="recommend_article">
           <span class="recommend_article-title-bg"><h2 class="recommend_article-title"><span class="recommend_article-title-initial">新</span>着記事</h2></span>
@@ -77,6 +79,21 @@ export default {
         { hid: 'og:image', property: 'og:image', content: `${this.baseUrl}images/${this.eyecatch}` },
       ],
     }
+  },
+  mounted() {
+      // H2タグ直前にGoogleAdを埋め込む
+      // ※ H2が2個以上なら2個目の前、1個しかなければその前
+      const googleAd = document.querySelector('ins:nth-of-type(1)');
+
+      if (document.querySelectorAll('h2').length >= 2) {
+          let target = document.querySelector('h2:nth-of-type(2)');
+          let targetParent = target.parentNode;
+          targetParent.insertBefore(googleAd, target)
+      } else {
+          let target = document.querySelector('h2');
+          let targetParent = target.parentNode;
+          targetParent.insertBefore(googleAd, target)
+      }
   }
 }
 </script>
