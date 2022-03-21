@@ -23,13 +23,13 @@
     "@nuxtjs/google-adsense": "^1.1.3",
     "@nuxtjs/google-gtag": "^1.0.4",
     "@nuxtjs/markdownit": "^1.2.6",
+    "cpx2": "^4.2.0",
     "husky": "^4.2.3",
     "nuxt": "^2.14.7",
     "processmd": "^4.6.3"
   },
   "devDependencies": {
     "chokidar": "^3.3.0",
-    "cpx": "^1.5.0",
     "ftp-deploy": "^2.3.6",
     "imagemin": "^7.0.1",
     "imagemin-gifsicle": "^6.0.1",
