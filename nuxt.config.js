@@ -59,7 +59,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    { src: '~plugins/ga.js', mode: 'client' }
+    // { src: '~plugins/ga.js', mode: 'client' }
   ],
   /*
   ** Nuxt.js dev-modules
@@ -75,6 +75,13 @@ export default {
         {
           id: secretInfos.googlead.id,
           pageLevelAds: true
+        }
+    ],
+    [
+        '@nuxtjs/google-gtag',
+        {
+            id: secretInfos.gtag.id,
+            // debug: true
         }
     ]
   ],

@@ -21,10 +21,11 @@
   },
   "dependencies": {
     "@nuxtjs/google-adsense": "^1.1.3",
+    "@nuxtjs/google-gtag": "^1.0.4",
     "@nuxtjs/markdownit": "^1.2.6",
     "husky": "^4.2.3",
     "nuxt": "^2.14.7",
-    "processmd": "^4.5.3"
+    "processmd": "^4.6.3"
   },
   "devDependencies": {
     "chokidar": "^3.3.0",
