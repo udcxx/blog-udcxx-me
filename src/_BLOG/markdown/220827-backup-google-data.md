@@ -2,7 +2,7 @@
 title: Googleからデータをバックアップ
 date: 2022-08-27
 tags: IT
-eyecatch:
+eyecatch: 220827.jpg
 description: Google依存脱却は難しそうですが、うまく付き合っていくために定期的なバックアップを取ろうと決意しました。
 ---
 
