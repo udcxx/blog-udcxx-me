@@ -2,7 +2,7 @@
 title: 読書録：心を鍛える
 date: 2022-12-05
 tags: Book
-eyecatch: 221205jpg
+eyecatch: 221205.jpg
 description: 藤田晋 氏と、堀江貴文 氏による、「心を鍛える」を読んだ感想を簡単にメモっておきます
 ---
 
