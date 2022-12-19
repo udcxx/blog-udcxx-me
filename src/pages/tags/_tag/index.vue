@@ -64,13 +64,11 @@ export default {
 
 <style lang="scss">
 
-.contents {
-    max-width: 768px;
-    margin-top: 10vh;
-    padding: 0 5px;
-}
 .category_name {
-    font-size: 1.5rem;
+    width: 100%; max-width: 1024px;
+    font-size: 2.8rem;
+    margin: 10rem auto;
+    text-align: center; text-align-last: center;
     letter-spacing: 0.2em;
     color: #edefeb;
 }

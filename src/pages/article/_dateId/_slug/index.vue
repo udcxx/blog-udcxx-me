@@ -3,26 +3,27 @@
     <Header></Header>
 
     <div class="contents">
-      <div class="article_content">
         <div class="article_head">
-            <div class="article_eyecatch"><img :src="'/images/' +  eyecatch" :alt="params.title"></div>
-            <div class="article_title"><h1>{{ title }}</h1></div>
+            <div class="article_head-emoji" v-if="eyecatchEmoji">{{eyecatchEmoji}}</div><div class="article_head-emoji"  v-else="eyecatchEmoji">📄</div>
+            <h1>{{title}}</h1>
+        </div>
+      <div class="article_content">
+        <div class="article_left">
             <div class="article_meta">
-                <div class="article_meta_date">date: <time>{{ date.slice(0, 10) }}</time></div>
-                <Tags :tags="tags"></Tags>
-                <ShareButtons :title="title"></ShareButtons>
+              <div class="article_meta_title">公開</div>
+              <div class="article_meta_content"><time>{{ date.slice(0, 10) }}</time></div>
+              <div class="article_meta_title">タグ</div>
+              <div class="article_meta_content"><Tags :tags="tags"></Tags></div>
             </div>
-            <adsbygoogle ad-slot="2499763349" style="max-width: calc(768px - 1rem); margin: 2rem auto;" />
+            <ShareButtons :title="title"></ShareButtons>
         </div>
         <div class="article_body" v-html="bodyHtml"></div>
-        <Tags :tags="tags"></Tags>
-        <ShareButtons :title="title"></ShareButtons>
         <adsbygoogle ad-slot="2499763349" style="max-width: calc(768px - 1rem); margin: 2rem auto;" />
         <adsbygoogle ad-slot="2499763349" style="max-width: calc(768px - 1rem); margin: 2rem auto;" />
-        <div class="recommend_article">
+        <!-- <div class="recommend_article">
           <span class="recommend_article-title-bg"><h2 class="recommend_article-title"><span class="recommend_article-title-initial">新</span>着記事</h2></span>
           <PostList :ls-from="0" :ls-to="3"></PostList>
-        </div>
+        </div> -->
       </div>
       <div class="pagination">
         <n-link to="/">TOP</n-link>
@@ -100,29 +101,65 @@ export default {
 
 <style lang="scss">
 
-.article_content {
-  margin: 10px auto;
-  width: 100%;
-  max-width: 640px;
-  background-color: rgba(231, 233, 233, 0.9);
-  box-shadow: 0px 0px 7px 3px rgba(255, 255, 255, 0.4);
+.article_head {
+    width: 100%; 
+    max-width: 1024px;
+    margin: 10rem auto 10.8rem;
+    text-align: center;
+
+    .article_head-emoji {
+        font-size: 7.5rem;
+        color: #f7f7f7;
+    }
+    h1 {
+        padding: 0 4rem;
+        font-size: 2.8rem; font-weight: bold;
+        color: #f7f7f7;
+    }
 }
 
-.article_eyecatch {
-  margin: 0;
-  width: 100%;
+.article_content {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
 }
-.article_eyecatch img {
-  width: 100%;
-  display: block;
+
+.article_left {
+    width: 21.6rem; height: 100%;
+    margin-left: 4rem;
+    position: sticky;
+    top: 7.5vh;
+    .article_meta {
+        width: 21.6rem;
+		padding: 2rem;
+		border-radius: 1rem;
+        color: #2C2C2C;
+		background-color: #D1D5D5;
+        .article_meta_title {
+            margin-top: 1em;;
+            font-size: 1.6rem;
+            &:nth-of-type(1) {
+                margin-top: 0;
+            }
+        }
+        .article_meta_content {
+            text-align: right;
+            font-size: 1.6rem;
+        }
+    }
 }
+
+
 .article_meta_date {
     padding-bottom: 1rem;
   margin-right: 1em;
   text-align: right;
 }
 .article_body {
-  padding: 0 1rem;
+  padding: 4rem 2rem;
+  width: 100%; max-width: 768px;
+  border-radius: 1rem;
+  background-color: #D1D5D5;
   img {
     max-width: 100%; height: auto;
     display: block;
@@ -172,7 +209,8 @@ export default {
 }
 
 .pagination {
-  margin: 3vh auto;
+  margin: 3rem auto;
+  font-size: 1.6rem;
   text-align: center;
 }
 </style>

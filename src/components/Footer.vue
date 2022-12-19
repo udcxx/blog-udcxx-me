@@ -22,7 +22,8 @@ export default {
 <style lang="scss">
 footer {
   padding: 10vh 0 0;
-  width: 100%; height: 20vh;
+  width: 100%; max-width: 1024px; height: 20vh;
+  margin: 0 auto;
   color: #fff;
   font-size: 0.8rem;
   p {
@@ -40,7 +41,7 @@ footer {
       list-style: none;
       display: inline-block;
       img {
-        width: 1.3rem;
+        width: 2.4rem;
       }
     }
     li:before {

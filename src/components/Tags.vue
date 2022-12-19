@@ -28,6 +28,7 @@ export default {
 .tags {
   width: 100%;
   ul {
+    margin: auto;
     padding-right: 1rem;
     text-align: right;
     li {
