@@ -71,44 +71,63 @@ export default {
 
 <style lang="scss">
 
-.share_buttons {
-	width: 100%;
-	.article_meta {
-		width: 21.6rem; height: 6.1rem;
-		margin-top: 1rem;
-		padding: 2rem;
-		border-radius: 1rem;
-		display: inline-flex;
-		align-items: center;
-		background-color: #D1D5D5;
-		a {
-			width: 100%; height: 100%;
-			display: flex;
-			align-items: center;
-		}
-		svg {
-			width: 2.4rem; height: 2.4rem;
-			border-radius: 5px;
-			background-color: #D1D5D5;
-			fill: #2C2C2C;
-			display: inline-block;
-		}
-		span {
-			padding-left: 1em;
-			font-size: 1.6rem; font-weight: normal;
-			color: #2C2C2C;
-		}
-	}
-	.share-twitter:hover {
-		.fill_tw { fill: #55acee; }
-	}
-	.share-hatebu:hover {
-		.fill_b { fill: #00A4DE; }
-	}
-	.share-line:hover {
-		.fill_li_1 { fill: #00c300; }
-		.fill_li_2 { fill: #ffffff; }
-	}
+.article_left {
+    .share_buttons {
+        width: 100%;
+        .article_meta {
+            width: 21.6rem; height: 6.1rem;
+            margin-top: 1rem;
+            padding: 2rem;
+            border-radius: 1rem;
+            display: inline-flex;
+            align-items: center;
+            background-color: #D1D5D5;
+            a {
+                width: 100%; height: 100%;
+                display: flex;
+                align-items: center;
+                @media (max-width: 768px) {
+                    justify-content: center;
+                }
+            }
+            svg {
+                width: 2.4rem; height: 2.4rem;
+                background-color: #D1D5D5;
+                fill: #2C2C2C;
+                display: inline-block;
+            }
+            span {
+                padding-left: 1em;
+                font-size: 1.6rem; font-weight: normal;
+                color: #2C2C2C;
+                @media (max-width: 768px) {
+                    display: none;
+                }
+            }
+            @media (max-width: 768px) {
+                width: 6.1rem;
+                padding: 0;
+                margin-top: 0;
+            }
+        }
+        .share-twitter:hover {
+            .fill_tw { fill: #55acee; }
+        }
+        .share-hatebu:hover {
+            .fill_b { fill: #00A4DE; }
+        }
+        .share-line:hover {
+            .fill_li_1 { fill: #00c300; }
+            .fill_li_2 { fill: #ffffff; }
+        }
+        @media (max-width: 768px) {
+            width: 21rem;
+            padding-left: 1rem;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
 }
+
 
 </style>

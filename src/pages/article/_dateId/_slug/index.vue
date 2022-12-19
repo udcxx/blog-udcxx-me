@@ -122,6 +122,9 @@ export default {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row-reverse;
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
+    }
 }
 
 .article_left {
@@ -141,11 +144,35 @@ export default {
             &:nth-of-type(1) {
                 margin-top: 0;
             }
+            @media (max-width:768px) {
+                display: none;
+            }
         }
         .article_meta_content {
             text-align: right;
             font-size: 1.6rem;
+            @media (max-width:768px) {
+                text-align: left;
+                font-size: 1.4rem;
+            }
         }
+        @media (max-width: 768px) {
+            width: 54.8rem;
+            padding: 1.2rem;
+            display: inline-block;
+            &:nth-last-of-type(1) {
+                margin-right: 0;
+            }
+        }
+    }
+    @media (max-width:768px) {
+        width: 100%;
+        margin-left: 0; margin-bottom: 1.6rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        position: relative;
+        top: auto;
     }
 }
 

@@ -29,11 +29,15 @@ export default {
   width: 100%;
   ul {
     margin: auto;
-    padding-right: 1rem;
-    text-align: right;
     li {
         margin: 0 0 0 0.5rem;
         display: inline-block;
+        &:nth-of-type(1) {
+          margin: 0;
+        }
+        &::before {
+          display: none;
+        }
     }
     li:before {
       content: '';
