@@ -1,7 +1,8 @@
 <template>
   <div class="post">
     <n-link :to="'/article/' + fileMap[sourceJson]['sourceBase'].replace('.md','').replace('-','/') + '/'" class="notscroll" >
-      <img :src="'/images/' + fileMap[sourceJson]['eyecatch']">
+      <img v-if="fileMap[sourceJson]['eyecatch']" :src="'/images/' + fileMap[sourceJson]['eyecatch']">
+      <div v-else class="article_head-emoji">{{fileMap[sourceJson]['eyecatchEmoji']}}</div>
       <div class="post_inner">
         <span class="tag">{{fileMap[sourceJson]['tags']}}</span>
         <span class="title">{{fileMap[sourceJson]['title']}}</span>
@@ -22,7 +23,7 @@ export default {
       sourceJson: this.source.replace('./', '').replace('markdown', 'json').replace('.md', '.json'),
       fileMap: summary['fileMap'],
     };
-  },
+  }
 };
 </script>
 
@@ -69,6 +70,24 @@ export default {
   opacity: 0.6;
   filter: alpha(opacity=60); -ms-filter: "alpha(opacity=60)";
   -webkit-transform: scale(1.1); -moz-transform: scale(1.1); -o-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1);
+}
+
+.post .article_head-emoji {
+  width: 100%; height: 100%;
+  padding-bottom: 3rem;
+  position: absolute;
+  top: 0; left: 0;
+  display: inline-flex;
+  justify-content: center; align-items: center;
+  font-size: 10rem;
+  transition-duration: 0.3s;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  background-color: #071e22;
+}
+.post:hover .article_head-emoji {
+  opacity: 0.6;
+  font-size: 13rem;
 }
 
 .post_inner {

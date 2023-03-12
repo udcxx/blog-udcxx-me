@@ -36,8 +36,8 @@ export default {
   data() {
     return {
       lsFrom: 0,
-      lsTo: 9,
-      lsStep: 10,
+      lsTo: 16,
+      lsStep: 16,
       summaryLength: summary['sourceFileArray'].length,
     };
   },
@@ -56,13 +56,13 @@ export default {
     onPrev() {
       document.body.scrollTop = 0
       document.documentElement.scrollTop = 0
-      if ( this.lsTo <= 20 ) { this.lsTo = 9; } else { this.lsTo = this.lsTo - this.lsStep; }
-      if ( this.lsFrom <= 10 ) { this.lsFrom = 0; } else { this.lsFrom = this.lsFrom - this.lsStep; }
+      if ( this.lsTo <= 32 ) { this.lsTo = 16; } else { this.lsTo = this.lsTo - this.lsStep; }
+      if ( this.lsFrom <= 17 ) { this.lsFrom = 0; } else { this.lsFrom = this.lsFrom - this.lsStep; }
     },
     onTop() {
       document.body.scrollTop = 0
       document.documentElement.scrollTop = 0
-      this.lsTo = 9;
+      this.lsTo = 16;
       this.lsFrom = 0;
     },
     onNext() {

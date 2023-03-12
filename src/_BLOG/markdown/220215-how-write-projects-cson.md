@@ -3,6 +3,7 @@ title: projects.cson の書き方
 date: 2022-02-15
 tags: IT
 eyecatch: 220215.jpg
+eyecatchEmoji: ✒️
 description: Atomでプロジェクトを切り替えてくれるパッケージ「project-plus」が参照するプロジェクト一覧のファイルの書き方
 ---
 
