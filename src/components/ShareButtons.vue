@@ -82,6 +82,9 @@ export default {
             display: inline-flex;
             align-items: center;
             background-color: #D1D5D5;
+            @media (max-width: 768px) {
+                height: 100%;
+            }
             a {
                 width: 100%; height: 100%;
                 display: flex;
@@ -95,6 +98,9 @@ export default {
                 background-color: #D1D5D5;
                 fill: #2C2C2C;
                 display: inline-block;
+                @media (max-width: 768px) {
+                  width: 3rem; height: 3rem;
+                }
             }
             span {
                 padding-left: 1em;

@@ -20,10 +20,10 @@
         <div class="article_body" v-html="bodyHtml"></div>
         <adsbygoogle ad-slot="2499763349" style="max-width: calc(768px - 1rem); margin: 2rem auto;" />
         <adsbygoogle ad-slot="2499763349" style="max-width: calc(768px - 1rem); margin: 2rem auto;" />
-        <!-- <div class="recommend_article">
-          <span class="recommend_article-title-bg"><h2 class="recommend_article-title"><span class="recommend_article-title-initial">新</span>着記事</h2></span>
-          <PostList :ls-from="0" :ls-to="3"></PostList>
-        </div> -->
+      </div>
+      <div class="recommend_article">
+      <span class="recommend_article-title-bg"><h2 class="recommend_article-title"><span class="recommend_article-title-initial">新</span>着記事</h2></span>
+      <PostList :ls-from="0" :ls-to="5"></PostList>
       </div>
       <div class="pagination">
         <n-link to="/">TOP</n-link>
@@ -110,6 +110,7 @@ export default {
     .article_head-emoji {
         font-size: 7.5rem;
         color: #f7f7f7;
+        margin-bottom: 10rem;
     }
     h1 {
         padding: 0 4rem;
@@ -134,10 +135,18 @@ export default {
     top: 7.5vh;
     .article_meta {
         width: 21.6rem;
-		padding: 2rem;
-		border-radius: 1rem;
+        padding: 2rem;
+        border-radius: 1rem;
         color: #2C2C2C;
-		background-color: #D1D5D5;
+        background-color: #D1D5D5;
+        @media (max-width:768px) {
+            width: 54.8rem;
+            padding: 1.2rem 1.2rem 0.5rem;
+            display: inline-block;
+            &:nth-last-of-type(1) {
+                margin-right: 0;
+            }
+        }
         .article_meta_title {
             margin-top: 1em;;
             font-size: 1.6rem;
@@ -151,17 +160,10 @@ export default {
         .article_meta_content {
             text-align: right;
             font-size: 1.6rem;
+            font-weight: bold;
             @media (max-width:768px) {
                 text-align: left;
                 font-size: 1.4rem;
-            }
-        }
-        @media (max-width: 768px) {
-            width: 54.8rem;
-            padding: 1.2rem;
-            display: inline-block;
-            &:nth-last-of-type(1) {
-                margin-right: 0;
             }
         }
     }
@@ -178,7 +180,7 @@ export default {
 
 
 .article_meta_date {
-    padding-bottom: 1rem;
+  padding-bottom: 1rem;
   margin-right: 1em;
   text-align: right;
 }
@@ -208,7 +210,7 @@ export default {
 }
 .recommend_article-title-bg {
   width: 100%;
-  padding: 0 1rem;
+  padding: 0 2rem;
   display: block;
   position: relative;
 }
@@ -216,16 +218,12 @@ export default {
   color: #f49d37;
 }
 .recommend_article-title {
+  margin-bottom: 0;
   text-align: left;
+  color: #fff;
 }
 .recommend_article-title::after {
-  margin-left: 1rem;
-  width: calc(100% - 12rem);
-  display: inline;
-  border-bottom: solid 1px #000;
-  position: absolute;
-  bottom: 50%;
-  content: '';
+  content: none;
 }
 .recommend_article {
   #post_wrap {

@@ -73,7 +73,7 @@ header {
 }
 
 .header_title {
-  padding: 1.5vh 1vw;
+  padding: 0 1vw;
   height: 100%;
   display: flex;
   align-items: center;
@@ -84,7 +84,7 @@ header {
   font-size: 1rem;
   h1 {
     margin: 0;
-    height: 100%;
+    height: 60%;
     font-size: 0;
   }
   .header_title_img {
@@ -95,7 +95,7 @@ header {
 
 @media (max-width:764px) {
   .header_title {
-    padding: 3.5% 0.5%;
+    padding: 0 0.5%;
   }
 }
 
