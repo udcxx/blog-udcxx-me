@@ -100,21 +100,32 @@ export default {
 }
 
 span.tag {
-  padding-left: 0.4rem;
-  font-size: 0.8rem; font-weight: 300;
+  padding-top: 3px; padding-left: 0.4rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.28rem; font-weight: 300;
   line-height: 1.2rem;
   display: block;
 }
 span.title {
   padding-left: 0.5rem;
-  font-size: 1rem;
-  line-height: 1.5em;
+  margin-bottom: 0.5rem;
+  font-size: 1.6rem;
+  line-height: 1.25em;
   letter-spacing: -0.05em;
   display: block;
 }
+@media (max-width:768px) {
+  span.tag {
+    margin-bottom: 1rem;
+  }
+  span.title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+}
 span.date {
   padding-left: 0.4rem;
-  font-size: 0.8rem; font-weight: 300;
+  font-size: 1.28rem; font-weight: 300;
   display: block;
 }
 </style>
