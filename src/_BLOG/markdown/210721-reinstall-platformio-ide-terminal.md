@@ -3,6 +3,7 @@ title: Platformio Ide Terminalの画面が真っ黒で使えなかった
 date: 2021-07-21
 tags: IT
 eyecatch: 210721.jpg
+eyecatchEmoji:
 description: Platformio Ide Terminalが真っ黒で動かなかったので再インストールしてみたらすんなり動きました。
 ---
 

@@ -3,6 +3,7 @@ title: PowerShellのフォントとか色をカスタマイズしてみた
 date: 2021-02-16
 tags: IT
 eyecatch: 210216.png
+eyecatchEmoji:
 description: RictyDiminishedというテンションの上がるおすすめフォントに変えて、色も見やすさとかっこよさのハイブリッドを目指しました
 ---
 

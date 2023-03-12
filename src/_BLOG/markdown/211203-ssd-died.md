@@ -3,6 +3,7 @@ title: 起動しなくなったPCの救出劇
 date: 2021-12-03
 tags: IT
 eyecatch: 211203.jpg
+eyecatchEmoji:
 description: とある学習塾のPCが起動不能になってから、データ救出までの奮闘記
 ---
 

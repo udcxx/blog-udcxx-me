@@ -3,6 +3,7 @@ title: Safariの仕様に悩まされた備忘録
 date: 2020-12-07
 tags: IT
 eyecatch: 201207.jpg
+eyecatchEmoji:
 description: 意外とSafariも厄介なブラウザですよね。今回は「ブラウザバック時のキャッシュ強すぎ問題」「ポップアップブロック強すぎ問題」の回避方法を備忘録としてまとめました。
 ---
 

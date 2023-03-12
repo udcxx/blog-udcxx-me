@@ -3,6 +3,7 @@ title: Windowsでエイリアスを設定する
 date: 2022-06-30
 tags: IT
 eyecatch: 220630.jpg
+eyecatchEmoji:
 description: PoweShellを楽にかっこよく使えるようにエイリアスを設定する方法を調べました。
 ---
 

@@ -3,6 +3,7 @@ title: ノーコードの限界と自分の将来像
 date: 2022-03-26
 tags: IT Life
 eyecatch: 220326.jpg
+eyecatchEmoji:
 description: 最近業務で関わっている製品の立場にモヤモヤがあったので、明文化しつつ自分の将来につなげようと思います
 ---
 

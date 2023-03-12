@@ -3,6 +3,7 @@ title: 記事ごとにdescriptionを設定できるようにしました
 date: 2020-11-18
 tags: Blog Vue IT
 eyecatch: 201118.jpg
+eyecatchEmoji:
 description: descriptionを記事ごとに設定出来るようにNuxt.jsで作ったブログのアップデートを行いました
 ---
 

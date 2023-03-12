@@ -3,6 +3,7 @@ title: Notionの自動同期がツラい
 date: 2022-12-30
 tags: IT
 eyecatch: 221230.png
+eyecatchEmoji:
 description: Android版Notionを使うときに、入力中に自動同期とぶつかるタイミングに悩まされたお話。
 ---
 

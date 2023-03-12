@@ -3,6 +3,7 @@ title: Atomで不可視ファイルの切り替え、日本語が入力出来な
 date: 2021-05-20
 tags: IT
 eyecatch: 210520.jpg
+eyecatchEmoji:
 description: Atomを使っていて気になった「不可視ファイルの表示・非表示切り替え」と「日本語入力時に確定するまで画面に反映されない件」の対処法
 ---
 

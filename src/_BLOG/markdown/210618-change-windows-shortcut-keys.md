@@ -3,6 +3,7 @@ title: WindowsのショートカットをMac風にする
 date: 2021-06-18
 tags: IT
 eyecatch: 210618.jpg
+eyecatchEmoji:
 description: WindowsとMacを両方使っていると、ちょっとしたショートカットキーの違いが気になったのでリマッピングしました。
 ---
 

@@ -3,6 +3,7 @@ title: AlfredのPowerpackをやっと購入！
 date: 2020-11−14
 tags: IT
 eyecatch: 201114.jpg
+eyecatchEmoji:
 description: ついにランチャーアプリ「Alfred」のPowerpackを購入して、クリップボードマネージャーやスニペットが使えるようになり、Macがさらに最強で快適になりました！
 ---
 

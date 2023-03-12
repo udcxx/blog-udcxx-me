@@ -3,6 +3,7 @@ title: Oracle DB自分的まとめ
 date: 2021-10-22
 tags: IT
 eyecatch: 211022.jpg
+eyecatchEmoji:
 description: Oracle Databaseド初心者な僕が、覚えにくい部分をあとで見直せるようにまとめた記事です。
 ---
 

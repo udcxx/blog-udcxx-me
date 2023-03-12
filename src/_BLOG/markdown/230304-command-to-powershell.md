@@ -3,6 +3,7 @@ title: コマンドプロンプトとPowerShellのコマンド差異
 date: 2023-03-04
 tags: IT
 eyecatch: 230304.png
+eyecatchEmoji:
 description: コマンドプロンプト用のコマンドをPowerShellで実行させるときに気をつけることをメモします。
 ---
 

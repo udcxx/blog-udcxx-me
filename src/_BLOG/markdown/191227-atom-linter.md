@@ -3,6 +3,7 @@ title: Atomで構文チェックする linter の導入が難しかった話
 date: 2019-12−27
 tags: IT
 eyecatch: 191227.png
+eyecatchEmoji:
 description: AtomでWebコーディングの時に構文エラーチェックをしてくれるlinterというパッケージをインストールする奮闘記
 ---
 

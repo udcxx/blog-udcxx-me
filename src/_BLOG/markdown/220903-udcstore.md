@@ -3,6 +3,7 @@ title: STORESへ出店しました
 date: 2022-09-03
 tags: IT
 eyecatch: 220903.png
+eyecatchEmoji:
 description: 主にkintoneアプリを公開・販売するためのネットショップを立ち上げました！
 ---
 

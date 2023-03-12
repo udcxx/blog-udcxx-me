@@ -3,6 +3,7 @@ title: 会社がkintone使ってるならPrivateアプリを作ろうぜ
 date: 2022-10-16
 tags: IT kintone
 eyecatch: 221016.jpg
+eyecatchEmoji:
 description: kintoneでは、作成可能なアプリ数にカウントされないPrivateアプリグループを利用することができます。社内での自分用の記録とかに活用してみては！
 ---
 

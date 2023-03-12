@@ -3,6 +3,7 @@ title: 2年半勤めた会社を辞めました
 date: 2021-08-03
 tags: IT Life
 eyecatch: 210803.jpg
+eyecatchEmoji:
 description: 約2年半勤めた広告代理店を退職したので人生初の退職エントリーです
 ---
 

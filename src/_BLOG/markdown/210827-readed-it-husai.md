@@ -3,6 +3,7 @@ title: 【読書録】IT負債
 date: 2021-08-27
 tags: Book
 eyecatch: 210827.jpg
+eyecatchEmoji:
 description: 室脇 慶彦著の「IT負債」を読みました。ITに関わる人だけの問題ではなく社会問題であると気付かされた一冊です。
 ---
 

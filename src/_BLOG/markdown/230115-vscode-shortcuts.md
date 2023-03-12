@@ -3,6 +3,7 @@ title: VSCodeのショートカットを変更した
 date: 2023-01-15
 tags: IT VSCode
 eyecatch: 230115.jpg
+eyecatchEmoji:
 description: VSCodeをメインで使うにあたって、キーボードショートカットの変更を行いました。
 ---
 

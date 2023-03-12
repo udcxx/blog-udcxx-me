@@ -3,6 +3,7 @@ title: IIJへ乗り換え＆Reno7A購入
 date: 2022-10-30
 tags: IT Life SmartPhone
 eyecatch: 221030.jpg
+eyecatchEmoji:
 description: 楽天モバイルからIIJmioへ乗り換えと同時に、OPPO Reno 7Aも購入しちゃいました！
 ---
 

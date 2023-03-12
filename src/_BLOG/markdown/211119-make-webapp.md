@@ -3,6 +3,7 @@ title: タイマーアプリ作ろうとして挫折しそう
 date: 2021-11-19
 tags: IT
 eyecatch: 211119.jpg
+eyecatchEmoji:
 description: 時間で区切ってタスク管理もできるようなアプリを作りたかったのですが、早々に心折れてます。
 ---
 

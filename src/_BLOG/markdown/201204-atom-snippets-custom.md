@@ -3,6 +3,7 @@ title: Atomのスニペットをカスタマイズした
 date: 2020-12-04
 tags: IT
 eyecatch: 201204.jpg
+eyecatchEmoji:
 description: Atomで今より快適にコーディングが出来るように、スニペット（コードの予測変換のようなもの）をカスタマイズしてみました！
 ---
 

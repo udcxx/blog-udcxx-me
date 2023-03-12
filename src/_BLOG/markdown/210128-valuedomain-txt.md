@@ -3,6 +3,7 @@ title: VALUE-DOMAINでTXTレコードを追加する方法
 date: 2021-01-28
 tags: IT
 eyecatch: 210128.png
+eyecatchEmoji:
 description: Google Search Consoleのサイト所有権を設定するために、VALUE-DOMAIN（バリュードメイン）でTXTレコードを追加してみました。
 ---
 

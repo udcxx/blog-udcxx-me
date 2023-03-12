@@ -3,6 +3,7 @@ title: JCB GOLD EXTAGEへアップグレードした
 date: 2022-11-21
 tags: Life
 eyecatch: 221121.jpg
+eyecatchEmoji:
 description: JCB カード W から JCB GOLD EXTAGE へアップグレードしました！
 ---
 

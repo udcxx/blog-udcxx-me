@@ -3,6 +3,7 @@ title: SSH接続の度にパスフレーズ訊かれる件を解消しました
 date: 2021-03-13
 tags: IT
 eyecatch: 210313.jpg
+eyecatchEmoji:
 description: GitlabにSSHで認証していて、pushやpullなどリモートと通信する度にパスフレーズを求められるのが非効率だったので解消しました。
 ---
 

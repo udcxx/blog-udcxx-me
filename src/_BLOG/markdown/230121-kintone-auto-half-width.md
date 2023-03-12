@@ -3,6 +3,7 @@ title: kintoneのカスタマイズを作成した
 date: 2023-01-21
 tags: IT kintone
 eyecatch: 230121.jpg
+eyecatchEmoji:
 description: kintoneで全角文字を入力した際に自動で半角に変換するカスタマイズを作成しました
 ---
 

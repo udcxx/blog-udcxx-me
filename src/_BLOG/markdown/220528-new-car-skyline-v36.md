@@ -3,6 +3,7 @@ title: V36スカイラインに乗り換えました
 date: 2022-05-28
 tags: Car
 eyecatch: 220528.jpg
+eyecatchEmoji:
 description: CPV35からV36へ乗り換えました！簡単な紹介と、今後について書き残しておこうと思います。
 ---
 
