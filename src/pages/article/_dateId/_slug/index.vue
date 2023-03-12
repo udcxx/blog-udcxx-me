@@ -86,7 +86,7 @@ export default {
       // ※ H2が2個以上なら2個目の前、1個しかなければその前
       const googleAd = document.querySelector('ins:nth-of-type(2)');
 
-      if (document.querySelectorAll('h2').length >= 2) {
+      if (document.querySelectorAll('h2').length >= 3) {
           let target = document.querySelector('h2:nth-of-type(2)');
           let targetParent = target.parentNode;
           targetParent.insertBefore(googleAd, target)
