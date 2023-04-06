@@ -13,7 +13,7 @@ description: 麻生競馬場の「この部屋から東京タワーは永遠に�
 
 ## この部屋から東京タワーは永遠に見えない
 
-![https://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4087880834&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=tairiku02280e-22&language=ja_JP](https://amzn.to/3U9xzQS)
+[![](https://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4087880834&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=tairiku02280e-22&language=ja_JP)](https://amzn.to/3U9xzQS)    
 [この部屋から東京タワーは永遠に見えない](https://amzn.to/3U9xzQS)
 
 著者がツイッター出身（？）ということもあって、ツイッター特有の、なんとなく劣等感を抱いて少しひねくれたような雰囲気が文章に現れているように感じて、読んでいて気持ちのいい内容ではなかったのに、なんとなく報われない気持ちを、なんとなく他人を嘲笑したりすることでバランスしようとする感じがリアルで気持ち悪くて心地よかったです。
