@@ -1,4 +1,4 @@
-#
+﻿#
 # blog-udcxx-me の Git 管理外にするファイル
 #
 
@@ -21,7 +21,9 @@ package-lock.json
 # Nuxt系
 .nuxt/
 /secret-infos.js
+/secret-infos.json
 
 # distディレクトリ
 /dist/
 /src/_BLOG/json/
+.output/
