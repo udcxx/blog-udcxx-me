@@ -1,14 +1,24 @@
-<script setup>
-    const articleNew = await queryContent()
-    .sort({ date: -1 })
-    .limit(6)
-    .find();
+<script setup lang="ts">
+const slug = useRoute().path.split('/');
+let article: Array<object>;
+let page: number = Number(slug[3]);
+let skip = (page === 2) ? 1 : (page * 15) - 14;
+let limit = 15;
 
-    const articleTagIt = await queryContent()
-    .sort({ date: -1 })
-    .where({ tags: { $contains: 'IT' } })
-    .limit(3)
-    .find();
+if (slug[2] === 'new') {
+    article = await queryContent()
+        .sort({ date: -1 })
+        .limit(limit)
+        .skip(skip)
+        .find();
+} else {
+    article = await queryContent()
+        .sort({ date: -1 })
+        .where({ tags: { $contains: slug[2] } })
+        .limit(limit)
+        .skip(skip)
+        .find();
+}
 </script>
 <template>
     <Header></Header>
@@ -17,7 +27,6 @@
         <img src="~/assets/images/logo.png" alt="" class="blog_title--logo">
         <img src="~/assets/images/blogName.png" alt="" class="blog_title--name">
 
-
         <ul>
             <li><a href="https://udcxx.me" target="_blank">PORTFOLIO</a></li>
             <li><a href="https://twitter.com/udc_xx" target="_blank">TWITTER</a></li>
@@ -25,12 +34,10 @@
         </ul>
     </div>
 
-    <h3>新着記事</h3>
-    <PostList :articles="articleNew" />
+    <h3>{{ slug[2] }} 記事</h3>
+    <PostList :articles="article" />
 
-    <h3>IT タグ</h3>
-    <PostList :articles="articleTagIt" />
-    <NuxtLink to="/tags/IT/1/">ITタグの記事をもっと見る</NuxtLink>
+    <Pagenation :Tag="slug[2]" :page="page" :skip="skip" :limit="limit" />
 
     <Footer></Footer>
 </template>

@@ -1,4 +1,4 @@
-<template lang="html">
+<template>
   <div class="share_buttons">
     <div class="article_meta">
       <a class="share-twitter" :href="twitterUrl()" target="_blank" title="ツイッターで共有">
