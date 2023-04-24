@@ -27,11 +27,6 @@ export default defineNuxtConfig({
         "@nuxt/content",
         "@nuxtjs/google-adsense"
     ],
-    nitro: {
-        prerender: {
-            routes: ['/named-route']
-        }
-    },
     "google-adsense": {
         id: secretInfos.googlead.id
     }
