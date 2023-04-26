@@ -8,7 +8,7 @@
     <div class="tags">
         <ul>
             <li v-for="tag in article.tags.split(' ')" :key="tag">
-                <NuxtLink :to="'/tags/' + tag.toLowerCase() + '/'">{{ tag }}</NuxtLink>
+                <NuxtLink :to="'/tags/' + tag + '/1'">{{ tag }}</NuxtLink>
             </li>
         </ul>
     </div>
@@ -60,4 +60,5 @@
             fill: #ffffff;
         }
     }
-}</style>
+}
+</style>
