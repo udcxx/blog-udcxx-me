@@ -43,6 +43,7 @@
         font-size: 7.5rem;
         color: #f7f7f7;
         margin-bottom: 10rem;
+        font-family: 'Noto Color Emoji', sans-serif;
     }
 
     .article_head--title {
