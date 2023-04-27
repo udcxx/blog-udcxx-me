@@ -24,10 +24,7 @@ export default defineNuxtConfig({
         'assets/css/common.scss'
     ],
     modules: [
-        "@nuxt/content",
-        "@nuxtjs/google-adsense"
-    ],
-    "google-adsense": {
-        id: secretInfos.googlead.id
-    }
+        '@nuxt/content',
+        ['@nuxtjs/google-adsense', { id: secretInfos.googlead.id }]
+    ]
 })
