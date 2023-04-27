@@ -1,8 +1,8 @@
-<script setup lang="ts">
+<script setup>
 const slug = useRoute().path.split('/');
-let article: Array<object>;
-let page: number = Number(slug[3]);
-let skip = (page === 2) ? 1 : (page * 15) - 14;
+let article;
+let page = Number(slug[3]);
+let skip = (page === 1) ? 0 : (page * 15) - 14;
 let limit = 15;
 
 if (slug[2] === 'new') {
