@@ -10,7 +10,7 @@ const config = {
     password: secretInfos.ftp.password,
     host: secretInfos.ftp.host,
     port: 21,
-    localRoot: "dist",
+    localRoot: ".output/public",
     remoteRoot: "/public_html/blog.udcxx.me/",
     include: ["*", "**/*"],
     exclude: ["/**/*.DS_Store"],
