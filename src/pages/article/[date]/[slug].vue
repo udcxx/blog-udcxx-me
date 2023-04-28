@@ -1,5 +1,10 @@
 <script setup>
     const article = await queryContent(useRoute().path).findOne();
+    const description = article.description ? article.description : 'ああああ';
+
+    useHead({
+        title: `${article.title} | 無趣味の戯言`
+    });
 </script>
 
 <template>
@@ -24,7 +29,7 @@
                 <ShareButtons :title="title"></ShareButtons>
             </div>
             <div class="article_body">
-                <content-doc />
+                <content-doc :head="false" />
                 <adsbygoogle ad-slot="2499763349" style="max-width: calc(768px - 1rem); margin: 2rem auto;" />
                 <adsbygoogle ad-slot="2499763349" style="max-width: calc(768px - 1rem); margin: 2rem auto;" />
             </div>
@@ -55,6 +60,8 @@
 }
 
 .article_content {
+    width: 100%; max-width: 1024px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row-reverse;

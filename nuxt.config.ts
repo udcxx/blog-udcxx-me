@@ -26,5 +26,8 @@ export default defineNuxtConfig({
     modules: [
         '@nuxt/content',
         ['@nuxtjs/google-adsense', { id: secretInfos.googlead.id }]
-    ]
+    ],
+    typescript: {
+        strict: false
+    }
 })

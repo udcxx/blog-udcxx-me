@@ -19,6 +19,11 @@ if (slug[2] === 'new') {
         .skip(skip)
         .find();
 }
+
+
+useHead({
+    title: `${slug[2]}タグの記事一覧 | 無趣味の戯言`
+})
 </script>
 <template>
     <Header></Header>
