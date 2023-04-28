@@ -1,10 +1,40 @@
 <script setup>
     const article = await queryContent(useRoute().path).findOne();
+
+    const articleNew = await queryContent()
+        .sort({ date: -1 })
+        .limit(3)
+        .find();
+
+    const articleTag = await queryContent()
+        .sort({ date: -1 })
+        .where({ tags: { $contains: article.tags.split(' ')[0] } })
+        .limit(3)
+        .find();
+
+    const tagArticlesLink = `/tags/${article.tags.split(' ')[0]}/1/`;
+
     const description = article.description ? article.description : 'ああああ';
 
     useHead({
-        title: `${article.title} | 無趣味の戯言`
+        title: `${article.title} | 無趣味の戯言`,
+        meta: [
+            { name: 'description', content: description }
+        ]
     });
+
+    onMounted(() => {
+        const googleAd = document.querySelector('ins:nth-of-type(2)');
+        if (document.querySelectorAll('h2').length >= 3) {
+            let target = document.querySelector('h2:nth-of-type(2)');
+            let targetParent = target.parentNode;
+            targetParent.insertBefore(googleAd, target)
+        } else {
+            let target = document.querySelector('h2');
+            let targetParent = target.parentNode;
+            targetParent.insertBefore(googleAd, target)
+        } 
+    })
 </script>
 
 <template>
@@ -34,7 +64,19 @@
                 <adsbygoogle ad-slot="2499763349" style="max-width: calc(768px - 1rem); margin: 2rem auto;" />
             </div>
         </div>
+
+
+        <h3>新着記事</h3>
+        <PostList :articles="articleNew" />
+        <NuxtLink to="/tags/new/1/">新着記事をもっと見る</NuxtLink>
+
+        <h3>{{ article.tags.split(' ')[0] }}タグ</h3>
+        <PostList :articles="articleTag" />
+        <NuxtLink :to="tagArticlesLink">{{ article.tags.split(' ')[0] }}タグの記事をもっと見る</NuxtLink>
+
     </div>
+
+    <Footer></Footer>
 </template>
 
 <style lang="scss">
