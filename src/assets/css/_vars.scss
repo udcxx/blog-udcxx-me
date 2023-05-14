@@ -1,0 +1,14 @@
+@use "sass:list";
+@use "sass:math";
+
+@mixin fontsize($size) {
+    font-size: #{$size}px;
+
+    @media (max-width: 900px) {
+        font-size: min(#{$size}px, calc(#{$size}px - #{math.div(900px, 100)} + 1vw));
+    }
+
+    @media (max-width: 768px) {
+        font-size: min(#{$size}px, calc(#{$size}px - #{math.div(768px, 100)} + 1.2vw));
+    }
+}
