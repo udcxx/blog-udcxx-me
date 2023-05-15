@@ -24,10 +24,22 @@ export default defineNuxtConfig({
     css: [
         'assets/css/common.scss'
     ],
+    vite: {
+        css: {
+            preprocessorOptions: {
+                scss: {
+                    additionalData: '@import "@/assets/css/_vars.scss";',
+                }
+            }
+        }
+    },
     modules: [
         '@nuxt/content',
         ['@nuxtjs/google-adsense', { id: secretInfos.googlead.id }]
     ],
+    router: {
+        trailingSlash: true
+    },
     typescript: {
         strict: false
     }
