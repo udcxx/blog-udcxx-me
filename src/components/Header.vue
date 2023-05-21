@@ -43,7 +43,7 @@ export default {
 .header {
     width: 100%; height: 0;
     position: fixed;
-    top: 0; z-index: 2;
+    top: 0; z-index: 10;
     background-color: #071e22;
     box-shadow: 0px 3px 7px 0px rgba(7, 30, 34, 0.35);
     pointer-events: none;
@@ -62,6 +62,7 @@ export default {
     float: left;
     text-align: left;
     align-items: center;
+    box-sizing: border-box;
 
     .header_logo_img {
         height: 100%;
@@ -87,7 +88,7 @@ export default {
 
     h1 {
         margin: 0;
-        height: 60%;
+        height: 40%;
         font-size: 0;
     }
 

@@ -8,7 +8,7 @@
                 </div>
                 <div class="postitem--details">
                     <p class="postitem--title">{{ article.title }}</p>
-                    <p class="postitem--date">{{ article.date }}</p>
+                    <p class="postitem--date">{{ article.date.slice(0, 10) }}</p>
                 </div>
             </NuxtLink>
         </li>
@@ -33,6 +33,7 @@ export default {
     display: flex;
     justify-content: space-between;
     align-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .postitem {
@@ -57,7 +58,7 @@ export default {
         top: 50%; left: 0; right: 0; z-index: 5;
         transition: 0.3s;
         transform: translateY(-50%);
-        background-color: gray;
+        background-color: #071e22;
 
         &:hover {
             width: 100%; height: 100%;
