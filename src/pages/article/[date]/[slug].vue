@@ -196,15 +196,10 @@
     }
 
     hr {
-        margin: 2rem auto;
-        border: none;
-        text-align: center;
-    }
-
-    hr:after {
-        content: "―";
-        font-size: 2rem;
-        color: #f49d37;
+        width: 8rem;
+        margin: 6rem auto;
+        border-top: none; border-left: none; border-right: none;
+        border-bottom: 3px solid #F49D37;
     }
 }
 
