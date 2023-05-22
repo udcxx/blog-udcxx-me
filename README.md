@@ -65,13 +65,11 @@ Nuxt.jsやcontentを利用して静的デプロイし、一般的なレンタル
 
 記事データを用いたテストを行いたい場合には、`blog` ブランチから分岐したブランチに、`dev` ・ `fix` または `future` ブランチにて開発した内容をmergeし、テストを行います。
 
-### YYMM-{type}-{name}
+### {type}-{name}
 
 上記に該当しない、ブログ基盤の更新や修正を行うためのブランチです。
 
-覚えやすい数字で補完機能を利用したいので、ブランチ名の先頭には YYMM 形式でブランチの作成年月を記載します。
-
-例： `2304-dev-update-to-nuxt3`
+例： `dev-update-to-nuxt3`
 
 ※ **type** に入力する項目例：
 
@@ -116,8 +114,8 @@ blog-udcxx-me
 ┣━━ app.vue                  #全ページの枠になるファイル
 ┣━━ movecont.js              #移行に際して記事ファイルのディレクトリを
 ┃                             整えるために利用したスクリプト
-┣━━ nuxt.config.ts           #
-┣━━ package-lock.json        #
+┣━━ nuxt.config.ts           #nuxtの設定ファイル
+┣━━ package-lock.json        #Nodeのパッケージファイル
 ┣━━ package.json             #Nodeのパッケージファイル
 ┣━━ README.md                #本ファイル
 ┗━━ tsconfig.json            #TSの設定ファイル
