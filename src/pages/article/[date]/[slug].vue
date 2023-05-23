@@ -65,15 +65,16 @@
             </div>
         </div>
 
+        <div class="contents">
+            <h3>新着記事</h3>
+            <PostList :articles="articleNew" />
+            <NuxtLink to="/tags/new/1/">新着記事をもっと見る</NuxtLink>
 
-        <h3>新着記事</h3>
-        <PostList :articles="articleNew" />
-        <NuxtLink to="/tags/new/1/">新着記事をもっと見る</NuxtLink>
-
-        <h3>{{ article.tags.split(' ')[0] }}タグ</h3>
-        <PostList :articles="articleTag" />
-        <NuxtLink :to="tagArticlesLink">{{ article.tags.split(' ')[0] }}タグの記事をもっと見る</NuxtLink>
-
+            <h3>{{ article.tags.split(' ')[0] }}タグ</h3>
+            <PostList :articles="articleTag" />
+            <NuxtLink :to="tagArticlesLink">{{ article.tags.split(' ')[0] }}タグの記事をもっと見る</NuxtLink>
+        </div>
+        
     </div>
 
     <Footer></Footer>
