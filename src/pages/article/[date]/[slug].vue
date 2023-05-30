@@ -65,7 +65,7 @@
             </div>
         </div>
 
-        <div class="contents">
+        <div class="recommend">
             <h3>新着記事</h3>
             <PostList :articles="articleNew" />
             <NuxtLink to="/tags/new/1/">新着記事をもっと見る</NuxtLink>
@@ -122,7 +122,6 @@
     top: 7.5vh;
 
     .article_meta {
-        width: 21.6rem;
         padding: 2rem;
         border-radius: 1rem;
         color: #2C2C2C;
@@ -186,9 +185,13 @@
 .article_body {
     padding: 4rem 2rem;
     width: 100%;
-    max-width: 768px;
+    max-width: 74.4rem;
     border-radius: 1rem;
     background-color: #D1D5D5;
+
+    @media (max-width:768px) {
+        max-width: none;
+    }
 
     img {
         max-width: 100%;
@@ -202,6 +205,11 @@
         border-top: none; border-left: none; border-right: none;
         border-bottom: 3px solid #F49D37;
     }
+}
+
+.recommend {
+    width: 100%; max-width: 1024px;
+    margin: 2rem auto;
 }
 
 .recommend_article-title {

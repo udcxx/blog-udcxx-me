@@ -72,13 +72,13 @@ export default {
     &--eyecatchemoji {
         margin: 0 auto;
         text-align: center;
-        @include fontsize(100);
+        font-size: 10rem;
         line-height: 2em;
         display: block;
         transition: 0.3s;
 
         &:hover {
-            @include fontsize(125);
+            font-size: 12.5rem;
         }
     }
 
