@@ -65,14 +65,14 @@
             </div>
         </div>
 
-        <div class="contents">
-            <h3>新着記事</h3>
+        <div class="recommend">
+            <h3 class="recommend--tagname">New</h3>
             <PostList :articles="articleNew" />
-            <NuxtLink to="/tags/new/1/">新着記事をもっと見る</NuxtLink>
+            <NuxtLink to="/tags/new/1/" class="recommend--morebutton">More New posts... &Gt;</NuxtLink>
 
-            <h3>{{ article.tags.split(' ')[0] }}タグ</h3>
+            <h3 class="recommend--tagname">{{ article.tags.split(' ')[0] }}</h3>
             <PostList :articles="articleTag" />
-            <NuxtLink :to="tagArticlesLink">{{ article.tags.split(' ')[0] }}タグの記事をもっと見る</NuxtLink>
+            <NuxtLink :to="tagArticlesLink" class="recommend--morebutton">More {{ article.tags.split(' ')[0] }}... &Gt;</NuxtLink>
         </div>
         
     </div>
@@ -122,7 +122,6 @@
     top: 7.5vh;
 
     .article_meta {
-        width: 21.6rem;
         padding: 2rem;
         border-radius: 1rem;
         color: #2C2C2C;
@@ -186,9 +185,14 @@
 .article_body {
     padding: 4rem 2rem;
     width: 100%;
-    max-width: 768px;
+    max-width: 74.4rem;
     border-radius: 1rem;
     background-color: #D1D5D5;
+    box-sizing: border-box;
+
+    @media (max-width:768px) {
+        max-width: none;
+    }
 
     img {
         max-width: 100%;
@@ -204,42 +208,23 @@
     }
 }
 
-.recommend_article-title {
-    border: none;
-}
+.recommend {
+    width: 100%; max-width: 1024px;
+    margin: 2rem auto;
 
-.recommend_article-title-bg {
-    width: 100%;
-    padding: 0 2rem;
-    display: block;
-    position: relative;
-}
-
-.recommend_article-title-initial {
-    color: #f49d37;
-}
-
-.recommend_article-title {
-    margin-bottom: 0;
-    text-align: left;
-    color: #fff;
-}
-
-.recommend_article-title::after {
-    content: none;
-}
-
-.recommend_article {
-    #post_wrap {
-        margin: 0;
-        padding: 2rem;
-        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    &--tagname {
+        @include fontsize(40);
+        font-weight: 400;
+        color: #6C7A7C;
+        line-height: 0.8em;
+        margin-bottom: 0;
     }
-}
 
-.pagination {
-    margin: 3rem auto;
-    font-size: 1.6rem;
-    text-align: center;
+    &--morebutton {
+        margin: 1rem 0 0 auto;
+        @include fontsize(16);
+        text-align: right;
+        display: block;
+    }
 }
 </style>

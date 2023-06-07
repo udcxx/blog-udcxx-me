@@ -1,7 +1,7 @@
 <script setup>
     const articleNew = await queryContent()
     .sort({ date: -1 })
-    .limit(6)
+    .limit(8)
     .find();
 
     const articleTagShorts = await queryContent()
@@ -24,7 +24,7 @@
 
     <div class="blog_title">
         <img src="~/assets/images/logo.png" alt="" class="blog_title--logo">
-        <img src="~/assets/images/blogName.png" alt="" class="blog_title--name">
+        <NuxtLink to="/"><img src="~/assets/images/blogName.png" alt="" class="blog_title--name"></NuxtLink>
 
 
         <ul>
@@ -35,56 +35,58 @@
     </div>
 
     <div class="articles -new">
+        <h3 class="articles--tagname">New</h3>
         <PostList :articles="articleNew" />
+        <NuxtLink to="/tags/new/1/" class="articles--morebutton">More new posts... &Gt;</NuxtLink>
     </div>
 
     <div class="articles">
-        <h3>Shorts</h3>
+        <h3 class="articles--tagname">Shorts</h3>
         <PostList :articles="articleTagShorts" />
-        <NuxtLink to="/tags/Shorts/1/">More Shorts... &Gt;</NuxtLink>
+        <NuxtLink to="/tags/Shorts/1/" class="articles--morebutton">More Shorts... &Gt;</NuxtLink>
     </div>
 
     <div class="articles">
-        <h3>IT</h3>
+        <h3 class="articles--tagname">IT</h3>
         <PostList :articles="articleTagIt" />
-        <NuxtLink to="/tags/IT/1/">More IT... &Gt;</NuxtLink>
+        <NuxtLink to="/tags/IT/1/" class="articles--morebutton">More IT... &Gt;</NuxtLink>
     </div>
 
     <div class="articles">
-        <h3>Life</h3>
+        <h3 class="articles--tagname">Life</h3>
         <PostList :articles="articleTagLife" />
-        <NuxtLink to="/tags/Life/1/">More Life... &Gt;</NuxtLink>
+        <NuxtLink to="/tags/Life/1/" class="articles--morebutton">More Life... &Gt;</NuxtLink>
     </div>
 
     <div class="articles">
-        <h3>Car</h3>
+        <h3 class="articles--tagname">Car</h3>
         <PostList :articles="articleTagCar" />
-        <NuxtLink to="/tags/Car/1/">More Car... &Gt;</NuxtLink>
+        <NuxtLink to="/tags/Car/1/" class="articles--morebutton">More Car... &Gt;</NuxtLink>
     </div>
 
     <div class="articles">
-        <h3>Gadget</h3>
+        <h3 class="articles--tagname">Gadget</h3>
         <PostList :articles="articleTagGadget" />
-        <NuxtLink to="/tags/Gadget/1/">More Gadget... &Gt;</NuxtLink>
+        <NuxtLink to="/tags/Gadget/1/" class="articles--morebutton">More Gadget... &Gt;</NuxtLink>
     </div>
 
     <div class="articles">
-        <h3>Book</h3>
+        <h3 class="articles--tagname">Book</h3>
         <PostList :articles="articleTagBook" />
-        <NuxtLink to="/tags/Book/1/">More Book... &Gt;</NuxtLink>
+        <NuxtLink to="/tags/Book/1/" class="articles--morebutton">More Book... &Gt;</NuxtLink>
     </div>
 
     <div class="articles">
-        <h3>MU</h3>
+        <h3 class="articles--tagname">MU</h3>
         <PostList :articles="articleTagMU" />
-        <NuxtLink to="/tags/MU/1/">More MU... &Gt;</NuxtLink>
+        <NuxtLink to="/tags/MU/1/" class="articles--morebutton">More MU... &Gt;</NuxtLink>
     </div>
     <Footer></Footer>
 </template>
 
 <style lang="scss">
 .blog_title {
-    margin: 0;
+    margin: 0 auto;
     width: 100%;
 
     img {
@@ -92,19 +94,24 @@
     }
 
     &--logo {
-        width: 15%;
+        width: 25rem;
     }
 
     &--name {
-        margin-left: 3%;
-        padding-bottom: 5%;
-        width: 15rem;
+        margin-left: 5rem;
+        padding-bottom: 5rem;
+        width: 25rem;
     }
 
     ul {
-        margin-left: -15rem;
-        width: 80%;
-        display: inline-block;
+        margin: 0 0 0 30rem;
+        display: block;
+
+        @media (max-width: 768px) {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
     }
 
     li {
@@ -133,16 +140,42 @@
     margin: 0 auto;
     padding: 0 1rem;
     box-sizing: border-box;
-}
 
-.pagination {
-    text-align: center;
+    &--tagname {
+        @include fontsize(80);
+        font-weight: 400;
+        color: #6C7A7C;
+        line-height: 0.8em;
+        margin-bottom: 0;
+    }
 
-    .totop {
-        margin: 0 2rem;
+    &--morebutton {
+        margin: 1rem 0 0 auto;
+        @include fontsize(16);
+        text-align: right;
+        display: block;
+    }
+
+    .postlist {
+        margin: 0 auto 2rem;
+
+        @media (max-width: 940px) {
+            .postitem:nth-of-type(7), .postitem:nth-of-type(8) {
+                display: none;
+            }
+        }
+    }
+
+    &.-new {
+        .postlist {
+            @media (max-width: 940px) {
+                .postitem:nth-of-type(4) {
+                    display: none;
+                }
+            }
+        }
     }
 }
-
 
 @media (max-width:764px) {
     .blog-title {

@@ -49,6 +49,12 @@ export default {
         width: 100%; height: 100%;
         display: block;
         position: relative;
+
+        &:hover {
+            .postitem--background {
+                width: 100%; height: 100%;
+            }
+        }
     }
 
     &--background {
@@ -59,26 +65,23 @@ export default {
         transition: 0.3s;
         transform: translateY(-50%);
         background-color: #071e22;
-
-        &:hover {
-            width: 100%; height: 100%;
-        }
     }
 
     &--eyecatch {
-        width: 100%;
+        width: 100%; height: 100%;
+        object-fit: cover;
     }
 
     &--eyecatchemoji {
         margin: 0 auto;
         text-align: center;
-        @include fontsize(100);
+        font-size: 10rem;
         line-height: 2em;
         display: block;
         transition: 0.3s;
 
         &:hover {
-            @include fontsize(125);
+            font-size: 12.5rem;
         }
     }
 
