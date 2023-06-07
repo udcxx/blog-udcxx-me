@@ -46,6 +46,9 @@ const getpath = (page:number) => {
 
 <style>
 .pagenation {
+    width: 100%;
     color: #fff;
+    display: flex;
+    justify-content: space-around;
 }
 </style>

@@ -82,6 +82,7 @@ export default {
             display: inline-flex;
             align-items: center;
             background-color: #D1D5D5;
+            box-sizing: border-box;
             @media (max-width: 768px) {
                 height: 100%;
             }

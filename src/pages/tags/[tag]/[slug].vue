@@ -22,7 +22,7 @@ if (slug[2] === 'new') {
 
 
 useHead({
-    title: `${slug[2]}タグの記事一覧 | 無趣味の戯言`
+    title: `${slug[2]}タグの記事一覧｜無趣味の戯言`
 })
 </script>
 <template>
@@ -30,7 +30,7 @@ useHead({
 
     <div class="blog_title">
         <img src="~/assets/images/logo.png" alt="" class="blog_title--logo">
-        <img src="~/assets/images/blogName.png" alt="" class="blog_title--name">
+        <NuxtLink to="/"><img src="~/assets/images/blogName.png" alt="" class="blog_title--name"></NuxtLink>
 
         <ul>
             <li><a href="https://udcxx.me" target="_blank">PORTFOLIO</a></li>
@@ -39,17 +39,18 @@ useHead({
         </ul>
     </div>
 
-    <h3>{{ slug[2] }} 記事</h3>
-    <PostList :articles="article" />
-
-    <Pagenation :Tag="slug[2]" :page="page" :skip="skip" :limit="limit" />
+    <div class="articles">
+        <h3 class="articles--tagname">{{ slug[2] }}</h3>
+        <PostList :articles="article" />
+        <Pagenation :Tag="slug[2]" :page="page" :skip="skip" :limit="limit" />
+    </div>
 
     <Footer></Footer>
 </template>
 
 <style lang="scss">
 .blog_title {
-    margin: 0;
+    margin: 0 auto;
     width: 100%;
 
     img {
@@ -57,19 +58,24 @@ useHead({
     }
 
     &--logo {
-        width: 15%;
+        width: 25rem;
     }
 
     &--name {
-        margin-left: 3%;
-        padding-bottom: 5%;
-        width: 15rem;
+        margin-left: 5rem;
+        padding-bottom: 5rem;
+        width: 25rem;
     }
 
     ul {
-        margin-left: -15rem;
-        width: 80%;
-        display: inline-block;
+        margin: 0 0 0 30rem;
+        display: block;
+
+        @media (max-width: 768px) {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
     }
 
     li {
@@ -93,11 +99,26 @@ useHead({
     }
 }
 
-.pagination {
-    text-align: center;
+.articles {
+    width: 100%; max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
 
-    .totop {
-        margin: 0 2rem;
+    &--tagname {
+        @include fontsize(80);
+        font-weight: 400;
+        color: #6C7A7C;
+        line-height: 0.8em;
+        margin-bottom: 0;
+    }
+
+    .postlist {
+        margin: 0 auto 2rem;
+    }
+
+    .postitem {
+        margin: 0 0 2rem;
     }
 }
 

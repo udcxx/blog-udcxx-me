@@ -24,7 +24,7 @@
 
     <div class="blog_title">
         <img src="~/assets/images/logo.png" alt="" class="blog_title--logo">
-        <img src="~/assets/images/blogName.png" alt="" class="blog_title--name">
+        <NuxtLink to="/"><img src="~/assets/images/blogName.png" alt="" class="blog_title--name"></NuxtLink>
 
 
         <ul>
@@ -86,7 +86,7 @@
 
 <style lang="scss">
 .blog_title {
-    margin: 0;
+    margin: 0 auto;
     width: 100%;
 
     img {
@@ -94,19 +94,24 @@
     }
 
     &--logo {
-        width: 15%;
+        width: 25rem;
     }
 
     &--name {
-        margin-left: 3%;
-        padding-bottom: 5%;
-        width: 15rem;
+        margin-left: 5rem;
+        padding-bottom: 5rem;
+        width: 25rem;
     }
 
     ul {
-        margin-left: -15rem;
-        width: 80%;
-        display: inline-block;
+        margin: 0 0 0 30rem;
+        display: block;
+
+        @media (max-width: 768px) {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
     }
 
     li {
@@ -140,13 +145,13 @@
         @include fontsize(80);
         font-weight: 400;
         color: #6C7A7C;
-        line-height: 1em;
+        line-height: 0.8em;
         margin-bottom: 0;
     }
 
     &--morebutton {
         margin: 1rem 0 0 auto;
-        @include fontsize(14);
+        @include fontsize(16);
         text-align: right;
         display: block;
     }
