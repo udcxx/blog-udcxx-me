@@ -188,6 +188,7 @@
     max-width: 74.4rem;
     border-radius: 1rem;
     background-color: #D1D5D5;
+    box-sizing: border-box;
 
     @media (max-width:768px) {
         max-width: none;
