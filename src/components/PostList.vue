@@ -3,7 +3,7 @@
         <li v-for="(article, index) of articles" :key="article.slug" class="postitem">
             <NuxtLink :to="article._path + '/'" class="postitem--link">
                 <div class="postitem--background">
-                    <img v-if="article.eyecatch" :src="'/images/' + article.eyecatch" alt="" class="postitem--eyecatch">
+                    <img v-if="article.eyecatch" :src="'/images/' + article.eyecatch" alt="" class="postitem--eyecatch" loading="lazy">
                     <span v-else class="postitem--eyecatchemoji">{{ article.eyecatchEmoji }}</span>
                 </div>
                 <div class="postitem--details">
