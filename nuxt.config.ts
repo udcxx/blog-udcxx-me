@@ -37,9 +37,14 @@ export default defineNuxtConfig({
     modules: [
         '@nuxt/content',
         '@nuxt/image-edge',
+        'nuxt-mapple',
         ['@nuxtjs/google-adsense', { id: secretInfos.googlead.id }]
     ],
     typescript: {
         strict: false
+    },
+    mapple: {
+        basePath: 'https://blog.udcxx.me',
+        staticRoutes: ['/']
     }
 })
