@@ -12,6 +12,7 @@ export default defineNuxtConfig({
                 { name: 'viewport', content: 'width=device-width, initial-scale=1' },
                 { name: 'description', content: '無趣味なりにつらつらと戯言を。フロントエンドと車にちょっぴり興味あり。'},
                 { hid: 'og:site_name', property: 'og:site_name', content: '無趣味の戯言' },
+                { name: 'og:image', content: '/images/blog-card.png'},
                 { name: 'twitter:card', content: 'summary_large_image' },
                 { name: 'twitter:site', content: '@udc_xx' },
                 { name: 'twitter:creator', content: '@udc_xx' },

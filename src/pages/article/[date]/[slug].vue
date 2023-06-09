@@ -14,12 +14,14 @@
 
     const tagArticlesLink = `/tags/${article.tags.split(' ')[0]}/1/`;
 
-    const description = article.description ? article.description : 'ああああ';
+    const description = article.description ? article.description : '無趣味なりにつらつらと戯言を。フロントエンドと車にちょっぴり興味あり。';
+    const ogImage = article.eyecatch ? article.eyecatch : '/images/blog-card.png';
 
     useHead({
         title: `${article.title} | 無趣味の戯言`,
         meta: [
-            { name: 'description', content: description }
+            { name: 'description', content: description },
+            { name: 'og:image', content: ogImage}
         ]
     });
 
