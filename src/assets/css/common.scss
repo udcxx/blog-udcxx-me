@@ -12,6 +12,7 @@
 
 html {
     font-size: 10px;
+    background-color: #071e22;
 
     @media (max-width: 1000px) {
         font-size: calc(10 / 1000 * 100vw);
@@ -30,7 +31,18 @@ body {
     letter-spacing: 0.05em;
     position: relative;
     color: #333;
+    animation: fadein 2s ease-in 0s 1;
     background-color: #071e22;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
 }
 
 .contents {
