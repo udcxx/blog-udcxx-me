@@ -54,7 +54,7 @@
                     <div class="article_meta--title">公開</div>
                     <div class="article_meta--content"><time>{{ article.date.slice(0, 10) }}</time></div>
                     <div class="article_meta--title">タグ</div>
-                    <div class="article_meta--content"><Tags :tags="tags"></Tags></div>
+                    <div class="article_meta--content"><Tags :tags="article.tags"></Tags></div>
                 </div>
                 <ShareButtons :title="title"></ShareButtons>
             </div>

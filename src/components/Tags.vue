@@ -1,14 +1,14 @@
-<script setup lang="ts">
-    const { data: article } = useAsyncData("article", () =>
-        queryContent(useRoute().path).findOne()
-    );
+<script>
+export default {
+    props: ['tags']
+}
 </script>
 
 <template>
     <div class="tags">
         <ul>
-            <li v-for="tag in article.tags.split(' ')" :key="tag">
-                <NuxtLink :to="'/tags/' + tag + '/1'">{{ tag }}</NuxtLink>
+            <li v-for="tag in tags.split(' ')" :key="tag">
+                <NuxtLink :to="'/tags/' + tag + '/1/'">{{ tag }}</NuxtLink>
             </li>
         </ul>
     </div>
@@ -22,7 +22,7 @@
         margin: auto;
 
         li {
-            margin: 0 0 0 0.5rem;
+            margin: 0 0 0 .8em;
             display: inline-block;
 
             &:nth-of-type(1) {
