@@ -114,7 +114,7 @@ useHead({
     }
 
     .postlist {
-        margin: 0 auto 2rem;
+        margin: 0 auto 10px;
     }
 
     .postitem {

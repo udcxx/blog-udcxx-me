@@ -5,19 +5,19 @@
     .find();
 
     const articleTagShorts = await queryContent()
-        .sort({ date: -1 }).where({ tags: { $contains: 'Shorts' } }).limit(3).find();
+        .sort({ date: -1 }).where({ tags: { $contains: 'Shorts' } }).limit(4).find();
     const articleTagIt = await queryContent()
-        .sort({ date: -1 }).where({ tags: { $contains: 'IT' } }).limit(3).find();
+        .sort({ date: -1 }).where({ tags: { $contains: 'IT' } }).limit(4).find();
     const articleTagCar = await queryContent()
-        .sort({ date: -1 }).where({ tags: { $contains: 'Car' } }).limit(3).find();
+        .sort({ date: -1 }).where({ tags: { $contains: 'Car' } }).limit(4).find();
     const articleTagLife = await queryContent()
-        .sort({ date: -1 }).where({ tags: { $contains: 'Life' } }).limit(3).find();
+        .sort({ date: -1 }).where({ tags: { $contains: 'Life' } }).limit(4).find();
     const articleTagGadget = await queryContent()
-        .sort({ date: -1 }).where({ tags: { $contains: 'Gadget' } }).limit(3).find();
+        .sort({ date: -1 }).where({ tags: { $contains: 'Gadget' } }).limit(4).find();
     const articleTagBook = await queryContent()
-        .sort({ date: -1 }).where({ tags: { $contains: 'Book' } }).limit(3).find();
+        .sort({ date: -1 }).where({ tags: { $contains: 'Book' } }).limit(4).find();
     const articleTagMU = await queryContent()
-        .sort({ date: -1 }).where({ tags: { $contains: 'MU' } }).limit(3).find();
+        .sort({ date: -1 }).where({ tags: { $contains: 'MU' } }).limit(4).find();
 </script>
 <template>
     <Header></Header>
@@ -159,8 +159,8 @@
     .postlist {
         margin: 0 auto 2rem;
 
-        @media (max-width: 940px) {
-            .postitem:nth-of-type(7), .postitem:nth-of-type(8) {
+        @media (max-width: 980px) and (min-width: 740px) {
+            .postitem:nth-of-type(4) {
                 display: none;
             }
         }
@@ -168,8 +168,11 @@
 
     &.-new {
         .postlist {
-            @media (max-width: 940px) {
+            @media (max-width: 980px) and (min-width: 740px) {
                 .postitem:nth-of-type(4) {
+                    display: block;
+                }
+                .postitem:nth-of-type(7), .postitem:nth-of-type(8) {
                     display: none;
                 }
             }

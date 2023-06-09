@@ -1,14 +1,29 @@
 @use "sass:list";
 @use "sass:math";
 
-@mixin fontsize($size) {
-    font-size: #{$size}px;
+@mixin fontsize($size...) {
 
-    @media (max-width: 900px) {
-        font-size: min(#{$size}px, calc(#{$size}px - #{math.div(900px, 100)} + 1vw));
+    $sizePC: nth($size, 1);
+    $sizeTB: nth($size, 1);
+    $sizeSP: nth($size, 1);
+
+    @if (length($size) == 2) {
+        $sizePC: nth($size, 1);
+        $sizeTB: nth($size, 1);
+        $sizeSP: nth($size, 2);
+    }  @else if (length($size) == 3) {
+        $sizePC: nth($size, 1);
+        $sizeTB: nth($size, 2);
+        $sizeSP: nth($size, 3);
+     }
+
+    font-size: #{$sizePC}px;
+
+    @media (max-width: 1000px) {
+        font-size: min(#{$sizeTB}px, calc(#{$sizeTB}px - #{math.div(1000px, 100)} + 1vw));
     }
 
     @media (max-width: 768px) {
-        font-size: min(#{$size}px, calc(#{$size}px - #{math.div(768px, 100)} + 1.2vw));
+        font-size: min(#{$sizeSP}px, calc(#{$sizeSP}px - #{math.div(768px, 100)} + 1.2vw));
     }
 }

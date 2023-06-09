@@ -34,10 +34,14 @@ export default {
     justify-content: space-between;
     align-content: flex-start;
     flex-wrap: wrap;
+
+    @media (max-width: 980px) {
+        justify-content: space-around;
+    }
 }
 
 .postitem {
-    width: 23.5rem; height: 23.5rem;
+    width: 240px; max-width: 48vw; height: 240px; max-height: 48vw;
     margin: 0;
     background-color: #fff;
 
@@ -76,12 +80,15 @@ export default {
         margin: 0 auto;
         text-align: center;
         font-size: 10rem;
-        line-height: 2em;
+        line-height: 1em;
         display: block;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
         transition: 0.3s;
 
         &:hover {
-            font-size: 12.5rem;
+            font-size: 11rem;
         }
     }
 
@@ -95,14 +102,15 @@ export default {
     &--title {
         margin: 0;
         padding: 0.5rem;
-        @include fontsize(14);
+        @include fontsize(14, 16);
         line-height: 1.2em;
+        text-align: left;
     }
 
     &--date {
         margin: 0;
         padding: 0.5rem;
-        @include fontsize(10);
+        @include fontsize(10, 12);
         font-weight: 400;
         line-height: 1em;
     }
