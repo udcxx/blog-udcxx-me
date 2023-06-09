@@ -4,6 +4,7 @@
 
   "compilerOptions": {
     "moduleResolution": "node",
+    "types": [ "@nuxt/image-edge"],
     "resolveJsonModule": true
   }
 }
