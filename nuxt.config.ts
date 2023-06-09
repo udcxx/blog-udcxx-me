@@ -35,11 +35,9 @@ export default defineNuxtConfig({
     },
     modules: [
         '@nuxt/content',
+        '@nuxt/image-edge',
         ['@nuxtjs/google-adsense', { id: secretInfos.googlead.id }]
     ],
-    router: {
-        trailingSlash: true
-    },
     typescript: {
         strict: false
     }

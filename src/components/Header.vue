@@ -88,7 +88,7 @@ export default {
 
     h1 {
         margin: 0;
-        height: 40%;
+        height: 50%;
         font-size: 0;
     }
 

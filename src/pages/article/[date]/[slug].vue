@@ -3,13 +3,13 @@
 
     const articleNew = await queryContent()
         .sort({ date: -1 })
-        .limit(3)
+        .limit(4)
         .find();
 
     const articleTag = await queryContent()
         .sort({ date: -1 })
         .where({ tags: { $contains: article.tags.split(' ')[0] } })
-        .limit(3)
+        .limit(4)
         .find();
 
     const tagArticlesLink = `/tags/${article.tags.split(' ')[0]}/1/`;
@@ -119,7 +119,7 @@
     height: 100%;
     margin-left: 4rem;
     position: sticky;
-    top: 7.5vh;
+    top: 8vh;
 
     .article_meta {
         padding: 2rem;
@@ -211,6 +211,14 @@
 .recommend {
     width: 100%; max-width: 1024px;
     margin: 2rem auto;
+
+    .postlist {
+        @media (max-width: 980px) and (min-width: 720px) {
+            .postitem:nth-of-type(4) {
+                display: none;
+            }
+        }
+    }
 
     &--tagname {
         @include fontsize(40);
