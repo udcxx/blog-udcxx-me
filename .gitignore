@@ -25,5 +25,6 @@ package-lock.json
 
 # distディレクトリ
 /dist/
+dist
 /src/_BLOG/json/
 .output/
