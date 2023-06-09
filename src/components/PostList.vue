@@ -87,6 +87,7 @@ export default {
         margin: 0 auto;
         text-align: center;
         font-size: 10rem;
+        font-family: 'Noto Color Emoji', sans-serif;
         line-height: 1em;
         display: block;
         position: relative;
