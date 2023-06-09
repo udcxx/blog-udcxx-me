@@ -2,8 +2,8 @@
 const slug = useRoute().path.split('/');
 let article;
 let page = Number(slug[3]);
-let skip = (page === 1) ? 0 : (page * 15) - 14;
-let limit = 15;
+let skip = (page === 1) ? 0 : (page * 12) - 11;
+let limit = 12;
 
 if (slug[2] === 'new') {
     article = await queryContent()
