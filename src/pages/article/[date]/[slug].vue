@@ -56,7 +56,7 @@
                     <div class="article_meta--title">タグ</div>
                     <div class="article_meta--content"><Tags :tags="article.tags"></Tags></div>
                 </div>
-                <ShareButtons :title="title"></ShareButtons>
+                <ShareButtons :title="article.title"></ShareButtons>
             </div>
             <div class="article_body">
                 <content-doc :head="false" />
