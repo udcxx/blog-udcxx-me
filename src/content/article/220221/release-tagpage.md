@@ -1,7 +1,7 @@
 ---
 title: タグページを正式リリースしました！
 date: 2022-02-21
-tags: Blog Vue/Nuxt IT
+tags: Blog Nuxt IT
 eyecatch: 220221.jpg
 eyecatchEmoji:
 description: やっとタグごとの記事一覧ページを公開することができました！

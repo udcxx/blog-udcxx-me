@@ -1,7 +1,7 @@
 ---
 title: カテゴリ内記事一覧ページを作成しました
 date: 2021-09-27
-tags: Blog Vue/Nuxt IT
+tags: Blog Nuxt IT
 eyecatch: 210927.jpg
 eyecatchEmoji:
 description: Nuxt.jsで作られているこのブログに、やっとカテゴリ内の記事を一覧できるページを実装しました！

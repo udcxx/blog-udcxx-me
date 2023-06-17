@@ -1,7 +1,7 @@
 ---
 title: git pushしただけでアップロードまで終わらせる
 date: 2020-04-09
-tags: Blog Vue/Nuxt IT
+tags: Blog Nuxt IT
 eyecatch: 200409.jpg
 ---
 

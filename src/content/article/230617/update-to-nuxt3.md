@@ -1,9 +1,9 @@
 ---
 title: Nuxt3へのアップデート
 date: 2023-06-17
-tags: IT
+tags: Blog Nuxt IT
 eyecatch:
-eyecatchEmoji: 🍎
+eyecatchEmoji: 🚀
 description: 久しぶりにMacBook、初めてのM1をセットアップしたときに、やったことなどをまとめておきます。
 ---
 

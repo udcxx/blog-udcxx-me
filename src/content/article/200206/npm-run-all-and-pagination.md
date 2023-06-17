@@ -1,7 +1,7 @@
 ---
 title: npm-run-allの導入とページネーションの修正をしました
 date: 2020-02-06
-tags: Blog Vue/Nuxt IT
+tags: Blog Nuxt IT
 eyecatch: 200206.jpg
 ---
 

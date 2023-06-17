@@ -1,7 +1,7 @@
 ---
 title: GA4へ対応しました
 date: 2022-03-21
-tags: Blog Vue/Nuxt IT
+tags: Blog Nuxt IT
 eyecatch: 220321.png
 eyecatchEmoji:
 description: Nuxt.jsで制作している「無趣味の戯言」をGoogle Analytics 4へ対応させました。

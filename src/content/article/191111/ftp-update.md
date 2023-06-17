@@ -1,7 +1,7 @@
 ---
 title: FTPアップまでコマンドで終わらせる
 date: 2019-11-11
-tags: Blog Vue/Nuxt IT
+tags: Blog Nuxt IT
 eyecatch: 191111.jpg
 eyecatchEmoji:
 description: FileZillaを使わずに、コマンド1つでデプロイからサーバーへのアップロードまで完了できるようにアップデートしました。

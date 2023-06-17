@@ -1,7 +1,7 @@
 ---
 title: ブログのデザインアップデート
 date: 2023-03-12
-tags: Blog Vue/Nuxt IT
+tags: Blog Nuxt IT
 eyecatch:
 eyecatchEmoji: 🎊
 description: 久しぶりにデザインのアップデートを行いました！
