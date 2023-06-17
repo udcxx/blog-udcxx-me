@@ -48,6 +48,7 @@ export default defineNuxtConfig({
     },
     sitemap: {
         siteUrl: 'https://blog.udcxx.me',
-        trailingSlash: true
+        trailingSlash: true,
+        autoLastmod: false
     }
 })
