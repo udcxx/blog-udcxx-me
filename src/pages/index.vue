@@ -1,148 +1,205 @@
-<template lang="pug">
-#app
-  Header
-  .blog-title
-    img(src='~/assets/images/logo.png').logo
-    img(src='~/assets/images/blogName.png').title
-    ul
-      li
-        a(href='https://udcxx.me' target='_blank') PORTFOLIO
-      li
-        a(href='https://twitter.com/udc_xx' target='_blank') TWITTER
-      li
-        a(href='https://instagram.com/udcsk' target='_blank') INSTAGRAM
-  .contents
-    PostList(:ls-from="lsFrom", :ls-to="lsTo")
-    adsbygoogle(ad-slot="2499763349" style="max-width: calc(768px - 1rem); margin: 2rem auto;")
-    .pagination
-      a(href="#", @click.prevent="onPrev", v-if="lsFrom > 1") ＜ 前へ
-      a(href="#", class="totop" @click.prevent="onTop") TOP
-      a(href="#", @click.prevent="onNext", v-if="lsTo < summaryLength") 次へ ＞
-  Footer
+<script setup>
+    const articleNew = await queryContent()
+    .sort({ date: -1 })
+    .limit(8)
+    .find();
 
+    const articleTagShorts = await queryContent()
+        .sort({ date: -1 }).where({ tags: { $contains: 'Shorts' } }).limit(4).find();
+    const articleTagIt = await queryContent()
+        .sort({ date: -1 }).where({ tags: { $contains: 'IT' } }).limit(4).find();
+    const articleTagCar = await queryContent()
+        .sort({ date: -1 }).where({ tags: { $contains: 'Car' } }).limit(4).find();
+    const articleTagLife = await queryContent()
+        .sort({ date: -1 }).where({ tags: { $contains: 'Life' } }).limit(4).find();
+    const articleTagGadget = await queryContent()
+        .sort({ date: -1 }).where({ tags: { $contains: 'Gadget' } }).limit(4).find();
+    const articleTagBook = await queryContent()
+        .sort({ date: -1 }).where({ tags: { $contains: 'Book' } }).limit(4).find();
+    const articleTagMU = await queryContent()
+        .sort({ date: -1 }).where({ tags: { $contains: 'MU' } }).limit(4).find();
+</script>
+<template>
+    <Header></Header>
+
+    <div class="blog_title">
+        <img src="~/assets/images/logo.png" alt="" class="blog_title--logo">
+        <NuxtLink to="/"><img src="~/assets/images/blogName.png" alt="" class="blog_title--name"></NuxtLink>
+
+
+        <ul>
+            <li><a href="https://udcxx.me" target="_blank">PORTFOLIO</a></li>
+            <li><a href="https://twitter.com/udc_xx" target="_blank">TWITTER</a></li>
+            <li><a href="https://instagram.com/udcsk" target="_blank">INSTAGRAM</a></li>
+        </ul>
+    </div>
+
+    <div class="articles -new">
+        <h3 class="articles--tagname">New</h3>
+        <PostList :articles="articleNew" />
+        <NuxtLink to="/tags/new/1/" class="articles--morebutton">More new posts... &Gt;</NuxtLink>
+    </div>
+
+    <div class="articles">
+        <h3 class="articles--tagname">Shorts</h3>
+        <PostList :articles="articleTagShorts" />
+        <NuxtLink to="/tags/Shorts/1/" class="articles--morebutton">More Shorts... &Gt;</NuxtLink>
+    </div>
+
+    <div class="articles">
+        <h3 class="articles--tagname">IT</h3>
+        <PostList :articles="articleTagIt" />
+        <NuxtLink to="/tags/IT/1/" class="articles--morebutton">More IT... &Gt;</NuxtLink>
+    </div>
+
+    <div class="articles">
+        <h3 class="articles--tagname">Life</h3>
+        <PostList :articles="articleTagLife" />
+        <NuxtLink to="/tags/Life/1/" class="articles--morebutton">More Life... &Gt;</NuxtLink>
+    </div>
+
+    <div class="articles">
+        <h3 class="articles--tagname">Car</h3>
+        <PostList :articles="articleTagCar" />
+        <NuxtLink to="/tags/Car/1/" class="articles--morebutton">More Car... &Gt;</NuxtLink>
+    </div>
+
+    <div class="articles">
+        <h3 class="articles--tagname">Gadget</h3>
+        <PostList :articles="articleTagGadget" />
+        <NuxtLink to="/tags/Gadget/1/" class="articles--morebutton">More Gadget... &Gt;</NuxtLink>
+    </div>
+
+    <div class="articles">
+        <h3 class="articles--tagname">Book</h3>
+        <PostList :articles="articleTagBook" />
+        <NuxtLink to="/tags/Book/1/" class="articles--morebutton">More Book... &Gt;</NuxtLink>
+    </div>
+
+    <div class="articles">
+        <h3 class="articles--tagname">MU</h3>
+        <PostList :articles="articleTagMU" />
+        <NuxtLink to="/tags/MU/1/" class="articles--morebutton">More MU... &Gt;</NuxtLink>
+    </div>
+    <Footer></Footer>
 </template>
 
-<script>
-import Header from '~/components/Header.vue'
-import Footer from '~/components/Footer.vue'
-import PostList from '~/components/PostList.vue'
-import summary from '~/_BLOG/json/summary.json'
-
-
-export default {
-  components: {
-    Header, PostList, Footer,
-  },
-  data() {
-    return {
-      lsFrom: 0,
-      lsTo: 16,
-      lsStep: 16,
-      summaryLength: summary['sourceFileArray'].length,
-    };
-  },
-  computed: {
-    baseUrl() {
-      return 'https://blog.udcxx.me/'
-    },
-    title() {
-      return '無趣味の戯言'
-    },
-    description() {
-      return '無趣味なりにつらつらと戯言を。フロントエンドと車にちょっぴり興味あり。'
-    }
-  },
-  methods: {
-    onPrev() {
-      document.body.scrollTop = 0
-      document.documentElement.scrollTop = 0
-      if ( this.lsTo <= 32 ) { this.lsTo = 16; } else { this.lsTo = this.lsTo - this.lsStep; }
-      if ( this.lsFrom <= 17 ) { this.lsFrom = 0; } else { this.lsFrom = this.lsFrom - this.lsStep; }
-    },
-    onTop() {
-      document.body.scrollTop = 0
-      document.documentElement.scrollTop = 0
-      this.lsTo = 16;
-      this.lsFrom = 0;
-    },
-    onNext() {
-      document.body.scrollTop = 0
-      document.documentElement.scrollTop = 0
-      this.lsTo = this.lsTo + this.lsStep;
-      this.lsFrom = this.lsFrom + this.lsStep;
-    },
-  },
-  head() {
-    return {
-      title: this.title,
-      meta: [
-        { hid: 'description', name: 'description', content: this.description },
-        { hid: 'og:url', property: 'og:url', content: this.baseUrl},
-        { hid: 'og:title', property: 'og:title', content: this.title },
-        { hid: 'og:type', property: 'og:type', content: 'blog' },
-        { hid: 'og:description', property: 'og:description', content: this.description },
-        { hid: 'og:image', property: 'og:image', content: `${this.baseUrl}images/blog-card.png` },
-      ],
-    }
-  }
-};
-</script>
-
 <style lang="scss">
+.blog_title {
+    margin: 0 auto;
+    width: 100%;
 
-.blog-title {
-  margin: 0;
-  width: 100%;
-  img { display: inline-block; }
-  .logo { width: 15%; }
-  .title {
-    margin-left: 3%;
-    padding-bottom: 5%;
-    width: 15rem;
-  }
-  ul {
-    margin-left: -15rem;
-    width: 80%;
-    display: inline-block;
-  }
-  li {
-    margin-left: 3%;
-    display: inline-block;
-    list-style: none;
-    &:first-child {
-      margin-left: 0;
+    img {
+        display: inline-block;
     }
-    &::before {
-      content:'';
+
+    &--logo {
+        width: 25rem;
     }
-  }
-  a {
-    text-decoration: none;
-    color: #fff; font-weight: bold;
-  }
+
+    &--name {
+        margin-left: 5rem;
+        padding-bottom: 5rem;
+        width: 25rem;
+    }
+
+    ul {
+        margin: 0 0 0 30rem;
+        display: block;
+
+        @media (max-width: 768px) {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+
+    li {
+        margin-left: 3%;
+        display: inline-block;
+        list-style: none;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &::before {
+            content: '';
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+    }
 }
 
-.pagination {
-  text-align: center;
-  .totop {
-    margin: 0 2rem;
-  }
-}
+.articles {
+    width: 100%; max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
 
+    &--tagname {
+        @include fontsize(80);
+        font-weight: 400;
+        color: #6C7A7C;
+        line-height: 0.8em;
+        margin-bottom: 0;
+    }
+
+    &--morebutton {
+        margin: 1rem 0 0 auto;
+        @include fontsize(16);
+        text-align: right;
+        display: block;
+    }
+
+    .postlist {
+        margin: 0 auto 2rem;
+
+        @media (max-width: 980px) and (min-width: 740px) {
+            .postitem:nth-of-type(4) {
+                display: none;
+            }
+        }
+    }
+
+    &.-new {
+        .postlist {
+            @media (max-width: 980px) and (min-width: 740px) {
+                .postitem:nth-of-type(4) {
+                    display: block;
+                }
+                .postitem:nth-of-type(7), .postitem:nth-of-type(8) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
 
 @media (max-width:764px) {
-  .blog-title {
-    img { display: block; }
-    .logo {
-      margin: 10% auto;
-      width: 70%;
+    .blog-title {
+        img {
+            display: block;
+        }
+
+        .logo {
+            margin: 10% auto;
+            width: 70%;
+        }
+
+        .title {
+            margin: 10% auto;
+            padding: 0;
+            width: 70%;
+        }
+
+        ul {
+            display: none;
+        }
     }
-    .title {
-      margin: 10% auto;
-      padding: 0;
-      width: 70%;
-    }
-    ul { display: none; }
-  }
 }
 </style>

@@ -1,4 +1,4 @@
-<template lang="html">
+<template>
   <div class="share_buttons">
     <div class="article_meta">
       <a class="share-twitter" :href="twitterUrl()" target="_blank" title="ツイッターで共有">
@@ -75,13 +75,14 @@ export default {
     .share_buttons {
         width: 100%;
         .article_meta {
-            width: 21.6rem; height: 6.1rem;
+            width: 100%; height: 6.1rem;
             margin-top: 1rem;
             padding: 2rem;
             border-radius: 1rem;
             display: inline-flex;
             align-items: center;
             background-color: #D1D5D5;
+            box-sizing: border-box;
             @media (max-width: 768px) {
                 height: 100%;
             }

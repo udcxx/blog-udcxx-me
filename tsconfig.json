@@ -1,0 +1,10 @@
+{
+  // https://nuxt.com/docs/guide/concepts/typescript
+  "extends": "./.nuxt/tsconfig.json",
+
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "types": [ "@nuxt/image-edge", "nuxt-simple-sitemap"],
+    "resolveJsonModule": true
+  }
+}
