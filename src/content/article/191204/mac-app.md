@@ -1,7 +1,7 @@
 ---
 title: Macで愛用してるアプリたち
 date: 2019-12-04
-tags: IT
+tags: Mac IT
 eyecatch: 191204.jpg
 ---
 

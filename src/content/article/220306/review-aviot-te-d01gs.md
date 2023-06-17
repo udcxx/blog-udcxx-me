@@ -1,7 +1,7 @@
 ---
 title: AVIOT TE-D01gsレビュー
 date: 2022-03-06
-tags: Life
+tags: Gadget
 eyecatch: 220306.jpg
 eyecatchEmoji:
 description: AVIOTの完全ワイヤレスイヤホン TE-D01gs のレビュー！入門機として必要十分な性能だと感じました！

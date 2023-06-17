@@ -1,7 +1,7 @@
 ---
 title: フィッシングサイトの踏み台にされた
 date: 2021-05-19
-tags: Blog IT
+tags: Web IT
 eyecatch: 210519.png
 eyecatchEmoji:
 description: フィッシングサイトの踏み台にされ、Googleに怒られ、サーバー管理会社に怒られ、サーバーが一時凍結されました。復旧までの道のりと、対策を考えます。

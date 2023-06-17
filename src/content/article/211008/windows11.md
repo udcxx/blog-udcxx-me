@@ -1,7 +1,7 @@
 ---
 title: 【やっぱり】Windows11は非対応でした
 date: 2021-10-08
-tags: IT
+tags: Windows IT
 eyecatch: 211008.jpg
 eyecatchEmoji:
 description: やっぱりって感じですが、僕が使っている2012年製のPCではWindows11がインストール出来ませんでした。

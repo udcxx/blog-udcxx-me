@@ -1,7 +1,7 @@
 ---
 title: ランダムに文字が飛び散るCSS Animationを作って遊びました
 date: 2020-06-18
-tags: IT
+tags: Web IT
 eyecatch: 200618.jpg
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Firefoxでポートフォリオが見れない事に気づいた
 date: 2020-08-07
-tags: IT
+tags: Portfolio IT
 eyecatch: 200807.jpg
 ---
 

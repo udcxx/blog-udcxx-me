@@ -1,7 +1,7 @@
 ---
 title: 会社PCの設定備忘録
 date: 2021-03-06
-tags: IT
+tags: Mac IT
 eyecatch: 191227.png
 eyecatchEmoji:
 description: Webコーダーの僕が、PCリニューアル時に行ったMacbookProの設定とかのメモ

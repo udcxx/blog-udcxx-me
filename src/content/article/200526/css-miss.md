@@ -1,7 +1,7 @@
 ---
 title: CSS Tips集
 date: 2020-05-26
-tags: IT
+tags: Web IT
 eyecatch: 200526.jpg
 ---
 

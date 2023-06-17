@@ -1,7 +1,7 @@
 ---
 title: PHPでディレクトリ一覧と簡易的な認証機能を実装した
 date: 2020-11-02
-tags: IT
+tags: Web IT
 eyecatch: 201102.jpg
 ---
 

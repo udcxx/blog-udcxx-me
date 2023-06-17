@@ -1,7 +1,7 @@
 ---
 title: 2022
 date: 2022-01-25
-tags: Blog Life
+tags: Life
 eyecatch: 220125.png
 eyecatchEmoji:
 description: あけましておめでとうございます（遅）。2022年もudcxxをよろしくお願いします！

@@ -1,7 +1,7 @@
 ---
 title: 【GAS】毎日自動で記事を投下するbotを作る(1)
 date: 2020-03-17
-tags: Blog Vue IT GAS
+tags: IT GAS
 eyecatch: 200317.png
 ---
 

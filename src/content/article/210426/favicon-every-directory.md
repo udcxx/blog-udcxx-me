@@ -1,7 +1,7 @@
 ---
 title: ルートパスで指定されたfaviconをディレクトリごとに出し分ける
 date: 2021-04-26
-tags: IT
+tags: Web IT
 eyecatch: 210426.png
 eyecatchEmoji:
 description: ファビコンをディレクトリごとに変えたい、けど、ルートディレクトリに置いてる時と同じ記述にしたい、を叶えてみました。ちょっと前提条件のせいで汎用性ないかも。

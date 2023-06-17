@@ -1,7 +1,7 @@
 ---
 title: Analyticsの設定を直した【3度目の正直】
 date: 2020-01-20
-tags: Blog Vue IT
+tags: Blog Vue/Nuxt IT
 eyecatch: 200120_2.jpg
 ---
 

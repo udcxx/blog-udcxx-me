@@ -1,7 +1,7 @@
 ---
 title: PWAY KVMスイッチを導入しました
 date: 2021-10-25
-tags: IT
+tags: Gadget
 eyecatch: 211025.jpg
 eyecatchEmoji:
 description: KVMスイッチ（HDMI＆USBスイッチャー）を導入して、会社支給PCと私用PCの切り替えをスムーズにできるようにしました。

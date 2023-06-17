@@ -1,7 +1,7 @@
 ---
 title: オリジナルのメールフォームにreCAPTCHA認証を導入する
 date: 2021-01-15
-tags: IT
+tags: Web IT
 eyecatch: 210115.png
 eyecatchEmoji:
 description: phpでメールフォームを自作して公開していたところ、スパム・営業メールがたくさん来たのでreCAPTCHA認証を導入してみました。

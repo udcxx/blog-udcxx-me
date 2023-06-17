@@ -1,7 +1,7 @@
 ---
 title: とあるプロジェクトのお手伝いをしました
 date: 2019-12−17
-tags: IT
+tags: Web IT
 eyecatch: 191217.jpg
 ---
 

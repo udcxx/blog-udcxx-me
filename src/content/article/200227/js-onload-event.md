@@ -1,7 +1,7 @@
 ---
 title: 【JS】onloadイベントは思ったより後から来る
 date: 2020-02-27
-tags: IT
+tags: Web IT
 eyecatch: 200227.jpg
 ---
 

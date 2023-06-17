@@ -1,7 +1,7 @@
 ---
 title: SSD換装しました
 date: 2020-02-01
-tags: IT
+tags: Windows IT
 eyecatch: 210201.jpg
 eyecatchEmoji:
 description: Panasonic Let'sNote CF-SX2 のHDDをSSD（Crucial MX500）に換装しました。SSDは人権だっ！

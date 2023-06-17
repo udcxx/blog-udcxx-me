@@ -1,7 +1,7 @@
 ---
 title: 速度改善を考えてみた
 date: 2019-08-31
-tags: Blog Vue IT GAS Life
+tags: Blog Vue/Nuxt IT
 eyecatch: 190831.jpg
 ---
 

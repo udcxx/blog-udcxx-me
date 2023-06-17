@@ -1,7 +1,7 @@
 ---
 title: APIで郵便番号から住所を取得する
 date: 2023-04-08
-tags: IT kintone
+tags: kintone IT
 eyecatch:
 eyecatchEmoji: 📬
 description: よくWebフォームにあるような、郵便番号を入力したら住所が自動で入力されるアレを、kintoneレコード追加/編集画面でも利用できるカスタマイズを作成しました。

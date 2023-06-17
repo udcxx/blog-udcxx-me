@@ -1,7 +1,7 @@
 ---
 title: 無趣味の戯言で今後やっていきたいこと
 date: 2022-06-05
-tags: Blog
+tags: Blog Life
 eyecatch: 220605.jpg
 eyecatchEmoji:
 description: このブログ（無趣味の戯言）で、今後やりたいことを記録しておこうと思います。

@@ -1,7 +1,7 @@
 ---
 title: LINE Messaging APIで遊んでみました
 date: 2020-11-29
-tags: IT GAS
+tags: GAS IT
 eyecatch: 201129.jpg
 eyecatchEmoji:
 description: LINE Messaging APIとGoogle Apps Scriptを組み合わせて、簡単なBotのようなものを作って遊んでみました

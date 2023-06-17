@@ -1,7 +1,7 @@
 ---
 title: 【レスポンシブ対応】CSSの書き方【2020年夏版】
 date: 2020-09-03
-tags: IT
+tags: Web IT
 eyecatch: 200903.jpg
 ---
 

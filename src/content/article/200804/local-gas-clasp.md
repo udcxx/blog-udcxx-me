@@ -1,7 +1,7 @@
 ---
 title: ローカルでGASを書く環境を整えました
 date: 2020-08-04
-tags: GAS
+tags: GAS IT
 eyecatch: 200804.jpg
 ---
 

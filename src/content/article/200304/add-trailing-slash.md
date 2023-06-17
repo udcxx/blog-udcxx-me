@@ -1,7 +1,7 @@
 ---
 title: Nuxt.jsでのURL表記を統一した【'20/12/04 追記】
 date: 2020-03-04
-tags: Blog Vue IT
+tags: Blog Vue/Nuxt IT
 eyecatch: 200304.jpg
 eyecatchEmoji:
 description: GAでURLがめちゃくちゃだったので、トレイリングスラッシュ付きに統一されるよう、Nuxt.jsの設定を見直しました

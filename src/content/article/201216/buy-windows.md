@@ -1,7 +1,7 @@
 ---
 title: Windows PCを買ったのでおもちゃにする
 date: 2020-12-16
-tags: IT
+tags: Windows IT
 eyecatch: 201216.jpg
 eyecatchEmoji:
 description: 珍しくWindowsのPCを購入しました！SSD換装・メモリ増設などおもちゃにして遊び倒すゾ〜〜〜！

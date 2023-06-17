@@ -1,7 +1,7 @@
 ---
 title: Macのゴミデータを削除する
 date: 2020-01-29
-tags: IT
+tags: Mac IT
 eyecatch: 200129.jpg
 ---
 

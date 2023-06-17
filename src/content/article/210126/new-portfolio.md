@@ -1,7 +1,7 @@
 ---
 title: ポートフォリオをリニューアルしました！
 date: 2021-01-26
-tags: IT Life
+tags: Portfolio IT Life
 eyecatch: 210126.png
 eyecatchEmoji:
 description: 毎年作り替えてるポートフォリオサイトを2020年版も公開しました！出遅れてしまった...！

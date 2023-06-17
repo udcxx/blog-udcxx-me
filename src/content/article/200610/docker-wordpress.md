@@ -1,7 +1,7 @@
 ---
 title: DockerでWordpressのローカル環境を爆速で構築する
 date: 2020-06-10
-tags: IT
+tags: Web IT
 eyecatch: 200610.jpg
 ---
 

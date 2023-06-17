@@ -1,7 +1,7 @@
 ---
 title: Youtube IFrame Player APIでの埋め込み実装メモ
 date: 2020-06-04jpg
-tags: IT
+tags: Web IT
 eyecatch: 200604.jpg
 ---
 

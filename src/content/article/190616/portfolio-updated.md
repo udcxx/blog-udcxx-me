@@ -1,7 +1,7 @@
 ---
 title: ポートフォリオサイトリニューアルしました
 date: 2019-06-16
-tags: IT
+tags: Portfolio IT Life
 eyecatch: 190616.jpg
 ---
 

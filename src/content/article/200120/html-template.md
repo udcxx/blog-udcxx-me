@@ -1,7 +1,7 @@
 ---
 title: 簡単なHTMLページを簡単に作るためのテンプレ
 date: 2020-01-20
-tags: IT
+tags: Web IT
 eyecatch: 200120.jpg
 ---
 

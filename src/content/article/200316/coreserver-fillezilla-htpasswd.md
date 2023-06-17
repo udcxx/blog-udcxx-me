@@ -1,7 +1,7 @@
 ---
 title: コアサーバー✕FileZillaでhtpasswd設定するとき毎回ハマるのでメモ
 date: 2020-03-16
-tags: IT
+tags: Web IT
 eyecatch: 200316.jpg
 eyecatchEmoji:
 description: コアサーバーのフルパスは、FileZillaで見えるものと異なっていることに気づかず、何度も引っかかってしまってます...

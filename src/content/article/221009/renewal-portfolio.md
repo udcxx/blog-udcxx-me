@@ -1,7 +1,7 @@
 ---
 title: ポートフォリオ Ver.2022
 date: 2022-10-09
-tags: IT
+tags: Portfolio IT Life
 eyecatch: 221009.png
 eyecatchEmoji:
 description: ポートフォリオをアップデートして、2022年バージョンになりました。

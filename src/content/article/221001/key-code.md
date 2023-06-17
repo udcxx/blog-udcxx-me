@@ -1,7 +1,7 @@
 ---
 title: ブラウザによってキーのコードが異なることがある
 date: 2022-10-01
-tags: IT JavaScript
+tags: kintone IT
 eyecatch: 221001.jpg
 eyecatchEmoji:
 description: ブラウザによって、入力されたキーを判定するコードが異なるらしく、解決するために悩んだことメモ。

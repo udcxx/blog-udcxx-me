@@ -1,7 +1,7 @@
 ---
 title: 【JS】ページ内リンクをスムーススクロールさせる【IE対応】
 date: 2020-03-23
-tags: IT
+tags: Web IT
 eyecatch: 200323.jpg
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: 共通ポイント・クレカ周りをもう一度見直してみた
 date: 2019-08-23
-tags: Life
+tags: Life Money
 eyecatch: 190823.jpg
 ---
 

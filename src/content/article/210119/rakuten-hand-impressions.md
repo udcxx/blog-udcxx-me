@@ -1,7 +1,7 @@
 ---
 title: 【レビュー】Rakuten Hand ファーストインプレッション
 date: 2020-01-19
-tags: IT
+tags: Gadget Smartphone Android
 eyecatch: 210119.jpg
 eyecatchEmoji:
 description: 楽天モバイルに乗り換える際に合わせて Rakuten Hand も新規購入しました。まだ使って数日ですが、ファーストインプレッションとして記録を残そうと思います。

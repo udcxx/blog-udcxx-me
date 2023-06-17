@@ -1,7 +1,7 @@
 ---
 title: WinとMacでのデータ共有環境を構築する
 date: 2020-01-20
-tags: IT GAS
+tags: Windows Mac IT
 eyecatch: 210120.png
 eyecatchEmoji:
 description: MacとWindowsの2台体制になるので、Googleドライブを軸に、データのやり取りがしやすい環境を整えてみました

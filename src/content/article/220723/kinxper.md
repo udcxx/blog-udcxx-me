@@ -1,7 +1,7 @@
 ---
 title: kinxperをリリースしました
 date: 2022-07-23
-tags: IT kintone
+tags: kintone IT
 eyecatch: 220723.jpg
 eyecatchEmoji:
 description: kintoneと連携して、無料で帳票印刷を行うkinxperというサービスをリリースしました！

@@ -1,7 +1,7 @@
 ---
 title: 2022年のWeb制作
 date: 2022-12-17
-tags: IT
+tags: Web IT
 eyecatch: 221217.jpg
 eyecatchEmoji:
 description: 2022年に個人で制作したサイトたちを振り返って見ようと思います。

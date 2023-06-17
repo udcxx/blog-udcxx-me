@@ -1,7 +1,7 @@
 ---
 title: DIESELの腕時計の電池交換
 date: 2022-08-14
-tags: Life
+tags: Gadget
 eyecatch: 220814.jpg
 eyecatchEmoji:
 description: DIESELの腕時計をDIYで電池交換してみました。電池交換用工具いいぞぉー。

@@ -1,7 +1,7 @@
 ---
 title: Hello World!!
 date: 2019-10-01
-tags: Blog Vue IT
+tags: Blog Vue/Nuxt IT
 eyecatch: 191001.jpg
 ---
 

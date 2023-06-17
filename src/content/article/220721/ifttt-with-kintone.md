@@ -1,7 +1,7 @@
 ---
 title: kintoneからIFTTTを経由してSlackへ通知する
 date: 2022-07-21
-tags: IT kintone
+tags: kintone IT
 eyecatch: 220721.jpg
 eyecatchEmoji:
 description: kintoneとIFTTTを連携させて、レコードを開いたらSlackに通知するAppletを作ってみました。実用性はないので、応用必須です。

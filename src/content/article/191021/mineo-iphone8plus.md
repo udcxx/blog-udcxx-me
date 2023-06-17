@@ -1,7 +1,7 @@
 ---
 title: 中学生の弟のスマホデビューにmineoとiPhone 8 Plusを用意しました
 date: 2019-10-21
-tags: IT Life
+tags: iOS IT Life Gadget
 eyecatch: 191021.jpg
 ---
 

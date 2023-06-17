@@ -1,7 +1,7 @@
 ---
 title: amazletがサービス終了していました
 date: 2020-03-30
-tags: Blog IT
+tags: Web IT
 eyecatch: 200330.jpg
 ---
 

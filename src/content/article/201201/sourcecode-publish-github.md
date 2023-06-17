@@ -1,7 +1,7 @@
 ---
 title: ブログのソースコードをGithubで公開しました！
 date: 2020-12-01
-tags: Blog Vue IT
+tags: Blog Vue/Nuxt IT
 eyecatch: 201201.jpg
 eyecatchEmoji:
 description: Nuxt.jsで作ったブログのソースコードを恥ずかしながらGithubで公開しました！

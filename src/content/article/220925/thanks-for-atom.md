@@ -1,7 +1,7 @@
 ---
 title: いまこそATOMへ感謝を
 date: 2022-09-25
-tags: IT Atom
+tags: IT
 eyecatch: 191227.png
 eyecatchEmoji:
 description: 僕のコーダー人生のほぼすべてを支えてくれたAtomを振り返ります。

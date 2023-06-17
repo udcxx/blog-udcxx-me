@@ -1,7 +1,7 @@
 ---
 title: git ftpでアップロードを実行させる
 date: 2020-07-11
-tags: IT
+tags: Web IT
 eyecatch: 200711.jpg
 ---
 

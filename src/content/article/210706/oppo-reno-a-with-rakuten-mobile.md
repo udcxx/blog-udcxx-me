@@ -1,7 +1,7 @@
 ---
 title: 楽天モバイルが不安なのでOPPO Reno Aを買った
 date: 2021-07-06
-tags: IT
+tags: Gadget Smartphone Android
 eyecatch: 210706.jpg
 eyecatchEmoji:
 description: 楽天モバイルだけではまだ心許ないので、イオンモバイルと併用するため、デュアルSIM対応のOPPO Reno Aを購入しました。

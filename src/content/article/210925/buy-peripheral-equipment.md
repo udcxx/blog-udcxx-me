@@ -1,7 +1,7 @@
 ---
 title: マイクとモニタアームを買いました
 date: 2021-09-25
-tags: IT Life
+tags: Gadget
 eyecatch: 210925.jpg
 eyecatchEmoji:
 description: 地道にデスク環境を改良中。最近買ったmarantzのマイクと、Worldliftのモニタアームを紹介します。
