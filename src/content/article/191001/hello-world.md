@@ -2,7 +2,6 @@
 title: Hello World!!
 date: 2019-10-01
 tags: Blog Vue IT
-eyecatchEmoji:
 eyecatch: 191001.jpg
 ---
 
