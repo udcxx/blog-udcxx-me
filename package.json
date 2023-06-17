@@ -9,7 +9,7 @@
         "build": "nuxt build",
         "start": "nuxt start",
         "generate": "nuxt generate",
-        "upload": "node ftp-upload.js",
+        "upload": "node ./scripts/ftp-upload.js",
         "blog": "run-s generate upload"
     },
     "dependencies": {
