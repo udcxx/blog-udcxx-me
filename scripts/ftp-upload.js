@@ -1,5 +1,7 @@
 // FTP 接続先情報読み込み
-import secretInfos from '../secret-infos.json';
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
+const secretInfos = require('../secret-infos.json');
 
 // ftp-uploadの設定
 const FtpDeploy = require("ftp-deploy");
