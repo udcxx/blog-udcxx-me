@@ -4,6 +4,7 @@
     "description": "for https://blog.udcxx.me/",
     "author": "udcxx",
     "private": true,
+    "type": "module",
     "scripts": {
         "dev": "nuxt dev",
         "build": "nuxt build",
