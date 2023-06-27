@@ -18,7 +18,7 @@ description: 久しぶりにMacBook、初めてのM1をセットアップした�
 今回のアップデートの概要は、以下の通りです。
 
 - 記事の管理をnuxt/content v2にした
-- TOPページのデザイン変えた
+- [TOPページのデザイン変えた](https://blog.udcxx.me/article/230627/top-page-design-update/)
     - 新着記事に加えて、主要タグごとの新しい記事を確認できるようにした
 - ~~nuxt-image入れた~~
     - 画像生成がまだ実装されてないので、現時点で何も変わらない。
