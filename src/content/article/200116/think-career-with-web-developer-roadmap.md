@@ -5,7 +5,7 @@ tags: Web IT Life
 eyecatch: 200116.jpg
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 Qiitaの [Web Developer Roadmap 2020版が出ていたので2019版と比較](https://qiita.com/hirotakasasaki/items/f93335857c17f6ceab9f) という記事が社内でちょっと話題になっていたので読んでみました。
 

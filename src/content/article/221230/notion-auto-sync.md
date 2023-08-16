@@ -7,7 +7,7 @@ eyecatchEmoji:
 description: Android版Notionを使うときに、入力中に自動同期とぶつかるタイミングに悩まされたお話。
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 今年の半ばくらいから、今流行りの Notion を活用して、ブログのネタ管理や、日頃の簡単な買い物リストなどをメモするようにしだしました。
 

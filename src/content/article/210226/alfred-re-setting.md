@@ -7,7 +7,7 @@ eyecatchEmoji: 🕵️
 description: いよいよAlfredの設定周りをカスタマイズしてみました
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 仕事でも自宅でもMacを使い倒しているのですが（最近はWinも使ってるけど）、Macを使う中でもずば抜けて利用頻度の高いアプリの一つに「Alfred」があります。
 

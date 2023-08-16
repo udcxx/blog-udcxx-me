@@ -5,7 +5,7 @@ tags: Web IT
 eyecatch: 200330.jpg
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 このブログでは活躍の場がありませんでしたが、FC2ブログ時代からお世話になっていたAmazonのアフィリエイトリンク生成（整形？）サービス [amazlet](http://app.amazlet.com/amazlet/) が **2020年3月9日でサービスが終了していた** そうです。
 

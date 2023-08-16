@@ -7,7 +7,7 @@ eyecatchEmoji: ✒️
 description: Atomでプロジェクトを切り替えてくれるパッケージ「project-plus」が参照するプロジェクト一覧のファイルの書き方
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 周りが VSCode に乗り換えていってるのを見つつも、未だにAtom信者してます。
 

@@ -5,7 +5,7 @@ tags: Life
 eyecatch: 191203.jpg
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 もう12月ですねぇ。
 

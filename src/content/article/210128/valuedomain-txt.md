@@ -7,7 +7,7 @@ eyecatchEmoji:
 description: Google Search Consoleのサイト所有権を設定するために、VALUE-DOMAIN（バリュードメイン）でTXTレコードを追加してみました。
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 DNSとか分かってるようでよく分からんです。ちょっと込み入ったことすると分からなくなるし、簡単なことでも毎度ググってしまっています。ミスった時の代償もデカそうで萎縮してしまいます👻
 

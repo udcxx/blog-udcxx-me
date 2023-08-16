@@ -7,7 +7,7 @@ eyecatchEmoji:
 description: Oracle Databaseド初心者な僕が、覚えにくい部分をあとで見直せるようにまとめた記事です。
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 Oracle Databaseの勉強をしなくちゃいけなくなり、超基礎の部分から分からなくてアワアワしてます。自分が見直しやすいように記事をノート代わりに使ってみようと思います。
 

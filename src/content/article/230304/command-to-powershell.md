@@ -7,7 +7,7 @@ eyecatchEmoji:
 description: コマンドプロンプト用のコマンドをPowerShellで実行させるときに気をつけることをメモします。
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 本業も副業も捗ってしまい、久しぶりの更新になってしまいました...。
 

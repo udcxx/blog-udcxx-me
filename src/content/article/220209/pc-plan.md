@@ -7,7 +7,7 @@ eyecatchEmoji:
 description: nasneの代わりを探していたら昔使っていたPCと出会い、自作PCが組みたくなったお話。
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 ふと気づいたらGoogleDriveの容量が7割くらいになってきてたので、 [以前記事](https://blog.udcxx.me/article/210120/data-sync-with-mac-and-windows/) にした考え方に則って最近使ってないファイルを [nasne](https://amzn.to/3HHpL1K) に退避させようとしたところ、HDDがカリカリ鳴り出してることに気づいてしまいました。
 

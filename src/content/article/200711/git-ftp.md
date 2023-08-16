@@ -5,7 +5,7 @@ tags: Web IT
 eyecatch: 200711.jpg
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 以前の記事で、git pushをトリガーにFTPアップロードまで自動化させる方法を紹介し、今もそれで運用しています。
 

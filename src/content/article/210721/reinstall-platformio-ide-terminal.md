@@ -7,7 +7,7 @@ eyecatchEmoji:
 description: Platformio Ide Terminalが真っ黒で動かなかったので再インストールしてみたらすんなり動きました。
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 未だにターミナルとかシェルとか用語があやふやです。
 

@@ -7,7 +7,7 @@ eyecatchEmoji:
 description: 楽天モバイルだけではまだ心許ないので、イオンモバイルと併用するため、デュアルSIM対応のOPPO Reno Aを購入しました。
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 2021年の2月頃から、第4のMNOである楽天モバイルに乗り換えて利用していました。
 

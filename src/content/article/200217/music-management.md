@@ -5,7 +5,7 @@ tags: IT Life
 eyecatch: 200217.jpg
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 **みなさん何で音楽聴いてますか？？**
 

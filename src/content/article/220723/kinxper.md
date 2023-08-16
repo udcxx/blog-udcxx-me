@@ -7,7 +7,7 @@ eyecatchEmoji:
 description: kintoneと連携して、無料で帳票印刷を行うkinxperというサービスをリリースしました！
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 kintoneと連携して、見積書とか請求書とかといった帳票の印刷画面を作成する [kinxper](https://app.udcxx.me/kinxper/) というサービスをリリースしました！
 

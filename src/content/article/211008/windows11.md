@@ -7,7 +7,7 @@ eyecatchEmoji:
 description: やっぱりって感じですが、僕が使っている2012年製のPCではWindows11がインストール出来ませんでした。
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 僕のおもちゃ＆現在のメインPCにしているWindows PCは、Panasonic Let's note CF-SX2という2012年発売のモデルで、当初はWindows7が搭載されていたものになります。
 

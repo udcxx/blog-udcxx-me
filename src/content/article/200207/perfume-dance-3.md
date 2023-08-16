@@ -5,7 +5,7 @@ tags: Life
 eyecatch: 190109.jpg
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 香水は敷居が高いという認識を変えてくれた **オリジナルオーダーメイド香水「[Dance](https://www.Dance-kobe.co.jp/)」** を数年間ずっと愛用しています。
 

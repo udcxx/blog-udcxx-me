@@ -5,7 +5,7 @@ tags: Life Money
 eyecatch: 200214.jpg
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 今朝メールチェックしていると残念なお知らせが届いていました。
 

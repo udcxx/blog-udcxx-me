@@ -5,7 +5,7 @@ tags: Web IT
 eyecatch: 200610.jpg
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 Wordpressのテーマを作成する際、ローカル環境で行うほうが何かと便利なので、今回はその環境構築をDockerを使って行いたいと思います。
 

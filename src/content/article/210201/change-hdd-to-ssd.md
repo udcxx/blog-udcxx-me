@@ -7,7 +7,7 @@ eyecatchEmoji:
 description: Panasonic Let'sNote CF-SX2 のHDDをSSD（Crucial MX500）に換装しました。SSDは人権だっ！
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 [先日実験用（おもちゃ）として購入](https://blog.udcxx.me/article/201216/buy-windows/) したLet's NoteがHDDだったのでSSDに換装してみました。大学1年の頃に当時使っていたLaVieの換装をして以来なので6年ぶりくらいの作業です。
 

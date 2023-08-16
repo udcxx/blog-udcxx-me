@@ -7,7 +7,7 @@ eyecatchEmoji:
 description: 楽天モバイルに乗り換える際に合わせて Rakuten Hand も新規購入しました。まだ使って数日ですが、ファーストインプレッションとして記録を残そうと思います。
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 先日、 [Re麺bar](https://remenbar.com/) を運営している親友の Taco [@ra_men_beer](https://twitter.com/ra_men_beer) におすすめされ、12ヵ月無料キャンペーンにも惹かれたため、ついに5年近く楽天モバイルへ乗り換えることにしました。
 

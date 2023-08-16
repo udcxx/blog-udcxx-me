@@ -5,7 +5,7 @@ tags: Web IT
 eyecatch: 200526.jpg
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 今回は、普段僕がCSSを書いていてよくやってしまう失敗やクセをまとめてみようと思います。
 

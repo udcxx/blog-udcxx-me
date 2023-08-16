@@ -7,7 +7,7 @@ eyecatchEmoji:
 description: Nuxt.jsで作られているこのブログに、やっとカテゴリ内の記事を一覧できるページを実装しました！
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 1年越し？の実装を成し遂げることが出来ました！w
 

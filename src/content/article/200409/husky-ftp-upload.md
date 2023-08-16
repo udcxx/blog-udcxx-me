@@ -5,7 +5,7 @@ tags: Blog Nuxt IT
 eyecatch: 200409.jpg
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 Nuxt.js（Vue）で作っていて、エディターとターミナルでほとんどの作業が完結するこのブログですが、より簡単に、手数を減らせるようにアップデートをしました！
 

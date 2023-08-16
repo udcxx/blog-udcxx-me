@@ -5,7 +5,7 @@ tags: Life Money
 eyecatch: 190504.jpg
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 老後2,000万円とかもう現実味の薄い数字が話題ですが、みなさん貯金してますか？
 

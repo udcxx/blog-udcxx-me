@@ -7,7 +7,7 @@ eyecatchEmoji:
 description: VSCodeをメインで使うにあたって、キーボードショートカットの変更を行いました。
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 昨年12月のAtomの開発終了にともなって、いままでサブで利用していた VSCode が、メインエディターとして昇格しました。
 

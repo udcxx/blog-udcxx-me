@@ -5,7 +5,7 @@ tags: Mac IT
 eyecatch: 200129.jpg
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 車で音楽を聞く手段として、PanasonicのGorillaを設置してて、そこからSDカードに保存した音楽を再生させています。
 

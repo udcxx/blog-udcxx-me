@@ -5,7 +5,7 @@ tags: IT
 eyecatch: 201007.png
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 あんまり話題に上がることが無い気がしますが、  **Brave Browser** というブラウザを試してみました。
 

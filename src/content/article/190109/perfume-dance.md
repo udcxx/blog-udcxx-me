@@ -5,7 +5,7 @@ tags: Blog Vue IT GAS Life
 eyecatch: 190109.jpg
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 突然ですが、 **女の子っていいにおいですよね** 。
 

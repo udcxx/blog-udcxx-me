@@ -7,7 +7,7 @@ eyecatchEmoji:
 description: JCB カード W から JCB GOLD EXTAGE へアップグレードしました！
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 最近仕事のモチベがだだ下がりでしゅんとしてたので、モチベアップのために、メインで使っているクレジットカードのアップグレードを申し込んでみました。
 

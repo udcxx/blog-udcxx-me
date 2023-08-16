@@ -7,7 +7,7 @@ eyecatchEmoji:
 description: VSCodeで隠しフォルダやhtaccessなどの隠しファイルもファイルツリーに表示されるように設定する方法
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 普段はAtomというエディターをこよなく愛する僕ですが、実はVS Codeの軽快な動作に惹かれてプライベートのMacbook Air(Mid-2014)ではそっちを使っています（ ~~Atomには秘密ですよ~~ ）
 

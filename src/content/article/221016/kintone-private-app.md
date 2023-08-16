@@ -7,7 +7,7 @@ eyecatchEmoji:
 description: kintoneでは、作成可能なアプリ数にカウントされないPrivateアプリグループを利用することができます。社内での自分用の記録とかに活用してみては！
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 kintoneには、自分だけが使えて、作成可能なアプリ数にカウントされない **Privateアプリグループ** ってのがあります。
 

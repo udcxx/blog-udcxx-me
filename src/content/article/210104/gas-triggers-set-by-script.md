@@ -7,7 +7,7 @@ eyecatchEmoji:
 description: Google Apps Script【GAS】の稼働時間制約（6分の壁）に歯向かったら、トリガー数の上限にぶち当たりつつもどうにかやりきりました。
 ---
 
-あけましておめでとうございます！だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+あけましておめでとうございます！だいちゃんです。
 
 新年1発目の更新は、GAS（Google Apps Script）ネタです。ほんとに小さな小さなTipsですが、稼働時間に制限があるGASだと意外と使いどころがあるのではないでしょうか。
 

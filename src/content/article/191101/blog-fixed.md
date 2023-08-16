@@ -7,7 +7,7 @@ eyecatchEmoji:
 description: このブログ内にある、インスタグラムへのリンクと、OG Titleを変更する微調整を行いました！
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 ハロウィンでしたね。
 

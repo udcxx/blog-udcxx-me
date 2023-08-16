@@ -7,7 +7,7 @@ eyecatchEmoji:
 description: FileZillaを使わずに、コマンド1つでデプロイからサーバーへのアップロードまで完了できるようにアップデートしました。
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 本日もブログをぷちアップデートしましたー！
 

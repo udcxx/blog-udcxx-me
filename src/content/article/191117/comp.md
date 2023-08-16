@@ -5,7 +5,7 @@ tags: Life
 eyecatch: 191117.jpg
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 元々ランチは軽くてOKなタイプで、ランチ代の節約と栄養のバランスを求めて、完全食・COMPを試してみました。
 

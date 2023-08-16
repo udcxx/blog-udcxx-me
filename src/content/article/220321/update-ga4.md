@@ -7,7 +7,7 @@ eyecatchEmoji:
 description: Nuxt.jsで制作している「無趣味の戯言」をGoogle Analytics 4へ対応させました。
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 Google Analyticsがバージョンアップし、 [Google Analytics 4](https://developers.google.com/analytics/devguides/collection/ga4) になる関係で、従来のタグから置き換える必要があるらしいです。（これまでの計測方法は、 2023/7/1 で [データ処理が終了するとのアナウンス](https://support.google.com/analytics/answer/11583528) がありました）
 

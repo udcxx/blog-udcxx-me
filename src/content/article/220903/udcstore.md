@@ -7,7 +7,7 @@ eyecatchEmoji:
 description: 主にkintoneアプリを公開・販売するためのネットショップを立ち上げました！
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 この度、人生初の自分のネットショップを立ち上げちゃいました🎉
 

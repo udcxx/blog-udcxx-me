@@ -5,7 +5,7 @@ tags: GAS IT
 eyecatch: 200804.jpg
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 最近やっとローカルでGAS【Google Apps Script】を書く環境を整えましたw
 

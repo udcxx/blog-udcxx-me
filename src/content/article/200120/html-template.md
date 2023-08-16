@@ -5,7 +5,7 @@ tags: Web IT
 eyecatch: 200120.jpg
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 先日、 **[Meetup with locals in Okinawaのサイトを作った話](https://blog.udcxx.me/article/191217/meetup-with-locals-in-okinawa)** をした際にもちょろっと書きましたが、簡単なWebページを効率よく楽に作れるように、自分なりにあらかじめよく使うツールをセットにして用意しています。
 

@@ -5,7 +5,7 @@ tags: Blog Nuxt IT
 eyecatch: 191001.jpg
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 なんと、やっと、ついに、、、
 

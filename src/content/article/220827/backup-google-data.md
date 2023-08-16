@@ -7,7 +7,7 @@ eyecatchEmoji:
 description: Google依存脱却は難しそうですが、うまく付き合っていくために定期的なバックアップを取ろうと決意しました。
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 日頃からGoogleのサービスをメインで利用していて、特にGmailやGoogle Drive、Google フォトは超重要なサービスです。
 

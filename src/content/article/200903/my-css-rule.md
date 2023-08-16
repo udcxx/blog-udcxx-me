@@ -5,7 +5,7 @@ tags: Web IT
 eyecatch: 200903.jpg
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 コーディングしていると、その人の癖みたいなものが出ちゃいますよね。
 

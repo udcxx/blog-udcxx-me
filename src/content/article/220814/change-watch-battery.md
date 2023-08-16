@@ -7,7 +7,7 @@ eyecatchEmoji:
 description: DIESELの腕時計をDIYで電池交換してみました。電池交換用工具いいぞぉー。
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 5年くらい？前に父に買ってもらってずっと愛用している [DIESELの腕時計](https://www.diesel.co.jp/ja/timeframes/dz1965/DZ196500QQQ.html) の電池が切れたので、自分で交換してみました。
 

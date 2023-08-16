@@ -7,7 +7,7 @@ eyecatchEmoji:
 description: GitlabにSSHで認証していて、pushやpullなどリモートと通信する度にパスフレーズを求められるのが非効率だったので解消しました。
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 先日から会社のPCが新しくなり、RAM 64GBの超絶気持ちのいい環境でコーディングをしていると、Gitでpushとかpullとかリモートと通信するシチュエーションになると毎回SSHキーのパスフレーズを訊かれるようになっていて超絶 [うっせーわ](https://amzn.to/3tcaUVt) って感じでした。
 

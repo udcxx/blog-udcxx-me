@@ -7,7 +7,7 @@ eyecatchEmoji:
 description: Homebrewの実行時に homebrew-core is a shallow clone. というエラーが出て処理を続行出来なかったので、その理由と対策方法について。
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 先程ふとHomebrewから git をアップデートしようとしたら下記のようなエラーが出てしまい、gitのインストールどころか、その手前のHomebrewのアップデートの段階でコケてしまって前に進めなくなってしまいました。
 

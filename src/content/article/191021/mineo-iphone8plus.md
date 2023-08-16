@@ -5,7 +5,7 @@ tags: iOS IT Life Gadget
 eyecatch: 191021.jpg
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 みなさんいつからスマホ持ってますか？
 

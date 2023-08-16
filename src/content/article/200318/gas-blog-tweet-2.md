@@ -5,7 +5,7 @@ tags: IT GAS
 eyecatch: 200318.jpg
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 [昨日に引き続き](https://blog.udcxx.me/article/200317/gas-blog-tweet-1/) 、GASによる自動過去記事ツイートBotを実装していきます！
 

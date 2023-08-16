@@ -7,7 +7,7 @@ eyecatchEmoji:
 description: Nuxt.jsで作ったブログのソースコードを恥ずかしながらGithubで公開しました！
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 前々から計画していたことなのですが、ついにこのブログのソースコードを [Github](https://github.com/udcxx/blog-udcxx-me) で公開しちゃいました！
 

@@ -5,7 +5,7 @@ tags: Life Money
 eyecatch: 191218.jpg
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 トヨタの打ち出したサブスクリプションが出だし不調のようですね。
 

@@ -7,7 +7,7 @@ eyecatchEmoji:
 description: ブラウザによって、入力されたキーを判定するコードが異なるらしく、解決するために悩んだことメモ。
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 [Handling Keyboard Shortcuts in JavaScript](http://www.openjs.com/scripts/events/keyboard_shortcuts/) というライブラリを利用して、キーボードショートカットを追加するJavaScriptの簡単なプログラムを作っていたのですが、Firefoxでは動くのにChromeでは動かない現象にぶち当たってしまったので、解決までに得た知識をメモ。
 

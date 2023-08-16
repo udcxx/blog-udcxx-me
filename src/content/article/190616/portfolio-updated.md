@@ -5,7 +5,7 @@ tags: Portfolio IT Life
 eyecatch: 190616.jpg
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 ついに！ **ポートフォリオをリニューアル** しました（ﾊﾟﾁﾊﾟﾁ    
 いま持ってる能力の、多分限界です。

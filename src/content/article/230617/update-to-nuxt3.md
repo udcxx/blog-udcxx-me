@@ -7,7 +7,7 @@ eyecatchEmoji: 🚀
 description: 久しぶりにMacBook、初めてのM1をセットアップしたときに、やったことなどをまとめておきます。
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 このブログはNuxtを使っているのですが、Vue2のサポート終了を受けて [Nuxt2が2023年末にサポート終了](https://nuxt.com/blog/vision-2023) するので、Nuxt3へのアップデートを行うことにしました。
 

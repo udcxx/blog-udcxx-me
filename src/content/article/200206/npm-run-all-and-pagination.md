@@ -5,7 +5,7 @@ tags: Blog Nuxt IT
 eyecatch: 200206.jpg
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 Nuxt.jsで作ったこのブログですが、Wordpressなどのように最初からいろいろな機能が用意されているわけではない分、イチから構築する楽しさを堪能できる点が醍醐味だと思っています。
 

@@ -5,7 +5,7 @@ tags: IT GAS
 eyecatch: 200317.png
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 たまにAnalyticsを覗くのですが、僕のブログの場合ツイッター経由での流入が半分くらいを占めているようです。
 

@@ -5,7 +5,7 @@ tags: Web IT
 eyecatch: 201102.jpg
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 もう11月ですね... 沖縄の冬が好きなのでテンション上がり気味です。
 

@@ -7,7 +7,7 @@ eyecatchEmoji:
 description: 僕のコーダー人生のほぼすべてを支えてくれたAtomを振り返ります。
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 エディター、何つかってます？
 

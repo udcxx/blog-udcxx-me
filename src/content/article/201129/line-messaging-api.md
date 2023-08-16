@@ -7,7 +7,7 @@ eyecatchEmoji:
 description: LINE Messaging APIとGoogle Apps Scriptを組み合わせて、簡単なBotのようなものを作って遊んでみました
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 初めてLINE Messaging APIを使ってみたので、使い方などを軽くメモっておこうと思います。 [LINE Developersの公式ガイド](https://developers.line.biz/ja/docs/messaging-api/) を読めばやりたいことは大抵網羅されているし、何より日本語で読みやすいので、詳しい説明は公式ガイドに譲ります。
 

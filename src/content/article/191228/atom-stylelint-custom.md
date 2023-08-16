@@ -5,7 +5,7 @@ tags: IT
 eyecatch: 191228.jpg
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 先日紹介しましたが、愛用してるエディタ Atom に構文チェック用のプラグイン linter を入れて、htmlとcssを書きながらチェックしてくれるようにしています。
 

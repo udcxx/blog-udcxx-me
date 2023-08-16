@@ -7,7 +7,7 @@ eyecatchEmoji:
 description: kintoneとIFTTTを連携させて、レコードを開いたらSlackに通知するAppletを作ってみました。実用性はないので、応用必須です。
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 kintoneとIFTTTの連携を試すべく、kintoneでレコード詳細画面を開いたらSlackへ通知するという激ウザアプレットを作成してみたので、メモっておきます。そのままだと実用性皆無だけど、一応動作が確認できれば問題ないので。
 

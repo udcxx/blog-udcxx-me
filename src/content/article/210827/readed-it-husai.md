@@ -7,7 +7,7 @@ eyecatchEmoji:
 description: 室脇 慶彦著の「IT負債」を読みました。ITに関わる人だけの問題ではなく社会問題であると気付かされた一冊です。
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 超久しぶりに読書録です。
 

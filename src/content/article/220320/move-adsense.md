@@ -7,7 +7,7 @@ eyecatchEmoji:
 description: 今までごめんなさい！AdSenseの自動広告のせいで記事が読みづらかったので改善しました。
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 今までごめんなさい！
 

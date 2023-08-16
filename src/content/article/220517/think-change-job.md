@@ -9,7 +9,7 @@ description:
 
 （この記事にオチは無いです）
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 [先日の記事](https://blog.udcxx.me/article/220326/nocode-with-me/) でもちらっと漏らしてしまっていますが、昨年9月に転職して、社内でうろうろした後、 *とある製品* のテクニカルサポートを担当しています。
 

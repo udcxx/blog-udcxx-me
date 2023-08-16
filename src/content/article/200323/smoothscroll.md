@@ -5,7 +5,7 @@ tags: Web IT
 eyecatch: 200323.jpg
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 素のJavascript（jQuery不使用）かつIE対応で、ページ内遷移のスムーススクロールを実装する方法を調べてみました。今後の自分の為にメモしておきます。
 

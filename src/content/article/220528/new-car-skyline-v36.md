@@ -7,7 +7,7 @@ eyecatchEmoji:
 description: CPV35からV36へ乗り換えました！簡単な紹介と、今後について書き残しておこうと思います。
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 記事にするのが1ヶ月くらい遅くなりましたが、MY NEW CARを手に入れました！
 

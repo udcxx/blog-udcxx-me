@@ -5,7 +5,7 @@ tags: IT GAS
 eyecatch: 181208.jpg
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 今回は、GoogleAppsScript【GAS】で遊んでみました(^O^)
 

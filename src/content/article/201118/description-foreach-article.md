@@ -7,7 +7,7 @@ eyecatchEmoji:
 description: descriptionを記事ごとに設定出来るようにNuxt.jsで作ったブログのアップデートを行いました
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 このブログはNuxt.jsで作られているのですが、僕の手抜き工事のせいで **どの記事でもdescriptionがデフォルトのままな状態** で放置していました（汗）
 

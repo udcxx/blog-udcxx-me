@@ -7,7 +7,7 @@ eyecatchEmoji:
 description: 帰宅後の時間を副業に充てるにあたって、現状抱えてる課題を洗い出してみました。
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 先月は [KnotWorks](https://knot3.work/) 絡みで副業案件を複数いただいて、帰宅後の多くの時間をコーディングに溶かしました。
 

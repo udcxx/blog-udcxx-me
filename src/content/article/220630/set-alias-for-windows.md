@@ -7,7 +7,7 @@ eyecatchEmoji:
 description: PoweShellを楽にかっこよく使えるようにエイリアスを設定する方法を調べました。
 ---
 
-こんにちは、だいちゃん [@udcxx](https://twitter.com/udc_xx) です。
+こんにちは、だいちゃんです。
 
 ターミナルとか使ってるときって、パソコンと対話ができてる気がしてワクワクしませんか？
 
