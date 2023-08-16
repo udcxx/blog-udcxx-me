@@ -34,8 +34,8 @@ useHead({
 
         <ul>
             <li><a href="https://udcxx.me" target="_blank">PORTFOLIO</a></li>
-            <li><a href="https://twitter.com/udc_xx" target="_blank">TWITTER</a></li>
-            <li><a href="https://instagram.com/udcsk" target="_blank">INSTAGRAM</a></li>
+            <li><a href="https://www.amazon.co.jp/hz/wishlist/ls/3S78SPACY6TSJ" target="_blank">WANT IT</a></li>
+            <li><a href="https://app.udcxx.me/surl/" target="_blank">SURL</a></li>
         </ul>
     </div>
 
