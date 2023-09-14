@@ -7,6 +7,8 @@ eyecatchEmoji: 🎉
 description: 営業日の日数などを返してくれるAPIを公開しました
 ---
 
+こんにちは、だいちゃんです。
+
 営業日の日数を取得するAPIを公開しました！
 
 [営業日数API](https://app.udcxx.me/document/workday-api/)
