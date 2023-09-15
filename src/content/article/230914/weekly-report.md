@@ -1,7 +1,7 @@
 ---
 title: 週報を復活しようと思います
 date: 2023-09-14
-tags: Short Life
+tags: Shorts Life
 eyecatch: 
 eyecatchEmoji: ✌
 description: 2年前に4ヶ月だけやっていた週報を久しぶりに復活させてみようと思い立ちました
