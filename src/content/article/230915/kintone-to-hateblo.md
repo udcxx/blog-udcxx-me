@@ -14,6 +14,9 @@ description: はてなブログAtomPubとkintone APIを活用して、kintoneの
 
 ## JavaScript側
 
+⚠ このままだと、月曜日と日曜日が別の月になる場合を考慮できていません。   
+[別の記事で修正版を公開](https://blog.udcxx.me/article/230929/this-sunday/)したので、そちらも参考にしてください。
+
 ```javascript
 // 新規作成画面表示イベント
 kintone.events.on(['app.record.create.show'], (e) => {
