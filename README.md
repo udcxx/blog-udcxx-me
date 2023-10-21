@@ -9,7 +9,7 @@
 ## :dolphin: 目次
 
 * <a href="#about_blog">無趣味の戯言について</a>
-* <a href="#technology">使用技術</a>
+* <a href="#technology">主な使用技術</a>
 * <a href="#how_to_use">使用方法</a>
 * <a href="#directory">ディレクトリ構成</a>
 * <a href="#url">URL構成</a>
@@ -25,7 +25,7 @@
 Nuxt.jsやcontentを利用して静的デプロイし、一般的なレンタルサーバーから配信しています。
 
 
-<h2 id="technology"> :dolphin: 使用技術</h2>
+<h2 id="technology"> :dolphin: 主な使用技術</h2>
 
 ### Nuxt.js v3
 
@@ -154,6 +154,6 @@ blog-udcxx-me
 
 <h2 id="contact"> :dolphin: 管理者への連絡</h2>
 
-僕へのお問い合わせは [twitter](https://twitter.com/udc_xx) などからお気軽にどうぞ！
+僕へのお問い合わせは [お問い合わせフォーム](https://udcxx.me/contact/) などからお気軽にどうぞ！
 
 * [ポートフォリオサイト](https://udcxx.me/)

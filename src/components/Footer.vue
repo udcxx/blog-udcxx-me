@@ -3,6 +3,8 @@
         <p>&copy; {{ year }} udcxx.</p>
         <ul>
             <li><a href="https://github.com/udcxx" target="_blank"><img src="~/assets/images/footer_github.png" alt="GitHub"></a></li>
+            <li><a href="https://www.amazon.co.jp/hz/wishlist/ls/3S78SPACY6TSJ" target="_blank" title="ほしいものリスト"><img src="/images/amazon.svg" alt="Amazon"></a></li>
+            <li><a href="https://udcxx.me/contact/" target="_blank" title="お問い合わせ"><img src="/images/contact.svg" alt="Contact"></a></li>
         </ul>
     </footer>
 </template>
@@ -41,8 +43,7 @@ footer {
         align-items: center;
 
         li {
-            margin-left: 1rem;
-            margin: 0 0 0 1rem;
+            margin: 0 0 0 2rem;
             list-style: none;
             display: inline-block;
 
