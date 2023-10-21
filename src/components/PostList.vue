@@ -50,6 +50,7 @@ export default {
 .postitem {
     width: 240px; max-width: 48vw; height: 240px; max-height: 48vw;
     margin: 0;
+    border-radius: 1rem;
     background-color: #fff;
 
     &::before {
@@ -75,12 +76,14 @@ export default {
         top: 50%; left: 0; right: 0; z-index: 5;
         transition: 0.3s;
         transform: translateY(-50%);
+        border-radius: 1rem;
         background-color: #071e22;
     }
 
     &--eyecatch {
         width: 100%; height: 100%;
         object-fit: cover;
+        border-radius: 1rem;
     }
 
     &--eyecatchemoji {
