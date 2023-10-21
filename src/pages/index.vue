@@ -30,7 +30,7 @@
         <ul>
             <li><a href="https://udcxx.me" target="_blank">PORTFOLIO</a></li>
             <li><a href="https://www.amazon.co.jp/hz/wishlist/ls/3S78SPACY6TSJ" target="_blank">WANT IT</a></li>
-            <li><a href="https://app.udcxx.me/surl/" target="_blank">SURL</a></li>
+            <li><a href="https://app.udcxx.me/" target="_blank">APPs</a></li>
         </ul>
     </div>
 
