@@ -17,7 +17,7 @@ description: AIがWebサイトのキャッチフレーズや冒頭部分の文�
 
 ## WebSiteAssistant
 
-[![](/images/231020.jpg)](https://app.udcxx.me/websiteassistant/)    
+[![](/images/231024.jpg)](https://app.udcxx.me/websiteassistant/)    
 [▲ WebSiteAssistant](https://app.udcxx.me/websiteassistant/)
 
 WebSiteAssistantは、サービスの名称や特徴を入力すると、それに相応しいキャッチフレーズを 5つくらい提案してくれるツールとなっています。一応、コンテンツ部分の出だしくらいには使えそうな文章も合わせて生成されるので、短いページであれば、このツールが生成した内容と、会社情報を置けばそれなりのページが作れる想定です。
@@ -27,7 +27,7 @@ WebSiteAssistantは、サービスの名称や特徴を入力すると、それ�
 
 ## OpenAI API
 
-今回のツールも、[RECITONE](https://app.udcxx.me/recitonet/) と同じく、OpenAI APIを活用して、ChatGPT 3.5がアイディアを出してくれるものとなっています... というか、ソースコードはほぼ9割くらいRECITONEの流用ですw そのおかげで半日くらいでリリースすることができました。
+今回のツールも、[RECITONE](https://app.udcxx.me/recitone/) と同じく、OpenAI APIを活用して、ChatGPT 3.5がアイディアを出してくれるものとなっています... というか、ソースコードはほぼ9割くらいRECITONEの流用ですw そのおかげで半日くらいでリリースすることができました。
 
 逆に変更すべき箇所をちゃんと変更しきれてなくて、結果が返ってこなくて悩まされたりはしましたが😅
 
