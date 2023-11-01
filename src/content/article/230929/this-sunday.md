@@ -41,7 +41,7 @@ kintone.events.on(['app.record.create.show'], (e) => {
     let mondayFullDate = "";
     if (mondayDate < 1) {
         // 月をまたぐ場合
-        mondayFullDate = `${date.getFullYear()}-${date.getMonth()}-${lastMonthlastDate + mondayDate - 1}`; 
+        mondayFullDate = `${date.getFullYear()}-${date.getMonth()}-${lastMonthlastDate + mondayDate}`; 
     } else {
         // 月をまたがない場合
         mondayFullDate = `${date.getFullYear()}-${date.getMonth() + 1}-${mondayDate}`; 
