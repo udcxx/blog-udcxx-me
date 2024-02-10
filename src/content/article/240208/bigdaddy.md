@@ -151,7 +151,8 @@ kintone.events.on('app.record.create.submit', async (event) => {
     await makeDummy(newApp.app, appForm);
 
     // 完成したアプリのURLをレコードに戻す
-    event.record.appUrl.value = 'https://cy-dai-uezu.cybozu.com/k/' + newApp.app + '/';
+    // subdomain 部分をサブドメインに置き換える
+    event.record.appUrl.value = 'https://subdomain.cybozu.com/k/' + newApp.app + '/';
     
     return event;
 });
