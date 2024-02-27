@@ -1,7 +1,7 @@
 ---
 title: サブスクを作ればいいのでは
 date: 2019-12-18
-tags: Life Money
+tags: Money Life
 eyecatch: 191218.jpg
 ---
 

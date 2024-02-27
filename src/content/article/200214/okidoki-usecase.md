@@ -1,7 +1,7 @@
 ---
 title: Okidokiポイントの移行先を検討する
 date: 2020-02-14
-tags: Life Money
+tags: Money Life
 eyecatch: 200214.jpg
 ---
 

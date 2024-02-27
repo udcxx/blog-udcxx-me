@@ -1,7 +1,7 @@
 ---
 title: お金の流れを整えてみました
 date: 2019-05-04
-tags: Life Money
+tags: Money Life
 eyecatch: 190504.jpg
 ---
 
