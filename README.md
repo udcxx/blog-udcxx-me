@@ -148,7 +148,7 @@ blog-udcxx-me
 
 * 2019/10/01    ブログリリース
 * 2020/11/14    Githubにソースコードを公開
-* 2023/MM/YY    Nuxt.jsをv2→v3に移行。記事管理をcontent v2に移行。
+* 2023/06/17    Nuxt.jsをv2→v3に移行 blog-udcxx-me v1.0.0 としてリリース [📓 ReleaseNote](https://github.com/udcxx/blog-udcxx-me/releases/tag/v.1.0.0)
 
 
 

@@ -18,8 +18,12 @@ export default defineNuxtConfig({
                 { name: 'twitter:creator', content: '@udc_xx' },
             ],
             link: [
-                { rel: 'icon', type: 'image/x-icon', href: '/images/favicon.ico' }
+                { rel: 'icon', type: 'image/x-icon', href: '/images/favicon.ico' },
+                { rel: 'stylesheet', href: '/highlight/highlightjs.min.css'}
             ],
+            script: [
+                { src: '/highlight/highlight.min.js'}
+            ]
         }
     },
     css: [
