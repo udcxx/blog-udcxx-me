@@ -201,18 +201,16 @@ code {
 
 pre {
     margin: 2.4rem auto;
-    padding: 1.8rem 1.6rem;
-    overflow: hidden;
-    overflow-x: scroll;
     color: #d9d9d9;
     @include fontsize(14);
     line-height: 1.8rem;
-    white-space: pre-wrap;
-    background-color: #2c2c2c;
     border-radius: 0.5rem;
 
     code {
-        padding: 0;
+        padding: 1.8rem 1.6rem;
+        overflow: hidden;
+        overflow-x: scroll;
+        background-color: #2c2c2c !important;
     }
 }
 

@@ -35,7 +35,10 @@
             let target = document.querySelector('h2');
             let targetParent = target.parentNode;
             targetParent.insertBefore(googleAd, target)
-        } 
+        }
+        document.querySelectorAll('pre code').forEach((el) => {
+            hljs.highlightElement(el);
+        });
     })
 </script>
 
