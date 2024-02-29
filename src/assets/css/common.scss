@@ -180,6 +180,10 @@ li::before {
     top: -0.3rem;
 }
 
+ol li::before {
+    content: none;
+}
+
 blockquote {
     margin: 2.4rem;
     border-left: solid 5px #2c2c2c;
