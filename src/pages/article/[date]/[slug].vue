@@ -35,7 +35,10 @@
             let target = document.querySelector('h2');
             let targetParent = target.parentNode;
             targetParent.insertBefore(googleAd, target)
-        } 
+        }
+        document.querySelectorAll('pre code').forEach((el) => {
+            hljs.highlightElement(el);
+        });
     })
 </script>
 
@@ -62,6 +65,7 @@
             </div>
             <div class="article_body">
                 <content-doc :head="false" />
+                <a href="https://www.buymeacoffee.com/udcxx" target="_blank" class="buymeacoffee"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
                 <adsbygoogle ad-slot="2499763349" style="max-width: calc(768px - 1rem); margin: 2rem auto;" />
                 <adsbygoogle ad-slot="2499763349" style="max-width: calc(768px - 1rem); margin: 2rem auto;" />
             </div>
@@ -207,6 +211,15 @@
         margin: 6rem auto;
         border-top: none; border-left: none; border-right: none;
         border-bottom: 3px solid #F49D37;
+    }
+
+    .buymeacoffee {
+        margin: 4rem auto 2rem;
+        display: block;
+
+        img {
+            margin: 0 auto;
+        }
     }
 }
 
