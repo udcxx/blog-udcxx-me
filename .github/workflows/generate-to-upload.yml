@@ -33,4 +33,4 @@ jobs:
                 username: ${{ secrets.FTP_USERNAME }}  # FTPサーバのアカウント名
                 password: ${{ secrets.FTP_PASSWORD }}  # FTPサーバのパスワード
                 server-dir: /public_html/play.udcxx.me/blog/ # アップロード先のリモートパス
-                local-dir: .output/public # ローカルのアップロードしたいフォルダのパス
+                local-dir: .output/public/ # ローカルのアップロードしたいフォルダのパス
