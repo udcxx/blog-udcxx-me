@@ -1,0 +1,36 @@
+name: Generate to Upload
+
+on: 
+    push:
+        branches: ['dev-githubactions']
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        strategy:
+          matrix:
+            node-version: [18.4.0]
+        steps:
+            - uses: actions/checkout@v3
+            - name: Use Node.js ${{ matrix.node-version }}
+              uses: actions/setup-node@v3
+              with:
+                node-version: ${{ matrix.node-version }}
+                cache: "npm"
+            - name: npm install # パッケージをインストール
+              run: npm install
+            - name: generate # SSG
+              run: npm run blog
+
+            - name: List output files
+              run: ls -la dist/ # ファイルリストを表示
+
+            - name: Deploy via FTP⏫
+              uses: SamKirkland/FTP-Deploy-Action@4.0.0
+              with:
+                server: ${{ secrets.FTP_SERVER }}      # FTPサーバのホスト
+                username: ${{ secrets.FTP_USERNAME }}  # FTPサーバのアカウント名
+                password: ${{ secrets.FTP_PASSWORD }}  # FTPサーバのパスワード
+                server-dir: /public_html/play.udcxx.me/blog/ # アップロード先のリモートパス
+                local-dir: .output/public # ローカルのアップロードしたいフォルダのパス
