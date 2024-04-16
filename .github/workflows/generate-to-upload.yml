@@ -2,7 +2,7 @@ name: Generate to Upload
 
 on: 
     push:
-        branches: ['dev-githubactions']
+        branches: ['blog']
 
 jobs:
     build:
@@ -32,5 +32,5 @@ jobs:
                 server: ${{ secrets.FTP_SERVER }}      # FTPサーバのホスト
                 username: ${{ secrets.FTP_USERNAME }}  # FTPサーバのアカウント名
                 password: ${{ secrets.FTP_PASSWORD }}  # FTPサーバのパスワード
-                server-dir: /public_html/dev-blog.udcxx.me/ # アップロード先のリモートパス
+                server-dir: /public_html/blog.udcxx.me/ # アップロード先のリモートパス
                 local-dir: .output/public/ # ローカルのアップロードしたいフォルダのパス
