@@ -1,7 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
-import secretInfos from './secret-infos.json';
-
 export default defineNuxtConfig({
     srcDir: 'src/',
     app: {
@@ -42,7 +40,7 @@ export default defineNuxtConfig({
         '@nuxt/content',
         '@nuxt/image-edge',
         'nuxt-simple-sitemap',
-        ['@nuxtjs/google-adsense', { id: secretInfos.googlead.id }]
+        ['@nuxtjs/google-adsense', { id: 'ca-pub-1301045842322864' }]
     ],
     typescript: {
         strict: false
