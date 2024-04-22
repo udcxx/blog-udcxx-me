@@ -18,19 +18,30 @@ jobs:
               with:
                 node-version: ${{ matrix.node-version }}
                 cache: "npm"
-            - name: npm install # パッケージをインストール
+            - name: 📦️ Install npm
               run: npm install
-            - name: generate # SSG
+
+            - name: ⚒️ Generate Site (SSG)
               run: npm run generate
 
-            - name: List output files
-              run: ls -la .output/public/ # ファイルリストを表示
+            - run: which lftp || sudo apt-get update -y && sudo apt-get install lftp -y
 
-            - name: 📂 Sync files
-              uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-              with:
-                server: ${{ secrets.FTP_SERVER }}      # FTPサーバのホスト
-                username: ${{ secrets.FTP_USERNAME }}  # FTPサーバのアカウント名
-                password: ${{ secrets.FTP_PASSWORD }}  # FTPサーバのパスワード
-                server-dir: /public_html/blog.udcxx.me/ # アップロード先のリモートパス
-                local-dir: .output/public/ # ローカルのアップロードしたいフォルダのパス
+            - name: 🚚 FTP Upload
+              run: |                
+                HOST=${{ secrets.FTP_SERVER }}
+                USERNAME=${{ secrets.FTP_USERNAME }}
+                PASSWORD=${{ secrets.FTP_PASSWORD }}
+                REMOTE="/public_html/blog.udcxx.me/"
+                LOCAL=".output/public/"
+                FROM="$LOCAL"
+                TO="$REMOTE"
+                lftp <<EOF
+                open -u $USERNAME,$PASSWORD $HOST
+                set ssl:check-hostname false
+                mirror \
+                --reverse \
+                --parallel=10 \
+                $FROM \
+                $TO \
+                exit \
+                EOF
