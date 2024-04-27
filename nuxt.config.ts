@@ -25,6 +25,8 @@ export default defineNuxtConfig({
         }
     },
     css: [
+        'assets/css/font-bizudpgothic.css',
+        'assets/css/font-notocoloremoji.css',
         'assets/css/common.scss'
     ],
     vite: {
