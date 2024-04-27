@@ -125,7 +125,7 @@
     height: 100%;
     margin-left: 4rem;
     position: sticky;
-    top: 8vh;
+    top: 7.5rem;
 
     .article_meta {
         padding: 2rem;
