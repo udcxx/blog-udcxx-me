@@ -90,7 +90,8 @@ export default {
         margin: 0 auto;
         text-align: center;
         font-size: 10rem;
-        font-family: 'Noto Color Emoji', sans-serif;
+        font-family: 'Noto Color Emoji', 'BIZ UDPGothic', sans-serif;
+        font-weight: 400;
         line-height: 1em;
         display: block;
         position: relative;
