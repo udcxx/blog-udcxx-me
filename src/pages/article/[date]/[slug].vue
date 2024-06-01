@@ -17,6 +17,20 @@
     const description = article.description ? article.description : '無趣味なりにつらつらと戯言を。フロントエンドと車にちょっぴり興味あり。';
     const ogImage = article.eyecatch ? article.eyecatch : '/images/blog-card.png';
 
+    const adjustEmoji = (emoji) => {
+        let needAdd = true;
+        let newEmoji = '';
+        for (let i = 0; i < emoji.length; i++) {
+            const charCode = emoji.charCodeAt(i).toString(16);
+            if (charCode === 'fe0f') { needAdd = false; }
+            newEmoji += '0x' + charCode;
+        }
+        if (needAdd) {
+            newEmoji += '0xfe0f';
+        }
+        return String.fromCodePoint(...newEmoji.split('0x').slice(1).map(hex => parseInt(hex, 16)));
+    }
+
     useHead({
         title: `${article.title} | 無趣味の戯言`,
         meta: [
@@ -48,8 +62,8 @@
     <div class="article">
         <div class="article_head">
             <div class="article_head--emoji">
-                <span v-if="article.eyecatchEmoji">{{ article.eyecatchEmoji }}</span>
-                <span v-else="article.eyecatchEmoji">📄</span>
+                <span v-if="article.eyecatchEmoji">{{ adjustEmoji(article.eyecatchEmoji) }}</span>
+                <span v-else="article.eyecatchEmoji">{{ adjustEmoji('📄') }}</span>
             </div>
             <h1 class="article_head--title">{{ article.title }}</h1>
         </div>
@@ -97,7 +111,8 @@
         font-size: 7.5rem;
         color: #f7f7f7;
         margin-bottom: 10rem;
-        font-family: 'Noto Color Emoji', sans-serif;
+        font-family: 'Noto Color Emoji', 'BIZ UDPGothic', sans-serif;
+        font-weight: 400;
     }
 
     .article_head--title {
