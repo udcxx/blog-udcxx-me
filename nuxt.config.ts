@@ -38,6 +38,11 @@ export default defineNuxtConfig({
             }
         }
     },
+    nitro: {
+        prerender: {
+            failOnError: false
+        }
+    },
     modules: [
         '@nuxt/content',
         '@nuxt/image-edge',
