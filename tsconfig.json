@@ -4,7 +4,7 @@
 
   "compilerOptions": {
     "moduleResolution": "node",
-    "types": [ "@nuxt/image-edge", "nuxt-simple-sitemap"],
+    "types": ["nuxt-simple-sitemap"],
     "resolveJsonModule": true
   }
 }

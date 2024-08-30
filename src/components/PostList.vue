@@ -3,7 +3,7 @@
         <li v-for="(article, index) of articles" :key="article.slug" class="postitem">
             <NuxtLink :to="article._path + '/'" class="postitem--link">
                 <div class="postitem--background">
-                    <nuxt-img 
+                    <img 
                         v-if="article.eyecatch" 
                         :src="'/images/' + article.eyecatch" 
                         alt="" 
