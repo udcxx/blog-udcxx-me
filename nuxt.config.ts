@@ -45,7 +45,7 @@ export default defineNuxtConfig({
   nitro: {
       prerender: {
           failOnError: false,
-          routes: ['/sitemap.xml']
+          routes: ['/sitemap.xml', '/feed.xml']
       }
   },
 
