@@ -20,7 +20,7 @@ export default defineEventHandler(async (event) => {
     articleNew.forEach((article) => {
         feed.addItem({
             link: article._path + '/',
-            date: new Date(article.date.slice(0, 10)),
+            date: new Date(article.date),
             content: generateContentFromAst(article.body.children),
             title: article.title,
         });
