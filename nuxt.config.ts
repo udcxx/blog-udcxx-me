@@ -44,13 +44,19 @@ export default defineNuxtConfig({
 
   nitro: {
       prerender: {
-          failOnError: false
+          failOnError: false,
+          routes: ['/sitemap.xml']
       }
+  },
+
+  routeRules: {
+    '/feed.xml': {
+        headers: { 'content-type': 'application/rss+xml; charset=UTF-8' },
+    }
   },
 
   modules: [
     '@nuxt/content',
-    'nuxt-simple-sitemap',
     ['@nuxtjs/google-adsense', { id: 'ca-pub-1301045842322864' }],
     '@nuxt/image'
   ],
@@ -61,12 +67,6 @@ export default defineNuxtConfig({
 
   content: {
       documentDriven: true
-  },
-
-  sitemap: {
-      siteUrl: 'https://blog.udcxx.me',
-      trailingSlash: true,
-      autoLastmod: false
   },
 
   compatibilityDate: '2024-08-29'
