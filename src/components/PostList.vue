@@ -1,9 +1,9 @@
 <template>
     <ul class="postlist">
-        <li v-for="(article, index) of articles" :key="article.slug" class="postitem">
+        <li v-if="(articles.length > 0)" v-for="(article, index) of articles" :key="article.slug" class="postitem">
             <NuxtLink :to="article._path + '/'" class="postitem--link">
                 <div class="postitem--background">
-                    <nuxt-img 
+                    <img 
                         v-if="article.eyecatch" 
                         :src="'/images/' + article.eyecatch" 
                         alt="" 
@@ -19,6 +19,7 @@
                 </div>
             </NuxtLink>
         </li>
+        <p v-else>記事がありません。</p>
     </ul>
 </template>
 

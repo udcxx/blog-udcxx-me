@@ -17,15 +17,16 @@
         "@nuxt/content": "^2.5.2",
         "@nuxtjs/google-adsense": "^2.1.0",
         "cpx2": "^4.2.0",
-        "nuxt-simple-sitemap": "^2.6.2",
+        "feed": "^4.2.2",
         "sass": "^1.61.0",
+        "sitemap": "^8.0.0",
         "vue-gtag-next": "^1.14.0"
     },
     "devDependencies": {
-        "@nuxt/image-edge": "^1.0.0-rc.1-28103886.fcc9b7a",
+        "@nuxt/image": "^1.8.0",
         "chokidar": "^3.3.0",
         "ftp-deploy": "^2.3.6",
         "npm-run-all": "^4.1.5",
-        "nuxt": "^3.5.3"
+        "nuxt": "^3.13.0"
     }
 }
