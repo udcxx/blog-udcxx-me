@@ -17,8 +17,8 @@ description: Google Analyticsのデータをもとに、このブログで読ま
 
 ![](/images/240921.png)
 
-**1位**：👑[VS Codeの隠しフォルダ設定を変更する | 無趣味の戯言](https://blog.udcxx.me/article/200408/vscode-files-exclude/)
-**2位**：[Macのゴミデータを削除する | 無趣味の戯言](https://blog.udcxx.me/article/200129/bastard-files/)
+**1位**：👑[VS Codeの隠しフォルダ設定を変更する | 無趣味の戯言](https://blog.udcxx.me/article/200408/vscode-files-exclude/)    
+**2位**：[Macのゴミデータを削除する | 無趣味の戯言](https://blog.udcxx.me/article/200129/bastard-files/)    
 **3位**：[Safariの仕様に悩まされた備忘録 | 無趣味の戯言](https://blog.udcxx.me/article/201207/safari-specification/)
 
 この結果を踏まえて記事の書き方を変えるつもりはありませんが、PV数がモチベーションになることは確かなので、読まれる記事の特徴とか、このブログの立ち位置を読み取ってみようと思います。
