@@ -1,5 +1,5 @@
 ---
-title: 11日連続でkintoneアプリなどを作って売る
+title: AIとコーディングするコツとか
 date: 2024-11-29
 tags: IT
 eyecatch: 
