@@ -265,4 +265,9 @@
         display: block;
     }
 }
+
+// Safari対策
+::-webkit-full-page-media, :future, :root .article_head .article_head--emoji {
+    font-family: -apple-system, serif;
+}
 </style>
