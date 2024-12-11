@@ -58,7 +58,7 @@ export default {
 
 .header_logo {
     padding: 0.5%;
-    height: 100%;
+    width: auto; height: 100%;
     float: left;
     text-align: left;
     align-items: center;
@@ -66,7 +66,7 @@ export default {
 
     .header_logo_img {
         height: 100%;
-        width: auto;
+        width: auto; min-width: 50px;
         display: block;
     }
 

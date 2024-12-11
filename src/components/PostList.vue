@@ -11,7 +11,7 @@
                         quality="70"
                         class="postitem--eyecatch" 
                         loading="lazy" />
-                    <span v-else class="postitem--eyecatchemoji">{{ article.eyecatchEmoji }}</span>
+                    <span v-else class="postitem--eyecatchemoji">{{ ajustEmoji(article.eyecatchEmoji) }}&#xfe0f;</span>
                 </div>
                 <div class="postitem--details">
                     <p class="postitem--title">{{ article.title }}</p>
@@ -28,6 +28,11 @@ export default {
     props: {
         articles: {
             required: true
+        }
+    },
+    methods: {
+        ajustEmoji(emoji) {
+            return emoji + '\uFE0F';
         }
     }
 }
@@ -127,5 +132,10 @@ export default {
         font-weight: 400;
         line-height: 1em;
     }
+}
+
+// Safari対策
+::-webkit-full-page-media, :future, :root .postitem--eyecatchemoji {
+    font-family: -apple-system, serif;
 }
 </style>
