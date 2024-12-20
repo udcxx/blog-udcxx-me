@@ -145,7 +145,7 @@ add_action('wp_enqueue_scripts', 'loadscript');
 
 テーマ制作時、毎回確認用のサーバーにアップするのも面倒なので、Gitlab側にpushしたら自動でサーバーにFTPでアップロードしてもらう仕組みも作りました。最近これ系にハマってる。
 
-```yml
+```
 deploy:
   stage: deploy
   image: node:lts # Dockerイメージの指定
