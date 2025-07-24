@@ -1,4 +1,4 @@
-<script setup>
+<script>
 const slug = useRoute().path.split('/');
 let article;
 let page = Number(slug[3]);
@@ -100,7 +100,8 @@ useHead({
 }
 
 .articles {
-    width: 100%; max-width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 1rem;
     box-sizing: border-box;
