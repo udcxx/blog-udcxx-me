@@ -1,4 +1,4 @@
-<script>
+<script setup>
 const slug = useRoute().path.split('/');
 let article;
 let page = Number(slug[3]);
@@ -25,6 +25,8 @@ useHead({
     title: `${slug[2]}タグの記事一覧｜無趣味の戯言`
 })
 </script>
+
+
 <template>
     <Header></Header>
 
@@ -107,7 +109,7 @@ useHead({
     box-sizing: border-box;
 
     &--tagname {
-        @include fontsize(80);
+        font-size: 80px;
         font-weight: 400;
         color: #6C7A7C;
         line-height: 0.8em;

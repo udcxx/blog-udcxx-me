@@ -1,59 +1,59 @@
 <script setup>
-    const article = await queryContent(useRoute().path).findOne();
+const article = await queryContent(useRoute().path).findOne();
 
-    const articleNew = await queryContent()
-        .sort({ date: -1 })
-        .limit(4)
-        .find();
+const articleNew = await queryContent()
+    .sort({ date: -1 })
+    .limit(4)
+    .find();
 
-    const articleTag = await queryContent()
-        .sort({ date: -1 })
-        .where({ tags: { $contains: article.tags.split(' ')[0] } })
-        .limit(4)
-        .find();
+const articleTag = await queryContent()
+    .sort({ date: -1 })
+    .where({ tags: { $contains: article.tags.split(' ')[0] } })
+    .limit(4)
+    .find();
 
-    const tagArticlesLink = `/tags/${article.tags.split(' ')[0]}/1/`;
+const tagArticlesLink = `/tags/${article.tags.split(' ')[0]}/1/`;
 
-    const description = article.description ? article.description : '無趣味なりにつらつらと戯言を。フロントエンドと車にちょっぴり興味あり。';
-    const ogImage = article.eyecatch ? article.eyecatch : '/images/blog-card.png';
+const description = article.description ? article.description : '無趣味なりにつらつらと戯言を。フロントエンドと車にちょっぴり興味あり。';
+const ogImage = article.eyecatch ? article.eyecatch : '/images/blog-card.png';
 
-    const adjustEmoji = (emoji) => {
-        let needAdd = true;
-        let newEmoji = '';
-        for (let i = 0; i < emoji.length; i++) {
-            const charCode = emoji.charCodeAt(i).toString(16);
-            if (charCode === 'fe0f') { needAdd = false; }
-            newEmoji += '0x' + charCode;
-        }
-        if (needAdd) {
-            newEmoji += '0xfe0f';
-        }
-        return String.fromCodePoint(...newEmoji.split('0x').slice(1).map(hex => parseInt(hex, 16)));
+const adjustEmoji = (emoji) => {
+    let needAdd = true;
+    let newEmoji = '';
+    for (let i = 0; i < emoji.length; i++) {
+        const charCode = emoji.charCodeAt(i).toString(16);
+        if (charCode === 'fe0f') { needAdd = false; }
+        newEmoji += '0x' + charCode;
     }
+    if (needAdd) {
+        newEmoji += '0xfe0f';
+    }
+    return String.fromCodePoint(...newEmoji.split('0x').slice(1).map(hex => parseInt(hex, 16)));
+}
 
-    useHead({
-        title: `${article.title} | 無趣味の戯言`,
-        meta: [
-            { name: 'description', content: description },
-            { name: 'og:image', content: ogImage}
-        ]
+useHead({
+    title: `${article.title} | 無趣味の戯言`,
+    meta: [
+        { name: 'description', content: description },
+        { name: 'og:image', content: ogImage }
+    ]
+});
+
+onMounted(() => {
+    const googleAd = document.querySelector('ins:nth-of-type(2)');
+    if (document.querySelectorAll('h2').length >= 3) {
+        let target = document.querySelector('h2:nth-of-type(2)');
+        let targetParent = target.parentNode;
+        targetParent.insertBefore(googleAd, target)
+    } else {
+        let target = document.querySelector('h2');
+        let targetParent = target.parentNode;
+        targetParent.insertBefore(googleAd, target)
+    }
+    document.querySelectorAll('pre code').forEach((el) => {
+        hljs.highlightElement(el);
     });
-
-    onMounted(() => {
-        const googleAd = document.querySelector('ins:nth-of-type(2)');
-        if (document.querySelectorAll('h2').length >= 3) {
-            let target = document.querySelector('h2:nth-of-type(2)');
-            let targetParent = target.parentNode;
-            targetParent.insertBefore(googleAd, target)
-        } else {
-            let target = document.querySelector('h2');
-            let targetParent = target.parentNode;
-            targetParent.insertBefore(googleAd, target)
-        }
-        document.querySelectorAll('pre code').forEach((el) => {
-            hljs.highlightElement(el);
-        });
-    })
+})
 </script>
 
 <template>
@@ -73,13 +73,17 @@
                     <div class="article_meta--title">公開</div>
                     <div class="article_meta--content"><time>{{ article.date.slice(0, 10) }}</time></div>
                     <div class="article_meta--title">タグ</div>
-                    <div class="article_meta--content"><Tags :tags="article.tags"></Tags></div>
+                    <div class="article_meta--content">
+                        <Tags :tags="article.tags"></Tags>
+                    </div>
                 </div>
                 <ShareButtons :title="article.title"></ShareButtons>
             </div>
             <div class="article_body">
                 <content-doc :head="false" />
-                <a href="https://www.buymeacoffee.com/udcxx" target="_blank" class="buymeacoffee"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+                <a href="https://www.buymeacoffee.com/udcxx" target="_blank" class="buymeacoffee"><img
+                        src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee"
+                        style="height: 60px !important;width: 217px !important;"></a>
                 <adsbygoogle ad-slot="2499763349" style="max-width: calc(768px - 1rem); margin: 2rem auto;" />
                 <adsbygoogle ad-slot="2499763349" style="max-width: calc(768px - 1rem); margin: 2rem auto;" />
             </div>
@@ -92,9 +96,10 @@
 
             <h3 class="recommend--tagname">{{ article.tags.split(' ')[0] }}</h3>
             <PostList :articles="articleTag" />
-            <NuxtLink :to="tagArticlesLink" class="recommend--morebutton">More {{ article.tags.split(' ')[0] }}... &Gt;</NuxtLink>
+            <NuxtLink :to="tagArticlesLink" class="recommend--morebutton">More {{ article.tags.split(' ')[0] }}... &Gt;
+            </NuxtLink>
         </div>
-        
+
     </div>
 
     <Footer></Footer>
@@ -124,7 +129,8 @@
 }
 
 .article_content {
-    width: 100%; max-width: 1024px;
+    width: 100%;
+    max-width: 1024px;
     margin: 0 auto;
     display: flex;
     flex-wrap: nowrap;
@@ -149,7 +155,7 @@
         background-color: #D1D5D5;
 
         @media (max-width:768px) {
-            width: 54.8rem;
+            width: 54%;
             padding: 1.2rem 1.2rem 0.5rem;
             display: inline-block;
 
@@ -160,7 +166,6 @@
 
         .article_meta--title {
             margin-top: 1em;
-            ;
             font-size: 1.6rem;
 
             &:nth-of-type(1) {
@@ -224,7 +229,9 @@
     hr {
         width: 8rem;
         margin: 6rem auto;
-        border-top: none; border-left: none; border-right: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
         border-bottom: 3px solid #F49D37;
     }
 
@@ -239,7 +246,8 @@
 }
 
 .recommend {
-    width: 100%; max-width: 1024px;
+    width: 100%;
+    max-width: 1024px;
     margin: 2rem auto;
 
     .postlist {
@@ -251,7 +259,7 @@
     }
 
     &--tagname {
-        @include fontsize(40);
+        font-size: 40px;
         font-weight: 400;
         color: #6C7A7C;
         line-height: 0.8em;
@@ -260,14 +268,16 @@
 
     &--morebutton {
         margin: 1rem 0 0 auto;
-        @include fontsize(16);
+        font-size: 16px;
         text-align: right;
         display: block;
     }
 }
 
 // Safari対策
-::-webkit-full-page-media, :future, :root .article_head .article_head--emoji {
+::-webkit-full-page-media,
+:future,
+:root .article_head .article_head--emoji {
     font-family: -apple-system, serif;
 }
 </style>

@@ -34,16 +34,6 @@ export default defineNuxtConfig({
       'assets/css/common.scss'
   ],
 
-  vite: {
-      css: {
-          preprocessorOptions: {
-              scss: {
-                  additionalData: '@import "@/assets/css/_vars.scss";',
-              }
-          }
-      }
-  },
-
   nitro: {
       prerender: {
           failOnError: false,

@@ -95,9 +95,8 @@ export default {
     &--eyecatchemoji {
         margin: 0 auto;
         text-align: center;
-        font-size: 10rem;
+        font-size: 10rem; font-weight: 400;
         font-family: 'Noto Color Emoji', 'BIZ UDPGothic', sans-serif;
-        font-weight: 400;
         line-height: 1em;
         display: block;
         position: relative;
@@ -120,7 +119,7 @@ export default {
     &--title {
         margin: 0;
         padding: 0.5rem;
-        @include fontsize(14, 16);
+        font-size: 14px;
         line-height: 1.2em;
         text-align: left;
     }
@@ -128,8 +127,7 @@ export default {
     &--date {
         margin: 0;
         padding: 0.5rem;
-        @include fontsize(10, 12);
-        font-weight: 400;
+        font-size: 10px; font-weight: 400;
         line-height: 1em;
     }
 }

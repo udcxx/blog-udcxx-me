@@ -1,23 +1,23 @@
 <script setup>
-    const articleNew = await queryContent()
+const articleNew = await queryContent()
     .sort({ date: -1 })
     .limit(8)
     .find();
 
-    const articleTagShorts = await queryContent()
-        .sort({ date: -1 }).where({ tags: { $contains: 'Shorts' } }).limit(4).find();
-    const articleTagIt = await queryContent()
-        .sort({ date: -1 }).where({ tags: { $contains: 'IT' } }).limit(4).find();
-    const articleTagCar = await queryContent()
-        .sort({ date: -1 }).where({ tags: { $contains: 'Car' } }).limit(4).find();
-    const articleTagLife = await queryContent()
-        .sort({ date: -1 }).where({ tags: { $contains: 'Life' } }).limit(4).find();
-    const articleTagGadget = await queryContent()
-        .sort({ date: -1 }).where({ tags: { $contains: 'Gadget' } }).limit(4).find();
-    const articleTagBook = await queryContent()
-        .sort({ date: -1 }).where({ tags: { $contains: 'Book' } }).limit(4).find();
-    const articleTagMU = await queryContent()
-        .sort({ date: -1 }).where({ tags: { $contains: 'MU' } }).limit(4).find();
+const articleTagShorts = await queryContent()
+    .sort({ date: -1 }).where({ tags: { $contains: 'Shorts' } }).limit(4).find();
+const articleTagIt = await queryContent()
+    .sort({ date: -1 }).where({ tags: { $contains: 'IT' } }).limit(4).find();
+const articleTagCar = await queryContent()
+    .sort({ date: -1 }).where({ tags: { $contains: 'Car' } }).limit(4).find();
+const articleTagLife = await queryContent()
+    .sort({ date: -1 }).where({ tags: { $contains: 'Life' } }).limit(4).find();
+const articleTagGadget = await queryContent()
+    .sort({ date: -1 }).where({ tags: { $contains: 'Gadget' } }).limit(4).find();
+const articleTagBook = await queryContent()
+    .sort({ date: -1 }).where({ tags: { $contains: 'Book' } }).limit(4).find();
+const articleTagMU = await queryContent()
+    .sort({ date: -1 }).where({ tags: { $contains: 'MU' } }).limit(4).find();
 </script>
 <template>
     <Header></Header>
@@ -142,8 +142,7 @@
     box-sizing: border-box;
 
     &--tagname {
-        @include fontsize(80);
-        font-weight: 400;
+        font-size: 80px; font-weight: 400;
         color: #6C7A7C;
         line-height: 0.8em;
         margin-bottom: 0;
@@ -151,7 +150,7 @@
 
     &--morebutton {
         margin: 1rem 0 0 auto;
-        @include fontsize(16);
+        font-size: 16px;
         text-align: right;
         display: block;
     }
@@ -172,6 +171,7 @@
                 .postitem:nth-of-type(4) {
                     display: block;
                 }
+
                 .postitem:nth-of-type(7), .postitem:nth-of-type(8) {
                     display: none;
                 }
