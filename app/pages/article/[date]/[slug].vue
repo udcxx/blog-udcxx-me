@@ -39,16 +39,17 @@ useHead({
     ]
 });
 
+import { onMounted } from 'vue'
+
 onMounted(() => {
     const googleAd = document.querySelector('ins:nth-of-type(2)');
-    if (document.querySelectorAll('h2').length >= 3) {
-        let target = document.querySelector('h2:nth-of-type(2)');
-        let targetParent = target.parentNode;
-        targetParent.insertBefore(googleAd, target)
-    } else {
-        let target = document.querySelector('h2');
-        let targetParent = target.parentNode;
-        targetParent.insertBefore(googleAd, target)
+    let target = document.querySelectorAll('h2').length >= 3
+        ? document.querySelector('h2:nth-of-type(2)')
+        : document.querySelector('h2');
+
+    console.log(`target: ${target}`);
+    if (googleAd && target && target.parentNode) {
+        target.parentNode.insertBefore(googleAd, target);
     }
     document.querySelectorAll('pre code').forEach((el) => {
         hljs.highlightElement(el);
@@ -57,8 +58,6 @@ onMounted(() => {
 </script>
 
 <template>
-    <Header></Header>
-
     <div class="article">
         <div class="article_head">
             <div class="article_head--emoji">

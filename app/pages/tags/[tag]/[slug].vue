@@ -28,8 +28,6 @@ useHead({
 
 
 <template>
-    <Header></Header>
-
     <div class="blog_title">
         <img src="~/assets/images/logo.png" alt="" class="blog_title--logo">
         <NuxtLink to="/"><img src="~/assets/images/blogName.png" alt="" class="blog_title--name"></NuxtLink>

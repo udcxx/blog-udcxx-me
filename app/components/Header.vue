@@ -15,28 +15,34 @@
     </div>
 </template>
 
-<script>
-export default {
-    data() {
-        return {
-            position: 1
-        }
-    },
-    mounted() {
-        document.onscroll = (e) => {
-            this.y = document.documentElement.scrollTop || document.body.scrollTop;
-            this.h = document.body.clientHeight;
-            this.position = (this.h - this.y) / this.h;
+<script setup>
+import { ref, onMounted, onUnmounted } from 'vue'
 
-            if (this.position < 0.9) {
-                document.querySelector('.header').classList.add('active');
-            } else {
-                document.querySelector('.header').classList.remove('active');
-            }
+const y = ref(0)
+const h = ref(0)
+const position = ref(1)
 
-        }
+function handleScroll() {
+    y.value = document.documentElement.scrollTop || document.body.scrollTop
+    h.value = document.body.clientHeight
+    position.value = (h.value - y.value) / h.value
+
+    const header = document.querySelector('.header')
+    if (!header) return
+    if (position.value < 0.9) {
+        header.classList.add('active')
+    } else {
+        header.classList.remove('active')
     }
 }
+
+onMounted(() => {
+    window.addEventListener('scroll', handleScroll)
+})
+
+onUnmounted(() => {
+    window.removeEventListener('scroll', handleScroll)
+})
 </script>
 
 <style lang="scss">

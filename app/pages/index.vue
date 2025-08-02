@@ -19,8 +19,9 @@ const articleTagBook = await queryContent()
 const articleTagMU = await queryContent()
     .sort({ date: -1 }).where({ tags: { $contains: 'MU' } }).limit(4).find();
 </script>
+
 <template>
-    <Header></Header>
+    <!-- <Header /> -->
 
     <div class="blog_title">
         <img src="~/assets/images/logo.png" alt="" class="blog_title--logo">
