@@ -47,7 +47,6 @@ onMounted(() => {
         ? document.querySelector('h2:nth-of-type(2)')
         : document.querySelector('h2');
 
-    console.log(`target: ${target}`);
     if (googleAd && target && target.parentNode) {
         target.parentNode.insertBefore(googleAd, target);
     }
