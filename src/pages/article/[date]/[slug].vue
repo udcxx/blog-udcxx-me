@@ -76,6 +76,12 @@
                     <div class="article_meta--content"><Tags :tags="article.tags"></Tags></div>
                 </div>
                 <ShareButtons :title="article.title"></ShareButtons>
+                <div class="article_sidead">
+                    <a href="https://shopa.jp/Z44235P93P9V/?url=/collections/home-digital" target="_blank" rel="noopener">
+                        <img src="~/assets/images/ad-gymgate-432x432.png"
+                            alt="話題の家電やデジタル製品がレンタルで試せる GYMGATE 商品一覧はこちらから">
+                    </a>
+                </div>
             </div>
             <div class="article_body">
                 <content-doc :head="false" />
@@ -181,6 +187,19 @@
                 text-align: left;
                 font-size: 1.4rem;
             }
+        }
+    }
+
+    .article_sidead {
+        margin-top: 2rem;
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+
+        @media (max-width:768px) {
+            display: none;
         }
     }
 
