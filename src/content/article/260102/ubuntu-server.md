@@ -40,7 +40,7 @@ Rufus で書き込むとき、「スタート」をクリックすると、ISO �
 
 サーバーとして運用する際、Mac や Surface などの別 PC から SSH で接続できないと不便なので、先に設定します。といっても、以下のコマンドを順番に実行するだけです。
 
-```bash
+```
 $ sudo apt install openssh-server
 $ sudo systemctl start ssh
 $ sudo systemctl status ssh
@@ -55,7 +55,7 @@ $ sudo systemctl status ssh
 
 調べてみたら、ディスプレイが閉じたことを検知するスイッチの設定を変更すればいいみたいです。具体的には以下のように設定します。
 
-```bash
+```
 $ sudo vim /etc/systemd/logind.conf
 ```
 
@@ -67,7 +67,7 @@ bashHandleLidSwitch=ignore
 
 `:wq` で保存して終了したら、以下のコマンドで設定を反映させます。
 
-```bash
+```
 $ sudo systemctl restart systemd-logind
 $ sudo reboot
 ```
