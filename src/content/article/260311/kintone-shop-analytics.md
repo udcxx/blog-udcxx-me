@@ -2,8 +2,8 @@
 title: ECの売上改善施策
 date: 2026-03-11
 tags: EC
-eyecatch: 🍄
-eyecatchEmoji: 
+eyecatch: 
+eyecatchEmoji: 🍄
 description: kintoneのカスタマイズを販売しているECサイトの改善を素人が挑戦してみようとしているよってお話です。
 ---
 

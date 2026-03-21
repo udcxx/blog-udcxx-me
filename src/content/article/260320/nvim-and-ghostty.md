@@ -2,8 +2,8 @@
 title: n度目のvimチャレンジ
 date: 2026-03-20
 tags: IT
-eyecatch: 🏃‍♂️
-eyecatchEmoji: 
+eyecatch: 
+eyecatchEmoji: 🏃‍♂️
 description: 人生n度目のvim使ってみたい欲が出てきたので、今までより本気でチャレンジしてみてます。
 ---
 
