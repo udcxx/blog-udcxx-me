@@ -1,7 +1,7 @@
 ---
 title: Ubuntu で外付け HDD を NAS にする
 date: 2026-01-17
-tags: IT
+tags: Linux IT
 eyecatch: 
 eyecatchEmoji: 🍆
 description: Linux（Ubuntu Server）の勉強がてら、自宅内 NAS を構築してみました。

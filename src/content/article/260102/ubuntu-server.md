@@ -1,7 +1,7 @@
 ---
 title: Ubuntu Server 入れてみた
 date: 2026-01-02
-tags: IT Linux
+tags: Linux IT
 eyecatch: 
 eyecatchEmoji: 🐧
 description: 古いノートパソコンに Ubuntu Server をインストールして Linux の練習環境を作りました。
