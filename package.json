@@ -24,7 +24,8 @@
     "devDependencies": {
         "@nuxt/image": "^1.11.0",
         "chokidar": "^3.6.0",
-        "nuxt": "^3.17.7"
+        "nuxt": "^3.17.7",
+        "wrangler": "^3.107.0"
     },
     "overrides": {
         "cac": "^6.7.14",

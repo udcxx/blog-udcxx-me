@@ -22,22 +22,22 @@
 
 主に、日々気づいた技術的なTipsの備忘録を書き残す場として利用していきます。
 
-Nuxt.jsやcontentを利用して静的デプロイし、Cloudflare Pagesから配信しています。
+Nuxt.jsやcontentを利用して静的デプロイし、Cloudflare Workersから配信しています。
 
 
 <h2 id="technology"> :dolphin: 主な使用技術</h2>
 
 ### Nuxt.js v3
 
-フレームワークとして [Nuxt](https://nuxt.com/) を使用し、静的サイト生成（Static Site Generation, SSG）機能を用いて生成されたファイルを Cloudflare Pages 上に公開しています。
+フレームワークとして [Nuxt](https://nuxt.com/) を使用し、静的サイト生成（Static Site Generation, SSG）機能を用いて生成されたファイルを Cloudflare Workers (Workers Assets) 上に公開しています。
 
 ### Nuxt Content v2 
 
 マークダウン形式（`*.md`）で記述された記事ファイルから各記事ページを生成・管理するために、 [Nuxt Content](https://content.nuxtjs.org/) モジュールを使用しています。
 
-### Cloudflare Pages
+### Cloudflare Workers (Workers Assets)
 
-生成された静的サイトは、GitHub Actions 連携経由で [Cloudflare Pages](https://pages.cloudflare.com/) へ自動デプロイされます。
+生成された静的サイトは、GitHub Actions 連携経由で [Cloudflare Workers](https://workers.cloudflare.com/) へ自動デプロイされます。
 
 
 
