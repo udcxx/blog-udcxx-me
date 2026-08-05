@@ -22,30 +22,30 @@
 
 主に、日々気づいた技術的なTipsの備忘録を書き残す場として利用していきます。
 
-Nuxt.jsやcontentを利用して静的デプロイし、一般的なレンタルサーバーから配信しています。
+Nuxt.jsやcontentを利用して静的デプロイし、Cloudflare Pagesから配信しています。
 
 
 <h2 id="technology"> :dolphin: 主な使用技術</h2>
 
 ### Nuxt.js v3
 
-フレームワークとして [Nuxt](https://nuxt.com/) を使用し、静的サイト生成（Static Site Generation, SSG）機能を用いて生成されたファイルをサーバー上に公開しています。
+フレームワークとして [Nuxt](https://nuxt.com/) を使用し、静的サイト生成（Static Site Generation, SSG）機能を用いて生成されたファイルを Cloudflare Pages 上に公開しています。
 
 ### Nuxt Content v2 
 
 マークダウン形式（`*.md`）で記述された記事ファイルから各記事ページを生成・管理するために、 [Nuxt Content](https://content.nuxtjs.org/) モジュールを使用しています。
 
-### ftp-deploy
+### Cloudflare Pages
 
-生成されたファイルをサーバー上にアップロードするために、[ftp-deploy](https://www.npmjs.com/package/ftp-deploy) を使用しています。
+生成された静的サイトは、GitHub Actions 連携経由で [Cloudflare Pages](https://pages.cloudflare.com/) へ自動デプロイされます。
 
 
 
 <h2 id="how_to_use"> :dolphin: 使用方法</h2>
 
-1. （初回のみ：リポジトリをクローンし、 `$ npm install` で必要なプラグインをインストールします。また、管理者から `secret-infos.js` を入手し、ルートディレクトリ配下に保存します。 ）
-2. `content/` ディレクトリ配下に `YYMMDD` の形式でディレクトリを作成し、その中に `article-title.md` の形式で命名したマークダウンファイルに記事を保存します
-3. 最後に `$ npm run blog` を実行することで、デプロイ・アップロードが完了し、公開されます :tada:
+1. （初回のみ：リポジトリをクローンし、 `$ npm install` で必要なプラグインをインストールします。）
+2. `src/content/` ディレクトリ配下に `YYMMDD` の形式でディレクトリを作成し、その中に `article-title.md` の形式で命名したマークダウンファイルに記事を保存します
+3. `blog` ブランチに push することで、GitHub Actions が自動的にビルドおよび Cloudflare Pages へのデプロイを実行します :tada:
 
 
 
