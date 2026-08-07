@@ -35,9 +35,9 @@ Nuxt.jsやcontentを利用して静的デプロイし、Cloudflare Pagesから�
 
 マークダウン形式（`*.md`）で記述された記事ファイルから各記事ページを生成・管理するために、 [Nuxt Content](https://content.nuxtjs.org/) モジュールを使用しています。
 
-### Cloudflare Pages
+### Cloudflare Workers
 
-生成された静的サイトは、GitHub Actions 連携経由で [Cloudflare Pages](https://pages.cloudflare.com/) へ自動デプロイされます。
+生成された静的サイトは、GitHub Actions 連携経由で [Cloudflare Workers](https://www.cloudflare.com/ja-jp/developer-platform/products/workers/) へ自動デプロイされます。
 
 
 
