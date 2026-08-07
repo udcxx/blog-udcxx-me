@@ -35,11 +35,10 @@ Nuxt.jsやcontentを利用して静的デプロイし、Cloudflare Workersから
 
 マークダウン形式（`*.md`）で記述された記事ファイルから各記事ページを生成・管理するために、 [Nuxt Content](https://content.nuxtjs.org/) モジュールを使用しています。
 
-### Cloudflare Workers (Workers Assets)
 
-生成された静的サイトは、GitHub Actions 連携経由で [Cloudflare Workers](https://workers.cloudflare.com/) へ自動デプロイされます。
+### Cloudflare Workers
 
-
+生成された静的サイトは、GitHub Actions 連携経由で [Cloudflare Workers](https://www.cloudflare.com/ja-jp/developer-platform/products/workers/) へ自動デプロイされます。
 
 <h2 id="how_to_use"> :dolphin: 使用方法</h2>
 
