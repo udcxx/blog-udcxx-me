@@ -2,7 +2,7 @@
 title: Shiorimeをリリースしました
 date: 2026-09-02
 tags: IT
-eyecatch: 
+eyecatch: 260902.png 
 eyecatchEmoji: 🔖 
 description: 読書記録サービス「Shiorime」をリリースしました！気になったページの写真を撮影するだけで簡単に読書メモを残すことができます。
 ---
@@ -16,6 +16,8 @@ description: 読書記録サービス「Shiorime」をリリースしました�
 ということで、自分が使いやすい読書メモサービス「Shiorime（シオリメ）」を作ってリリースしたので、今日はそのご報告です！
 
 ▶️ [Shiorime](https://shiorime.udcxx.me/)
+
+![](/images/260902.png)
 
 ## Shiorimeの使い方
 
