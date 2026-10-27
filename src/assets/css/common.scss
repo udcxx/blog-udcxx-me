@@ -203,12 +203,16 @@ pre {
     @include fontsize(14);
     line-height: 1.8rem;
     border-radius: 0.5rem;
+    background-color: #272822;
+    overflow-x: auto;
 
     code {
+        display: block;
         padding: 1.8rem 1.6rem;
-        overflow: hidden;
-        overflow-x: scroll;
-        background-color: #2c2c2c !important;
+        overflow-x: auto;
+        background-color: transparent !important;
+        border-radius: 0;
+        color: inherit;
     }
 }
 

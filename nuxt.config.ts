@@ -17,11 +17,7 @@ export default defineNuxtConfig({
               { name: 'twitter:creator', content: '@udc_xx' },
           ],
           link: [
-              { rel: 'icon', type: 'image/x-icon', href: '/images/favicon.ico' },
-              { rel: 'stylesheet', href: '/highlight/highlightjs.min.css'}
-          ],
-          script: [
-              { src: '/highlight/highlight.min.js'}
+              { rel: 'icon', type: 'image/x-icon', href: '/images/favicon.ico' }
           ]
       }
   },
@@ -66,7 +62,26 @@ export default defineNuxtConfig({
   },
 
   content: {
-      documentDriven: true
+      documentDriven: true,
+      highlight: {
+          theme: 'monokai',
+          preload: [
+              'diff',
+              'json',
+              'js',
+              'ts',
+              'css',
+              'scss',
+              'shell',
+              'bash',
+              'html',
+              'md',
+              'yaml',
+              'vue',
+              'php',
+              'python'
+          ]
+      }
   },
 
   compatibilityDate: '2024-08-29'
