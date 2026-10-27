@@ -41,18 +41,13 @@
 
     onMounted(() => {
         const googleAd = document.querySelector('ins:nth-of-type(2)');
-        if (document.querySelectorAll('h2').length >= 3) {
-            let target = document.querySelector('h2:nth-of-type(2)');
-            let targetParent = target.parentNode;
-            targetParent.insertBefore(googleAd, target)
-        } else {
-            let target = document.querySelector('h2');
-            let targetParent = target.parentNode;
-            targetParent.insertBefore(googleAd, target)
+        const h2List = document.querySelectorAll('h2');
+        if (googleAd && h2List.length > 0) {
+            const target = h2List.length >= 3 ? h2List[1] : h2List[0];
+            if (target && target.parentNode) {
+                target.parentNode.insertBefore(googleAd, target);
+            }
         }
-        document.querySelectorAll('pre code').forEach((el) => {
-            hljs.highlightElement(el);
-        });
     })
 </script>
 
