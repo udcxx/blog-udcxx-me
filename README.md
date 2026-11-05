@@ -11,7 +11,6 @@
 * <a href="#about_blog">無趣味の戯言について</a>
 * <a href="#technology">主な使用技術</a>
 * <a href="#how_to_use">使用方法</a>
-* <a href="#directory">ディレクトリ構成</a>
 * <a href="#url">URL構成</a>
 * <a href="#history">変更履歴</a>
 * <a href="#contact">管理者への連絡</a>
@@ -22,48 +21,33 @@
 
 主に、日々気づいた技術的なTipsの備忘録を書き残す場として利用していきます。
 
-Nuxt.jsやcontentを利用して静的デプロイし、Cloudflare Pagesから配信しています。
+フレームワークにはAstroを利用して、静的デプロイの上、Cloudflare Workersから配信しています。
 
 
 <h2 id="technology"> :dolphin: 主な使用技術</h2>
 
 ### Nuxt.js v3
 
-フレームワークとして [Nuxt](https://nuxt.com/) を使用し、静的サイト生成（Static Site Generation, SSG）機能を用いて生成されたファイルを Cloudflare Pages 上に公開しています。
-
-### Nuxt Content v2 
-
-マークダウン形式（`*.md`）で記述された記事ファイルから各記事ページを生成・管理するために、 [Nuxt Content](https://content.nuxtjs.org/) モジュールを使用しています。
+フレームワークとして [Astro](https://astro.build/) を使用し、静的サイト生成（Static Site Generation, SSG）機能を用いて生成されたファイルを Cloudflare Workers 上に公開しています。
 
 ### Cloudflare Workers
 
 生成された静的サイトは、GitHub Actions 連携経由で [Cloudflare Workers](https://www.cloudflare.com/ja-jp/developer-platform/products/workers/) へ自動デプロイされます。
 
 
-
 <h2 id="how_to_use"> :dolphin: 使用方法</h2>
 
 1. （初回のみ：リポジトリをクローンし、 `$ npm install` で必要なプラグインをインストールします。）
-2. `src/content/` ディレクトリ配下に `YYMMDD` の形式でディレクトリを作成し、その中に `article-title.md` の形式で命名したマークダウンファイルに記事を保存します
+2. `src/content/blog/` ディレクトリ配下に `YYMMDD` の形式でディレクトリを作成し、その中に `article-title.md` の形式で命名したマークダウンファイルに記事を保存します
 3. `blog` ブランチに push することで、GitHub Actions が自動的にビルドおよび Cloudflare Pages へのデプロイを実行します :tada:
 
 
 
 <h2 id="branch"> :dolphin: ブランチルール</h2>
 
-### master
+### main
 
-現在公開されているブログの基盤を管理するブランチです。
-
-記事データはHello Worldのみを保持します。
-
-### blog
-
-記事の更新に使用するブランチです。
-
-`master` ブランチが更新されたら、適宜取り込みますが、`master` ブランチにmergeする必要はありません。
-
-記事データを用いたテストを行いたい場合には、`blog` ブランチから分岐したブランチに、`dev` ・ `fix` または `future` ブランチにて開発した内容をmergeし、テストを行います。
+現在公開されているブログを管理するブランチです。
 
 ### {type}-{name}
 
@@ -77,49 +61,6 @@ Nuxt.jsやcontentを利用して静的デプロイし、Cloudflare Pagesから�
 * `fix` ・・・バグなどを修正するブランチです
 * `test` ・・・blogブランチのデータを用いてテストを行うためのブランチです
 * `future` ・・・将来的な実装に向けて、試験的なブランチです
-
-
-
-<h2 id="directory"> :dolphin: ディレクトリ構成</h2>
-
-```
-blog-udcxx-me
-┣━━ .nuxt                    #触らない。gitignore対象
-┣━━ .output                  #gitignore対象
-┃   ┣━━ public               #このディレクトリ配下をサーバーにアップする
-┃   ┗━━ server
-┣━━ assets                   #共通で使うcss/画像を格納するディレクトリ
-┃   ┣━━ css
-┃   ┗━━ images
-┣━━ components               #コンポーネント
-┣━━ content                  #記事を管理するディレクトリ
-┃   ┗━━ article
-┃       ┗━━ 181208
-┃           ┗━━ article-title.md
-┣━━ dist                     #触らない。gitignore対象
-┣━━ node_modules             #触らない。gitignore対象
-┣━━ pages
-┃   ┣━━ article
-┃   ┃   ┗━━ [date]
-┃   ┃       ┗━━ [slug].vue   #記事ページ
-┃   ┣━━ tags
-┃   ┃   ┗━━ [tag]
-┃   ┃       ┗━━ [slug].vue   #タグ別の一覧ページ
-┃   ┗━━ index.vue            #トップページ
-┣━━ public
-┣━━ static
-┃   ┗━━ images               #記事内で使う画像を格納する
-┣━━ .gitignore               #Gitで管理しないファイルを記載する
-┣━━ .npmrc                   #npmの設定ファイル
-┣━━ app.vue                  #全ページの枠になるファイル
-┣━━ movecont.js              #移行に際して記事ファイルのディレクトリを
-┃                             整えるために利用したスクリプト
-┣━━ nuxt.config.ts           #nuxtの設定ファイル
-┣━━ package-lock.json        #Nodeのパッケージファイル
-┣━━ package.json             #Nodeのパッケージファイル
-┣━━ README.md                #本ファイル
-┗━━ tsconfig.json            #TSの設定ファイル
-```
 
 
 <h2 id="url"> :dolphin: URL構成</h2>
@@ -149,6 +90,7 @@ blog-udcxx-me
 * 2019/10/01    ブログリリース
 * 2020/11/14    Githubにソースコードを公開
 * 2023/06/17    Nuxt.jsをv2→v3に移行 blog-udcxx-me v1.0.0 としてリリース [📓 ReleaseNote](https://github.com/udcxx/blog-udcxx-me/releases/tag/v.1.0.0)
+* 2026/11/05    FWをAstroに移行
 
 
 
