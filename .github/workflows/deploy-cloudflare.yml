@@ -1,8 +1,8 @@
-name: Deploy to Cloudflare Workers
+name: Deploy to Cloudflare Pages
 
 on:
   push:
-    branches: ['blog']
+    branches: ['main']
 
 jobs:
   deploy:
@@ -18,21 +18,18 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 'lts/*'
           cache: 'npm'
-
-      - name: Update npm
-        run: npm install -g npm@latest
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Generate site (SSG)
-        run: npm run generate
+      - name: Build site (Astro)
+        run: npm run build
 
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: deploy
+          command: pages deploy dist --project-name=blog-udcxx-me
