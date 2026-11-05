@@ -517,11 +517,12 @@ article {
         display: block;
         position: relative;
         opacity: 0;
+        background-color: none;
 
         &::before {
             content: '【広告】';
             position: absolute;
-            top: 0; left: 0;
+            top: -1em; left: 0;
             font-size: 12px; font-weight: 400;
             letter-spacing: 0.2em;
         }
@@ -566,6 +567,7 @@ article {
                         // 正常読み込み
                         document.querySelectorAll('.adsbygoogle').forEach((d) => {
                             (d as HTMLElement).style.opacity = '1';
+                            (d as HTMLElement).style.display = 'block';
                         })
                         
                         if (document.querySelectorAll('h2').length >= 2) {
