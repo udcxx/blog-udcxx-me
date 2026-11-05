@@ -1,0 +1,276 @@
+---
+---
+
+<header id="site-header">
+    <a href="/" class="site_title">無趣味<span>の</span>戯言</a>
+
+    <!-- SP用ハンバーガーボタン -->
+    <button 
+        type="button" 
+        class="menu_button" 
+        aria-label="メニューを開閉する" 
+        aria-expanded="false" 
+        aria-controls="nav-menu"
+    >
+        <span></span>
+    </button>
+
+    <ul id="nav-menu" class="nav_list">
+        <li><a href="/rss.xml">RSS</a></li>
+        <li><a href="https://udcxx.me/" target="_blank">Portfolio</a></li>
+        <li><a href="https://app.udcxx.me/" target="_blank">Tools</a></li>
+        <li><a href="/privacypolicy/">Privacy Policy</a></li>
+        <li><a href="https://udcxx.me/contact/" target="_blank">Contact</a></li>
+    </ul>
+</header>
+
+<style lang="scss">
+header {
+    margin: 0 auto;
+    width: 95%; max-width: 1024px;
+    padding: 12px 30px;
+    display: flex;
+    justify-content: space-between; align-items: center;
+    position: fixed;
+    top: 15px; left: 0; right: 0; z-index: 100;
+    transform: translateY(-150%);
+    opacity: 0;
+    background: rgba(7, 30, 34, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(7, 30, 34, 0.3);
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.3);
+    pointer-events: none;
+    transition: transform .5s ease, opacity .5s ease, border-radius .3s ease;
+
+    // スクロール検知で浮き出るクラス
+    &.-is_visible {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    // SP表示時の設定
+    @media (max-width: 1024px) {
+        flex-wrap: wrap; // タイトル・ボタン行とメニュー行を折り返す
+        padding: 12px 20px;
+        transition: transform .5s ease, opacity .5s ease, border-radius .3s ease, background-color .3s ease;
+    }
+
+    // メニュー展開時
+    &.-is_open {
+        @media (max-width: 1024px) {
+            border-radius: 24px;
+            background: rgba(7, 30, 34, 0.85); // 開いている時は可読性向上のため少し濃くする
+        }
+    }
+}
+
+.site_title {
+    font-size: 24px; font-weight: 900; font-family: 'M PLUS 1', sans-serif; font-optical-sizing: auto;
+    letter-spacing: 0.1em;
+    color: var(--gray);
+    line-height: 1;
+
+    span {
+        font: inherit;
+        color: var(--orange);
+    }
+
+    @media (min-width: 1025px) {
+        font-size: 30px;
+    }
+}
+
+/* 
+ * ハンバーガーボタン 
+ */
+.menu_button {
+    display: none; // PCでは非表示
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    width: 44px; height: 44px; // スマホでのタップ領域を確保
+    padding: 0;
+    position: relative;
+    z-index: 10;
+
+    @media (max-width: 1024px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    // 中央の線
+    span {
+        display: block;
+        width: 22px; height: 2px;
+        background-color: var(--gray);
+        border-radius: 2px;
+        position: relative;
+        transition: background-color .3s ease;
+
+        // 上下の線
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 100%; height: 100%;
+            background-color: var(--gray);
+            border-radius: 2px;
+            transition: transform .3s ease, top .3s ease;
+        }
+
+        &::before {
+            top: -7px;
+        }
+
+        &::after {
+            top: 7px;
+        }
+    }
+}
+
+/* 
+ * 開いた状態（バツ印への変形）
+ */
+header.-is_open {
+    .menu_button span {
+        background-color: transparent; // 中央の線を消す
+
+        &::before {
+            top: 0;
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            top: 0;
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+/* 
+ * メニューリスト（アコーディオンアニメーション）
+ */
+.nav_list {
+    display: flex;
+    justify-content: flex-end; align-items: center; gap: 16px;
+    margin: 0; padding: 0;
+    list-style: none;
+
+    @media (max-width: 1024px) {
+        width: 100%;
+        flex-direction: column;
+        overflow: hidden;
+        max-height: 0; // 初期状態は高さを0にする
+        opacity: 0;
+        margin-top: 0;
+        pointer-events: none;
+        // 高さが伸びることでヘッダー全体が下へ膨らむ
+        transition: max-height .4s cubic-bezier(0.4, 0, 0.2, 1), opacity .3s ease, margin-top .3s ease;
+
+        li {
+            width: 100%;
+            padding: 10px 0;
+            text-align: center;
+        }
+    }
+
+    li a {
+        color: var(--gray);
+        display: block;
+        transition: color .2s ease;
+
+        &:hover {
+            color: var(--orange);
+        }
+    }
+}
+
+// ヘッダーが開いた時のメニュー表示
+header.-is_open {
+    .nav_list {
+        @media (max-width: 1024px) {
+            max-height: 300px; // メニュー全体が収まる十分な高さ
+            opacity: 1;
+            margin-top: 16px;
+            pointer-events: auto;
+        }
+    }
+}
+</style>
+
+<script>
+    const header = document.querySelector('#site-header');
+    const menuButton = document.querySelector('.menu_button');
+    const navLinks = document.querySelectorAll('.nav_list a');
+
+    //
+    // 1. ハンバーガーボタンのトグル処理
+    //
+    menuButton?.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isOpen = header?.classList.toggle('-is_open');
+        menuButton.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    // リンククリック時にメニューを閉じる
+    navLinks.forEach((link) => {
+        link.addEventListener('click', () => {
+            if (header?.classList.contains('-is_open')) {
+                header.classList.remove('-is_open');
+                menuButton?.setAttribute('aria-expanded', 'false');
+            }
+        });
+    });
+
+    //
+    // 2. ヘッダー表示・非表示のコントロール（スクロール監視）
+    //
+    let lastScrollTop = 0;
+    const scrollBuffer = 30;
+    let scrollDown = 0;
+    let scrollUp = 0;
+
+    window.addEventListener('scroll', () => {
+        // メニュー展開中はスクロールしても非表示にしない
+        if (header?.classList.contains('-is_open')) {
+            return;
+        }
+
+        const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (currentScroll <= 30) {
+            header?.classList.remove('-is_visible');
+            lastScrollTop = currentScroll;
+            scrollDown = 0;
+            scrollUp = 0;
+            return;
+        }
+
+        if (currentScroll > lastScrollTop) {
+            // 下スクロール
+            scrollUp = 0;
+            scrollDown += (currentScroll - lastScrollTop);
+
+            if (scrollDown > scrollBuffer) {
+                header?.classList.remove('-is_visible');
+                scrollDown = 0;
+            }
+        } else {
+            // 上スクロール
+            scrollDown = 0;
+            scrollUp += (lastScrollTop - currentScroll);
+
+            if (scrollUp > scrollBuffer) {
+                header?.classList.add('-is_visible');
+                scrollUp = 0;
+            }
+        }
+
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    }, { passive: true });
+</script>

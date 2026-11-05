@@ -1,0 +1,116 @@
+---
+import { getCollection } from "astro:content";
+import type { $brand } from "astro:schema";
+import Common from '../../../layouts/common.astro';
+import ArticleCard from '../../../layouts/article-card.astro';
+import Header from '../../../layouts/site-header.astro';
+import Footer from '../../../layouts/site-footer.astro';
+
+export async function getStaticPaths({ paginate }) {
+    const allPosts = await getCollection("blog");
+    const sortedPosts = allPosts.sort(
+        (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
+    );
+
+    // 記事一覧
+    const allTagPaths = paginate(sortedPosts, {
+        params: { tagName: "new" },
+        pageSize: 20,
+    });
+
+    // タグ一覧
+    const uniqueTags = [...new Set(allPosts.flatMap((post) => post.data.tags))];
+
+    const tagPaths = uniqueTags.flatMap((tag) => {
+        const fillterdPosts = sortedPosts.filter((post) =>
+            post.data.tags.includes(tag),
+        );
+        return paginate(fillterdPosts, {
+            params: { tagName: tag },
+            pageSize: 20,
+        });
+    });
+
+    return [...allTagPaths, ...tagPaths];
+}
+
+const { page } = Astro.props;
+const { tagName } = Astro.params;
+---
+
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <title>{tagName}の記事一覧 | 無趣味の戯言</title>
+        <Common />
+    </head>
+    <body>
+        <Header />
+        <main>
+            <h1 class="tag_title">{tagName}</h1>
+
+            <div class="cards">
+                {page.data.map((post) => (
+                  <ArticleCard 
+                        title={post.data.title}
+                        date={post.data.date}
+                        tags={post.data.tags}
+                        eyecatch={post.data.eyecatch}
+                        eyecatchEmoji={post.data.eyecatchEmoji}
+                        link={post.id}
+                  />
+                ))}
+            </div>
+
+            <div class="pagenation">
+                {page.url.prev && (
+                    <a href={page.url.prev}>&laquo; 前のページへ</a>
+                )}
+                {page.url.next && (
+                    <a href={page.url.next}>次のページへ &raquo;</a>
+                )}
+            </div>
+        </main>
+        <Footer />
+    </body>
+</html>
+
+<style lang="scss">
+main {
+    margin: 100px auto 0;
+    max-width: 1012px;
+}
+
+.tag_title {
+    margin-bottom: -10px;
+    font-size: 80px; font-weight: 500; font-family: 'ubuntu', sans-serif;
+    line-height: 1em;
+    color: var(--gray);
+    opacity: 0.5;
+}
+
+.cards {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+
+    @media (max-width: 1012px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.pagenation {
+    margin-top: 40px;
+    width: 100%;
+    font-size: 20px; font-weight: 500; font-family: 'ubuntu', sans-serif;
+    letter-spacing: 0.01em;
+    display: flex;
+    justify-content: center; gap: 40px;
+    color: var(--orange);
+
+    a:hover {
+        opacity: 0.5;
+    }
+}
+</style>

@@ -1,0 +1,142 @@
+---
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import Common from '../layouts/common.astro';
+import Header from '../layouts/site-header.astro';
+import Footer from '../layouts/site-footer.astro';
+import ArticleCard from '../layouts/article-card.astro';
+import fvImage from '../assets/fv.png';
+
+const allPosts = await getCollection("blog");
+const sortedPosts = allPosts.sort(
+    (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
+);
+
+// 新着記事
+const recentPosts = sortedPosts.slice(0, 6);
+
+// タグごとの記事
+const targetTags = ["IT", "Life", "Gadget", "Book", "MU"];
+const tagPostsMap = {};
+
+targetTags.forEach((tag) => {
+    tagPostsMap[tag] = sortedPosts
+        .filter((post) => post.data.tags.includes(tag))
+        .slice(0, 4);
+});
+---
+
+<html lang="ja">
+    <head>
+        <Common />
+    </head>
+    <body>
+        <Header />
+        <section class="fv">
+            <Image src={fvImage} alt="" />
+            <h1>無趣味<span>の</span>戯言</h1>
+        </section>
+
+        <section class="new article_list">
+            <div class="cards">
+                {recentPosts.map((post) => (
+                    <ArticleCard 
+                        title={post.data.title}
+                        date={post.data.date}
+                        tags={post.data.tags}
+                        eyecatch={post.data.eyecatch}
+                        eyecatchEmoji={post.data.eyecatchEmoji}
+                        link={post.id}
+                    />
+                ))}
+            </div>
+            <p>
+                <a href="/tags/new/1/" class="more">More New Posts... &Gt;</a>
+            </p>
+        </section>
+
+        {targetTags.map((tag) => (
+            <section class="article_list">
+                <h2 class="tag_title">{tag}</h2>
+                <div class="cards">
+                    {tagPostsMap[tag].map((post) => (
+                      <ArticleCard 
+                          title={post.data.title}
+                          date={post.data.date}
+                          tags={post.data.tags}
+                          eyecatch={post.data.eyecatch}
+                          eyecatchEmoji={post.data.eyecatchEmoji}
+                          link={post.id}
+                      />
+                    ))}
+                </div>
+                <p>
+                    <a href={`/tags/${tag}/1/`} class="more">More {tag} Posts... &Gt;</a>
+                </p>
+            </section>
+        ))}
+
+        <Footer />
+    </body>
+</html>
+
+<style lang="scss">
+.fv {
+    margin-bottom: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; align-items: flex-end; gap: 10px;
+    
+    img {
+        width: 203px; height: auto;
+        flex-shrink: 1;
+    }
+
+    h1 {
+        font-size: 40px; font-weight: 900; font-family: 'M PLUS 1', sans-serif; font-optical-sizing: auto;
+        color: var(--gray);
+        letter-spacing: 0.1em;
+
+        span { font: inherit; color: var(--orange); }
+    }
+}
+
+.article_list {
+    width: 100%; max-width: 1024px;
+    margin: 0 auto 100px;
+    padding: 0 12px;
+}
+.tag_title {
+    margin-bottom: -10px;
+    font-size: 80px; font-weight: 500; font-family: 'ubuntu', sans-serif;
+    line-height: 1em;
+    color: var(--gray);
+    opacity: 0.5;
+}
+
+.cards {
+    margin: 0 auto;
+    max-width: 1012px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+
+    @media (max-width: 1012px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.more {
+    margin-top: 40px;
+    font-size: 20px; font-weight: 500; font-family: 'ubuntu', sans-serif;
+    letter-spacing: 0.01em;
+    text-align: right;
+    color: var(--orange);
+    display: block;
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+</style>

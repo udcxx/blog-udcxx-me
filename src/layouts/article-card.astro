@@ -1,0 +1,106 @@
+---
+import { Image } from 'astro:assets';
+const { title, date, tags, eyecatch = null, eyecatchEmoji = '📝', link } = Astro.props;
+
+const displayDate = () => {
+    const d = new Date(date);
+    return `${ d.getFullYear() }-${ d.getMonth() < 9 ? '0' + (d.getMonth() + 1) : d.getMonth() + 1 }-${ d.getDate() < 10 ? '0' + d.getDate() : d.getDate() }`
+}
+---
+<div class="card">
+    <a href={`/article/${link}/`} class="linkwrap"></a>
+    <div class="left">
+        {eyecatch == null ? <span>{eyecatchEmoji ? eyecatchEmoji : '📝'}</span> : <img src={`/${eyecatch}`} />}
+    </div> 
+    
+    <div class="right">
+        <p class="title">{title}</p>
+        <p class="details"><date>{displayDate}</date>{tags.map((tag: string) => <a href={`/tags/${tag}/1/`}>#{tag}</a>)}</p>
+    </div>
+</div>
+
+<style lang="scss">
+.card {
+    width: 100%; max-width: 500px; height: 150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: start;
+    align-items: stretch;
+    border: 5px solid var(--gray);
+    border-radius: 10px;
+    box-sizing: border-box;
+    position: relative;
+    background-color: var(--dark-green);
+}
+
+.linkwrap {
+    width: 100%; height: 100%;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    top: 0; left: 0; right: 0; z-index: 2;
+}
+
+.left {
+    width: 140px; height: 140px;
+    position: relative;
+    overflow: hidden;
+
+    span {
+        font-size: 60px;
+        line-height: 1em;
+        text-align: center;
+        position: absolute;
+        top: 50%; left: 0; right: 0;
+        transform: translateY(-50%);
+        transition: font-size .3s;
+    }
+
+    img {
+        width: 100%; height: 100%;
+        object-fit: cover;
+        border-radius: 5px 0 0 5px;
+    }
+}
+
+.right {
+    width: calc(100% - 150px); height: 100%;
+    position: relative;
+
+    .title {
+        width: calc(100% - 15px);
+        font-size: 20px; font-weight: bold;
+        letter-spacing: 0.01em;
+        color: var(--orange);
+        position: absolute;
+        top: 50%; left: 10px;
+        transform: translateY(-50%);
+        pointer-events: none;
+    }
+
+    .details {
+        width: calc(100% - 15px);
+        font-size: 14px; font-weight: 300; font-family: 'ubuntu', sans-serif;
+        letter-spacing: 0.03em;
+        text-align: right;
+        line-height: 1em;
+        color: var(--gray);
+        display: flex;
+        justify-content: flex-end; gap: 10px;
+        position: absolute;
+        bottom: 5px; right: 5px; z-index: 3;
+    }
+}
+
+.card:hover {
+    border: 0.1px solid;
+    transform: scale(1.01);
+    transition: transform 0.3s, border 0.3s;
+    cursor: pointer;
+
+    .left {
+        width: 150px; height: 150px;
+        transition: all 0.3s;
+    }
+}
+</style>
