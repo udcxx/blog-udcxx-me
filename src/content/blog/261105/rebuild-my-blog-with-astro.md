@@ -17,17 +17,17 @@ description: Astroを使って「無趣味の戯言」を再構築してみま�
 * 2019年 10月：Nuxt.jsで再構築！記事もほとんど捨てての再始動となりました。
   * 👉️ [Hello World!! | 無趣味の戯言](https://blog.udcxx.me/article/191001/hello-world/)
 * 2022年 6月：当時のブログ運営について、改善点を洗い出し。タグの整理とか未だにできてないや...
-  * 👉️ [無趣味の戯言で今後やっていきたいこと | 無趣味の戯言](http://localhost:4321/article/220605/future-blog-udcxx-me/)
+  * 👉️ [無趣味の戯言で今後やっていきたいこと | 無趣味の戯言](https://blog.udcxx.me/article/220605/future-blog-udcxx-me/)
 * 2023年 3月：デザイン刷新。我ながらシンプルなのに機能的で結構気に入ってます。無趣味の戯言 ver1 への前哨戦。
-  * 👉️ [ブログのデザインアップデート | 無趣味の戯言](http://localhost:4321/article/230312/design-update/)
+  * 👉️ [ブログのデザインアップデート | 無趣味の戯言](https://blog.udcxx.me/article/230312/design-update/)
 * 2023年 6月：Nuxt を 2 → 3 へメジャーアップデート！無趣味の戯言 ver1.0.0 としてバージョンの採番開始。
-  * 👉️ [Nuxt3へのアップデート | 無趣味の戯言](http://localhost:4321/article/230617/update-to-nuxt3/)
+  * 👉️ [Nuxt3へのアップデート | 無趣味の戯言](https://blog.udcxx.me/article/230617/update-to-nuxt3/)
 * 2023年 6月：3月に行ったデザイン改修に引き続き、TOPページも新デザインに。
-  * 👉️ [トップページのアップデート | 無趣味の戯言](http://localhost:4321/article/230627/top-page-design-update/)
+  * 👉️ [トップページのアップデート | 無趣味の戯言](https://blog.udcxx.me/article/230627/top-page-design-update/)
 * 2024年 2月：highlight.js・Buy Me a Coffee の導入
-  * 👉️ [無趣味の戯言 ver.1.1.0 | 無趣味の戯言](http://localhost:4321/article/240229/release-blog-v-1-1-0/)
+  * 👉️ [無趣味の戯言 ver.1.1.0 | 無趣味の戯言](https://blog.udcxx.me/article/240229/release-blog-v-1-1-0/)
 * 2024年 8月：RSSフィードの導入
-  * 👉️ [RSS Feedに対応しました | 無趣味の戯言](http://localhost:4321/article/240831/rss-feed/)
+  * 👉️ [RSS Feedに対応しました | 無趣味の戯言](https://blog.udcxx.me/article/240831/rss-feed/)
 * 2026年 11月： **Astroで再構築🎉**
 
 2023年（3年前）にガツンと手を入れてからは、記事の更新こそするものの、コア部分はしばらく放置気味な状態でした。
@@ -89,7 +89,7 @@ PCだと画面右、SPだと本文下に表示されるシェアボタンも改�
 この記事で「リンクをコピーする」をクリックすると、以下のようなものがコピーできます：
 
 ```markdown
-[無趣味の戯言ver2、始動ッ！ | 無趣味の戯言](http://localhost:4321/article/261105/rebuild-my-blog-with-astro/)
+[無趣味の戯言ver2、始動ッ！ | 無趣味の戯言](https://blog.udcxx.me/article/261105/rebuild-my-blog-with-astro/)
 ```
 
 
