@@ -511,28 +511,30 @@ article {
         box-sizing: border-box;
     }
 
-    ins {
-        max-width: 100%; height: auto;
+    ins.adsbygoogle {
+        max-width: 100%;
         margin: 40px auto;
         display: block;
         position: relative;
-        opacity: 0;
-        background-color: none;
-
-        &::before {
+        background-color: transparent;
+    
+        &[data-ad-status="filled"]::before {
             content: '【広告】';
             position: absolute;
-            top: -1em; left: 0;
+            top: -1.2em; left: 0;
             font-size: 12px; font-weight: 400;
             letter-spacing: 0.2em;
+            color: #888;
+        }
+    
+        &[data-ad-status="unfilled"] {
+            display: none !important;
         }
     }
 }
 </style>
 
 <script>
-    ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({});
-
     const showToast = (message = '✅️ コピーしました') => {
         document.getElementById('toast-message')?.remove();
 
@@ -555,46 +557,26 @@ article {
 
     document.addEventListener('DOMContentLoaded', () => {
         /**
-         * Google Adsense 位置調整
+         * Google Adsense
          */
-        const adsenseObserver = new MutationObserver((changes) => {
-            changes.forEach((change) => {
-                if (change.type === 'attributes' && change.attributeName === 'data-ad-status') {
-                    const ins = change.target;
-                    const status = ins.getAttribute('data-ad-status');
+        const heads = document.querySelectorAll('.post-content h2');
+        const targetAd = document.querySelector('.adsbygoogle.second');
 
-                    if (status === 'filled') {
-                        // 正常読み込み
-                        document.querySelectorAll('.adsbygoogle').forEach((d) => {
-                            (d as HTMLElement).style.opacity = '1';
-                            (d as HTMLElement).style.display = 'block';
-                        })
-                        
-                        if (document.querySelectorAll('h2').length >= 2) {
-                            const newArea = document.querySelectorAll('h2')[1];
-                            const targetAd = document.querySelector('.adsbygoogle.second');
+        if (heads.length >= 2 && targetAd) {
+            document.querySelector('.article')?.insertBefore(targetAd, heads[1]);
+        } else if (targetAd) {
+            (targetAd as HTMLElement).style.display = 'none';
+        }
 
-                            if (newArea && newArea.parentNode && targetAd) {
-                              newArea.parentNode.insertBefore(
-                                  targetAd, 
-                                  newArea
-                              )
-                            }
-                        }
-                    } else {
-                        document.querySelectorAll('.adsbygoogle').forEach((d) => {
-                            (d as HTMLElement).style.display = 'none';
-                        })
-                    }
-                }
-            })
-        })
-
-        // Adsense 監視開始
-        document.querySelectorAll('.adsbygoogle').forEach((d) => {
-            adsenseObserver.observe(d, { attributes: true });
-        })
-
+        const ads = document.querySelectorAll('.adsbygoogle');
+        ads.forEach(() => {
+            try {
+                ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({});
+            } catch (e) {
+                console.error('AdSense initialization error:', e);
+            }
+        });
+      
         /**
          * シェアリンク生成
          */
