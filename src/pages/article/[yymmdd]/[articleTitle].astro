@@ -568,14 +568,7 @@ article {
             (targetAd as HTMLElement).style.display = 'none';
         }
 
-        const ads = document.querySelectorAll('.adsbygoogle');
-        ads.forEach(() => {
-            try {
-                ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({});
-            } catch (e) {
-                console.error('AdSense initialization error:', e);
-            }
-        });
+        ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({});
       
         /**
          * シェアリンク生成
